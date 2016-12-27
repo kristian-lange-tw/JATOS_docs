@@ -1,3 +1,14 @@
+---
+title: Home
+keywords: 
+last_updated: December 27, 2016
+tags: 
+summary: "I have used this theme for projects that I've worked on as a professional technical writer."
+sidebar: mydoc_sidebar
+permalink: mydoc_home.html
+folder: mydoc
+---
+
 JATOS (Just Another Tool for Online Studies) helps you setup and run your online studies on your own server.
 
 JATOS 2 allows you to [run group studies](Example-Group-Studies), where multiple workers can interact with each other.
@@ -25,3 +36,5 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 This is the wiki for JATOS 2 - Are you looking for the Wiki of [JATOS 1.x](https://github.com/JATOS/JATOS_docs_v1/wiki/Home)?
 
 ### Download the [latest release](https://github.com/JATOS/JATOS/releases/)
+
+{% include links.html %}
