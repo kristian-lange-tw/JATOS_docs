@@ -2,7 +2,7 @@
 title: Home
 keywords: 
 last_updated: December 27, 2016
-tags: 
+tags: [getting_started]
 summary: "I have used this theme for projects that I've worked on as a professional technical writer."
 sidebar: mydoc_sidebar
 permalink: mydoc_home.html
