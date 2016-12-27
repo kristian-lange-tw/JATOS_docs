@@ -2,11 +2,12 @@
 title: Home
 keywords: 
 last_updated: December 27, 2016
-tags: [getting_started]
+tags: 
 summary: "I have used this theme for projects that I've worked on as a professional technical writer."
 sidebar: mydoc_sidebar
 permalink: mydoc_home.html
 folder: mydoc
+toc: false
 ---
 
 JATOS (Just Another Tool for Online Studies) helps you setup and run your online studies on your own server.
