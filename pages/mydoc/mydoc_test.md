@@ -1,11 +1,11 @@
 ---
 title: Home
-keywords: 
+keywords: summary, home
 last_updated: December 27, 2016
 tags: 
 summary:
 sidebar: mydoc_sidebar
-permalink: mydoc_home.html
+permalink: mydoc_test.html
 folder: mydoc
 toc: false
 ---
