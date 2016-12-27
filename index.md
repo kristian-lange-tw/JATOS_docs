@@ -1,5 +1,5 @@
 ---
-title:
+title: What's JATOS
 keywords: summary, homepage, home
 tags: 
 summary:
