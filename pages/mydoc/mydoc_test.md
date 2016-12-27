@@ -3,7 +3,7 @@ title: Home
 keywords: 
 last_updated: December 27, 2016
 tags: 
-summary: "I have used this theme for projects that I've worked on as a professional technical writer."
+summary: ""
 sidebar: mydoc_sidebar
 permalink: mydoc_home.html
 folder: mydoc
