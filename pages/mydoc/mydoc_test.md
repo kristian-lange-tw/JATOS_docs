@@ -3,7 +3,7 @@ title: Home
 keywords: 
 last_updated: December 27, 2016
 tags: 
-summary: ""
+summary:
 sidebar: mydoc_sidebar
 permalink: mydoc_home.html
 folder: mydoc
