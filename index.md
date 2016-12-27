@@ -36,4 +36,4 @@ This is the wiki for JATOS 2 - Are you looking for the Wiki of [JATOS 1.x](https
 
 ### Download the [latest release](https://github.com/JATOS/JATOS/releases/)
 
-{% include links.html %}
+
