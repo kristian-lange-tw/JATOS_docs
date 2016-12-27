@@ -1,5 +1,5 @@
 ---
-title: Home
+title:
 keywords: summary, homepage, home
 tags: 
 summary:
