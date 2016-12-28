@@ -3,14 +3,113 @@
 
 
 
+{
+"title": "Contact us",
+"tags": "",
+"keywords": "contact, email, help",
+"url": "Contact-us.html",
+"summary": ""
+}
+,
+
 
 
 {
-"title": "Getting started with the Documentation Theme for Jekyll",
-"tags": "getting_started",
-"keywords": "sample homepage",
+"title": "Get started",
+"tags": "",
+"keywords": "installation",
+"url": "Get-started.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Installation",
+"tags": "",
+"keywords": "installation",
+"url": "Installation.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Mandatory lines in your components&#39; HTML",
+"tags": "",
+"keywords": "mandatory, HTML, jatos.js",
+"url": "Mandatory-lines-in-your-components%27-HTML.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Run your Study with Batch Manager &amp; Worker Setup",
+"tags": "",
+"keywords": "batch manager, worker setup, worker, batch properties, worker setup, group properties",
+"url": "Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Set up your own studies",
+"tags": "",
+"keywords": "create, import, export",
+"url": "Set-up-your-own-studies.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Two Types of Session Data",
+"tags": "",
+"keywords": "session data, Study Session, group session",
+"url": "Two-Types-of-Session-Data.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Worker Types",
+"tags": "",
+"keywords": "worker types, Jatos Worker, Personal Single Worker, Personal Multiple Worker, MTurk Worker, Preview Links",
+"url": "Worker-Types.html",
+"summary": ""
+}
+,
+
+
+
+
+
+{
+"title": "What&#39;s JATOS",
+"tags": "",
+"keywords": "summary, homepage, home",
 "url": "index.html",
-"summary": "These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll."
+"summary": ""
+}
+,
+
+
+
+{
+"title": "jatos.js Reference",
+"tags": "",
+"keywords": "reference, jatos.js",
+"url": "jatos.js-Reference.html",
+"summary": ""
 }
 ,
 
@@ -589,6 +688,17 @@
 
 
 {
+"title": "Home",
+"tags": "",
+"keywords": "summary, home",
+"url": "mydoc_test.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "Themes",
 "tags": "publishing",
 "keywords": "themes, styles, colors, css",
@@ -951,17 +1061,6 @@
 
 
 
-
-
-
-{
-"title": "",
-"tags": "",
-"keywords": "",
-"url": "feed.xslt.xml",
-"summary": ""
-}
-,
 
 
 

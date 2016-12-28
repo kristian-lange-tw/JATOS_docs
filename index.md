@@ -6,9 +6,10 @@ summary:
 sidebar: mydoc_sidebar
 permalink: index.html
 toc: false
+last_updated: 28 Dec 2016
 ---
 
-JATOS (Just Another Tool for Online Studies) helps you setup and run your online studies on your own server. 
+JATOS (Just Another Tool for Online Studies) helps you setup and run your online studies on your own server.
 
 JATOS 2 allows you to [run group studies](Example-Group-Studies), where multiple workers can interact with each other.
  
@@ -34,4 +35,4 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 This is the wiki for JATOS 2 - Are you looking for the Wiki of [JATOS 1.x](https://github.com/JATOS/JATOS_docs_v1/wiki/Home)?
 
-### Download the [latest release](https://github.com/JATOS/JATOS/releases/)
+### Download the [latest release](https://github.com/JATOS/JATOS/releases/) 

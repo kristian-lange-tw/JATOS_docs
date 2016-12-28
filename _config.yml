@@ -5,7 +5,7 @@ output: web
 topnav_title: JATOS Documentation
 # this appears on the top navigation bar next to the home button
 
-site_title: JATOS Documentation
+site_title: JATOS Documentatio
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: JATOS
@@ -28,18 +28,18 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Contact
+feedback_subject_line: Jekyll documentation theme
 
-feedback_email: 
+feedback_email: tomjohnson1492@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-#feedback_disable: true
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
-feedback_text: "Contact"
+# feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-feedback_link: "http://helpy.io/"
+# feedback_link: "http://helpy.io/"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
