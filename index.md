@@ -8,7 +8,7 @@ permalink: index.html
 toc: false
 ---
 
-JATOS (Just Another Tool for Online Studies) helps you setup and run your online studies on your own server.
+JATOS (Just Another Tool for Online Studies) helps you setup and run your online studies on your own server. 
 
 JATOS 2 allows you to [run group studies](Example-Group-Studies), where multiple workers can interact with each other.
  
