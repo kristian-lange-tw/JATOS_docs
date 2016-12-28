@@ -36,5 +36,3 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 This is the wiki for JATOS 2 - Are you looking for the Wiki of [JATOS 1.x](https://github.com/JATOS/JATOS_docs_v1/wiki/Home)?
 
 ### Download the [latest release](https://github.com/JATOS/JATOS/releases/)
-
-
