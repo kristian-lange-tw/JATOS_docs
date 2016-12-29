@@ -26,5 +26,5 @@ So you could:
 
 Further reading about group studies:
 
-* [[Group Study Properties]]
-* [[Write Your Own Group Studies]]
+* [Group Study Properties](Group-Study-Properties.html)
+* [Write Your Own Group Studies](Write-Your-Own-Group-Studies.html)
