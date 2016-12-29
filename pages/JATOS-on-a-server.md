@@ -18,9 +18,9 @@ There are several ways to bring JATOS to the internet. You can install it
 * in the cloud on an Infrastructure as a Service (IaaS)
 * in the cloud with a Docker container
 
-The first two are discussed here in this page. For the last one JATOS provides a [Docker image](Install-JATOS-via-Docker).
+The first two are discussed here in this page. For the last one JATOS provides a [Docker image](Install-JATOS-via-Docker.html).
 
-One word about IaaS. There are many IaaS providers (Digital Ocean, Microsoft Azure, Google Cloud, Amazon's AWS etc.). They all give you a virtual machine (VM) and the possibility to install an operating system on it. I'd recommend to go with a Linux system like Ubuntu or Debian. Another point is to make sure they have persistent storage and not what is often called 'ephemeral storage' (storage that is deleted after the VM shuts down). Since JATOS stores all study assets in the server's file system persistent storage is needed. But apart from that it's the same JATOS installation like on a dedicated server. In [[JATOS in Amazon's Cloud (without Docker)]] we have some advice in how to do it in AWS. 
+One word about IaaS. There are many IaaS providers (Digital Ocean, Microsoft Azure, Google Cloud, Amazon's AWS etc.). They all give you a virtual machine (VM) and the possibility to install an operating system on it. I'd recommend to go with a Linux system like Ubuntu or Debian. Another point is to make sure they have persistent storage and not what is often called 'ephemeral storage' (storage that is deleted after the VM shuts down). Since JATOS stores all study assets in the server's file system persistent storage is needed. But apart from that it's the same JATOS installation like on a dedicated server. In [JATOS in Amazon's Cloud (without Docker)](JATOS-in-Amazons-Cloud-without-Docker.html) we have some advice in how to do it in AWS. 
 
 The actual JATOS instance on a server isn't too different from a local one. It basically involves telling JATOS which IP address and port it should use and (optionally) replace the H2 database with a MySQL one. There are other issues however, not directly related to JATOS, that you should consider when setting up a server. These include: setting up automatic, regular backups of your data, an automatic restart of JATOS after a server reboot, encryption, additional HTTP server, etc. The purpose of this page is not to teach you how to set up a server in general (you do need to know a little bit about Internet and security issues and should not try it at home unless you know what you're doing!). Here, we simply cover the steps to server setup that are related to JATOS. 
 
@@ -28,7 +28,7 @@ The actual JATOS instance on a server isn't too different from a local one. It b
 We've produced multiple versions of JATOS. The simplest version is JATOS alone, but other versions are bundled with Java JRE. On a server, it's best (though not necessary) to install JATOS without a bundled Java. This will make it easier to upgrade to new Java releases.
 
 ### Configuration
-If JATOS runs locally it's usually not necessary to change the defaults but on a server you probably want to set up the IP and port or maybe use a different database and change the path of the study assets root folder. This wiki has an extra page how to [[Configure JATOS on a Server]].
+If JATOS runs locally it's usually not necessary to change the defaults but on a server you probably want to set up the IP and port or maybe use a different database and change the path of the study assets root folder. This wiki has an extra page how to [Configure JATOS on a Server](Configure-JATOS-on-a-Server.html).
 
 ### Change admin's password
 Every JATOS installation has the same default admin password 'admin'. You must change it before the server goes live. This can be done in the GUI: 1) login as 'admin', 2) click on your user in the header 3) Click 'Change Password'. 
@@ -43,7 +43,7 @@ You should set up a regular backup of your data from JATOS. These include (1.) t
 Remember, a backup has to be done of **both** the database **and** the study assets root folder.
 
 ### HTTP server
-JATOS doesn't need an HTTP server (like Nginx or Apache). It is its own HTTP server. But sometimes it is  necessary to have an additional server in front of JATOS (e.g. for HTTPS encryption). In [[JATOS with Nginx]] we show a sample configuration for Nginx. And keep in mind that JATOS uses WebSockets for group studies and your HTTP server should be configured to support them.
+JATOS doesn't need an HTTP server (like Nginx or Apache). It is its own HTTP server. But sometimes it is necessary to have an additional server in front of JATOS (e.g. for HTTPS encryption). In [JATOS with Nginx](JATOS-with-Nginx.html) we show a sample configuration for Nginx and in [JATOS with Apache](JATOS-with-Apache.html) for Apache. And keep in mind that JATOS uses WebSockets for group studies and your HTTP server should be configured to support them.
 
 ### Auto-start JATOS on Linux/Unix as a daemon
 
@@ -58,22 +58,23 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
   1. Add variable `dir=` with the path to your JATOS installation
 
   The beginning of your `/etc/init.d/jatos` should look like:
-  ```bash
-#!/bin/bash
-# JATOS loader for Linux and MacOS X
+  ~~~ bash
+  #!/bin/bash
+  # JATOS loader for Linux and MacOS X
 
-# Change IP address and port here
-address="127.0.0.1"
-port="9000"
-dir="/path/to/my/JATOS/installation"
+  # Change IP address and port here
+  address="127.0.0.1"
+  port="9000"
+  dir="/path/to/my/JATOS/installation"
 
-# Don't change after here unless you know what you're doing
-#####################################
-# Get JATOS directory
-#dir="$( cd "$( dirname "$0" )" && pwd )"
-pidfile=$dir/RUNNING_PID
-...
-  ```
+  # Don't change after here unless you know what you're doing
+  #####################################
+  # Get JATOS directory
+  #dir="$( cd "$( dirname "$0" )" && pwd )"
+  pidfile=$dir/RUNNING_PID
+  ...
+  ~~~
+  
 1. Make it auto-start with the command `sudo update-rc.d jatos defaults`
 
 Now JATOS starts automatically when you start your server and stops when you shut it down. You can also use the init script yourself like any other init script with `sudo /etc/init.d/jatos start|stop|restart`.
