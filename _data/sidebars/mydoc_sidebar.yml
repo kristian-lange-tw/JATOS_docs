@@ -107,3 +107,36 @@ entries:
       url: /Write-Your-Own-Group-Studies.html
       output: web, pdf
 
+  - title: For admins
+    output: web, pdf
+    folderitems:
+
+    - title: JATOS on a server
+      url: /JATOS-on-a-server.html
+      output: web, pdf
+      
+    - title: Configure JATOS on a Server
+      url: /Configure-JATOS-on-a-Server.html
+      output: web, pdf
+
+    - title: JATOS with Nginx
+      url: /JATOS-with-Nginx.html
+      output: web, pdf
+      
+    - title: JATOS with Apache
+      url: /JATOS-with-Apache.html
+      output: web, pdf
+
+    - title: Install JATOS via Docker
+      url: /Install-JATOS-via-Docker.html
+      output: web, pdf
+
+    - title: JATOS in Amazon's Cloud (without Docker)
+      url: /JATOS-in-Amazons-Cloud-without-Docker.html
+      output: web, pdf
+
+    - title: Updating a JATOS server installation
+      url: /Updating-a-JATOS-server-installation.html
+      output: web, pdf
+      
+   
