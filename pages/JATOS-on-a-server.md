@@ -60,9 +60,6 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
       The beginning of your `/etc/init.d/jatos` should look like:
   
    ~~~ javascript
-   jatos.onLoad(function() {
-     // initialize and start your JavaScript here 
-   });
       #!/bin/bash
       # JATOS loader for Linux and MacOS X
       #
