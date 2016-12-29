@@ -10,7 +10,7 @@ toc: true
 last_updated: 28 Dec 2016
 ---
 
-If you run a study during development from within the JATOS GUI you will do so as a Jatos worker. There are [other worker types](Worker-Types) to distribute to real participants.
+If you run a study during development from within the JATOS GUI you will do so as a Jatos worker. There are [other worker types](Worker-Types.html) to distribute to real participants.
 
 A worker in JATOS is a person who runs a study. A batch organizes workers and their study runs and results. Each study has a Batch Manager.
 
@@ -48,7 +48,7 @@ Additionally you can switch on or off worker types in the **Allowed Worker Types
 
 ![Worker types](images/Batch Max total workers.png)
 
-The **Group Properties** relate to [group studies](Run-Group-Studies).
+The **Group Properties** relate to [group studies](Run-Group-Studies.html).
 
 ### Worker Setup
 
@@ -60,6 +60,6 @@ For **Personal Single Workers** and **Personal Multiple Workers** click **Add**.
 
 **General Single Workers** only have one link and each link will create a new separate worker. Get this link by clicking on **Link** in its row.
 
-How to connect to MTurk and create links to run for **MTurk Workers** is described in the page [[Connect to Mechanical Turk]].
+How to connect to MTurk and create links to run for **MTurk Workers** is described in the page [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
 
-The differences between the worker types is explained in the [Worker Types wiki page](Worker-Types).
+The differences between the worker types is explained in the [Worker Types wiki page](Worker-Types.html).
