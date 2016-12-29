@@ -44,6 +44,6 @@ The steps to create a project are part of the MTurk interface.
 
 1. When an MTurk worker finishes a study they'll see a confirmation code. To assign payment to individual workers, just compare the confirmation codes stored in JATOS' results view to those stored in MTurk.
 
-![Confirmation code](images/Screenshot from 2015-04-09 15_17_03.png)
+![Confirmation code](images/Screenshot from 2015-04-09 15_17_03.png){:height="50"}
 
 See the [Tips & Tricks](Tips-and-Tricks.html) page for some useful information on how to test your study before officially posting it on MTurk. 
