@@ -4,7 +4,7 @@ keywords: mandatory, HTML, jatos.js
 tags:
 summary:
 sidebar: mydoc_sidebar
-permalink: Mandatory-lines-in-your-components%27-HTML.html
+permalink: Mandatory-lines-in-your-components-HTML.html
 folder:
 toc: true
 last_updated: 28 Dec 2016
