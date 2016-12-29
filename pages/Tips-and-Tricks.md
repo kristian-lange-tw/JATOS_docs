@@ -25,14 +25,14 @@ To imitate a run from **MTurk's Sandbox**, use any arbitrary values in the query
 
 `http://localhost:9000/publix/4/start?workerId=123456&assignmentId=abcdef&turkSubmitTo=sandbox`
 
-***
+
 ### Lock your studies before running them
 
 Each Study bar has a button that toggles between the  'Unlocked' and 'Locked' states. Locking a study prevents changes to its (or any of its components') properties, change the order of components, etc. 
 
 ![GUI screenshot](images/Screen Shot 2015-04-27 at 16.25.55.png)
 
-***
+
 ### Do a General Single Run more than once in the same browser 
 
 The problem here is that a General Single Run is intended to work only once in the same browser. Although this is a feature to limit participants doing the same study twice, it can be a hassle for you as a study developer who just want to try out the General Single Run a second time. Luckily there is an easy way around: Since for a General Single Run all studies that the worker already participated in are stored in a browser cookie, it can be easily removed. Just **remove the cookie with the name JATOS_GENERALSINGLE_UUIDS** in your browser. You can find this cookie in every webpage hosted by a JATOS server. If it doesn't exist you probably never did a General Single run yet.
