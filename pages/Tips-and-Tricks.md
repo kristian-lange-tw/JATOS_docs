@@ -21,7 +21,7 @@ Here are some concrete examples:
 
 To run the study with the ID 4 on a local JATOS use `http://localhost:9000/publix/4/start?workerId=123456&assignmentId=abcdef`.
 
-To imitate a run from **MTurk's Sandbox**, use any arbitrary values in the query strings `workerId` and `assignmentId`. (In this example, `workerId = 12345` and `assignmentId = abcdef`). Also, set `turkSubmitTo` to the value 'sandbox'. 
+To imitate a run from **MTurk's Sandbox**, use any arbitrary values in the query strings `workerId` and `assignmentId` (In this example, `workerId = 12345` and `assignmentId = abcdef`). Also, set `turkSubmitTo` to the value 'sandbox'. 
 
 `http://localhost:9000/publix/4/start?workerId=123456&assignmentId=abcdef&turkSubmitTo=sandbox`
 
