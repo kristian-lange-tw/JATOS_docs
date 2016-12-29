@@ -59,7 +59,7 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
 
       The beginning of your `/etc/init.d/jatos` should look like:
   
-   ~~~ 
+      ~~~ 
       #!/bin/bash
       # JATOS loader for Linux and MacOS X
       
@@ -73,7 +73,7 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
       # Get JATOS directory
       #dir="$( cd "$( dirname "$0" )" && pwd )"
       pidfile=$dir/RUNNING_PID
-   ~~~
+      ~~~
   
 1. Make it auto-start with the command `sudo update-rc.d jatos defaults`
 
