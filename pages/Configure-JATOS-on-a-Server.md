@@ -19,14 +19,12 @@ If JATOS runs locally it's usually not necessary to change the defaults. On a se
 By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to configure the host name or IP address and the port:
 
 1. In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port.
-
    ~~~ bash
    address="172.16.0.1"
    port="8080"
    ~~~
   
 1. Via command-line arguments `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
-
    ~~~ bash
    loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
    ~~~
@@ -36,19 +34,14 @@ By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to
 By default the study assets root folder (where all your study's HTML, JavaScript files etc. are stored) is located within JATOS installation's folder in `study_assets_root`. There are three ways to change this path:
 
 1. Via the command-line argument `-DJATOS_STUDY_ASSETS_ROOT_PATH`, e.g. 
-
    ~~~ bash
    loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
-  
 1. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
-
    ~~~ bash
    jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
    ~~~
-     
 1. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
-  
    ~~~ bash
    export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
@@ -58,7 +51,6 @@ By default the study assets root folder (where all your study's HTML, JavaScript
 By default JATOS uses an embedded H2 database, but it can be easily configured to work with an external H2 or a MySQL database. 
 
 You can confirm that JATOS is accessing the correct database by looking in the logs. One of the lines after JATOS starts should look like this (with your JDBC URL).
-
 ~~~ bash
 19:03:42.000 [info] - p.a.d.DefaultDBApi - Database [default] connected at jdbc:mysql://localhost/jatos?characterEncoding=UTF-8
 ~~~
