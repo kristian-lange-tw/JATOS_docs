@@ -18,7 +18,7 @@ A local installation is straightforward.
 
 Usually you first develop your study with JATOS on a local computer. Then in a second step you bring it to a server installation of JATOS.
 
-With a local installation only you have access to JATOS - with a [server installation](JATOS-on-a-server) others can run your study via the internet too. This is especially true if you want to publish your study on Mechanical Turk.
+With a local installation only you have access to JATOS - with a [server installation](JATOS-on-a-server.html) others can run your study via the internet too. This is especially true if you want to publish your study on Mechanical Turk.
 
 **For convenience JATOS is available in a variant bundled with Java.**
 
@@ -50,4 +50,4 @@ Your local JATOS installation will run in the background. If you want to stop it
 
 ## How to go on from here
 
-The easiest way to start with JATOS is to download and import one of the [example studies](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies) and [play around with it](Get started).
+The easiest way to start with JATOS is to download and import one of the [example studies](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies) and [play around with it](Get-started.html).
