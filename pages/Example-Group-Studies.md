@@ -6,13 +6,13 @@ summary:
 sidebar: mydoc_sidebar
 permalink: Example-Group-Studies.html
 folder:
-toc: true
+toc: false
 last_updated: 28 Dec 2016
 ---
 
 With JATOS 2 you can run group studies. JATOS is versatile and supports fixed, two-user studies (like this [Prisoner's Dilemma](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies#prisoners-dilemma)) or open, multi-user studies (like this [Snake game](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies#snake)), and everything in between.
 
-## Interested? Try one of our pre-made example studies
+**Interested? Try one of our pre-made example studies**
 
 The easiest way to get started is trying out some pre-made examples. For this, you'll have to run a group study as two different workers. 
 
