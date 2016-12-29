@@ -10,7 +10,7 @@ toc: true
 last_updated: 28 Dec 2016
 ---
 
-(If you haven't already, we recommend that you try out some [example group studies](Example-Group-Studies).)
+(If you haven't already, we recommend that you try out some [example group studies](Example-Group-Studies.html).)
 
 ## Set up group studies
 
@@ -45,7 +45,7 @@ Say you want to have 3 groups with 2 workers each. You want to leave it to JATOS
 
 ![Prisoners example](images/prisoners example.png)
 
-The first two scenarios may apply to the [Prisoner's Dilemma Example Study](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies#prisoners-dilemma-group-study-example).
+The first two scenarios may apply to the [Prisoner's Dilemma Example Study](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies#prisoners-dilemma).
 
 ### Scenario 3: One open world
 
