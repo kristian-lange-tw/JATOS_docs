@@ -14,7 +14,7 @@ JATOS basically cares for the server side: it stores result data, does worker ma
 
 In [our example studies](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies) are a couple of jsPsych ones.
 
-Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and send the result data to) JATOS. Additionally you can have a look at [Make Your Existing Code Run in JATOS](Make-Your-Existing-Code-Run-in-JATOS).
+Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and send the result data to) JATOS. Additionally you can have a look at [Make Your Existing Code Run in JATOS](Make-Your-Existing-Code-Run-in-JATOS.html).
 
 ## How to turn your jsPsych experiment into a JATOS study
 
