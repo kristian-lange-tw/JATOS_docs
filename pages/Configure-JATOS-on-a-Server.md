@@ -35,23 +35,23 @@ By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to
 
 By default the study assets root folder (where all your study's HTML, JavaScript files etc. are stored) is located within JATOS installation's folder in `study_assets_root`. There are three ways to change this path:
 
-  1. Via the command-line argument `-DJATOS_STUDY_ASSETS_ROOT_PATH`, e.g. 
+1. Via the command-line argument `-DJATOS_STUDY_ASSETS_ROOT_PATH`, e.g. 
 
-     ~~~ javascript
-     loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
-     ~~~
+   ~~~ bash
+   loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
+   ~~~
   
-  2. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
+2. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
 
-     ~~~
-     jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
-     ~~~
+   ~~~ bash
+   jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
+   ~~~
      
-  3. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables: 
-
-     ~~~
-     export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
-     ~~~
+  3. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
+  
+   ~~~ bash
+   export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
+   ~~~
      
 ## Database
 
