@@ -63,6 +63,19 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
    jatos.onLoad(function() {
      // initialize and start your JavaScript here 
    });
+      #!/bin/bash
+      # JATOS loader for Linux and MacOS X
+      #
+      # Change IP address and port here
+      address="127.0.0.1"
+      port="9000"
+      dir="/path/to/my/JATOS/installation"
+      #
+      # Don't change after here unless you know what you're doing
+      #####################################
+      # Get JATOS directory
+      #dir="$( cd "$( dirname "$0" )" && pwd )"
+      pidfile=$dir/RUNNING_PID
    ~~~
   
       ~~~ 
