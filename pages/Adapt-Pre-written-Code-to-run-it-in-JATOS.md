@@ -36,14 +36,16 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
 
 1. Add **`jatos.onload`**
 
-   Every study in JATOS starts with this call. So whatever you want to do in your study it should start there. 
-   ~~~ javascript
+   Every study in JATOS starts with this call. So whatever you want to do in your study it should start there.
+   
+   ~~~ javascript
    jatos.onLoad(function() {
        // initialize and start your JavaScript here
    });
    ~~~
    
    E.g. if you want to initialize a jsPsych experiment:
+   
    ~~~ javascript
    jatos.onLoad(function() {
      jsPsych.init( {
@@ -55,6 +57,7 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
 1. Now to actually send our result data to JATOS we use jatos.js' function **`jatos.submitResultData`**. We can pass this function any data in text format including JSON, CSV or XML.
 
    E.g. if we want to send a JavaScript object as JSON
+   
    ~~~ javascript
    var resultJson = JSON.stringify(myObject);
    jatos.submitResultData(resultJson, jatos.startNextComponent);
@@ -63,6 +66,7 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
    Conveniently but optionally `jatos.submitResultData` takes a second parameter which specifies what should be done after the result data got sent. Usually one want to jump to the next component (`jatos.startNextComponent`) or finish the study (`jatos.endStudy`).
 
    Another example where we use jsPsych: We have to put `jatos.submitResultData` into jsPsych's `on_finish`:
+   
    ~~~ javascript
    jsPsych.init( {
      ...
