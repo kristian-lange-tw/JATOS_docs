@@ -15,6 +15,7 @@ last_updated: 29 Dec 2016
 Group studies differ from single-worker studies simply in that the JavaScript needs to handle groups and communications between members. The jatos.js library provides some useful functions for this.
 
 If you like to dive right into jatos.js' reference:
+
 * [jatos.js functions for group studies](jatos.js-Reference.html#functions-for-group-studies)
 * [jatos.js group variables](jatos.js-Reference.html#group-variables)
 * [jatos.js group session](jatos.js-Reference.html#groups-session-data)
@@ -31,14 +32,17 @@ There are two requisites for allowing group members to interact:
 So here's how a typical JATOS group study run would look like:
 
 Component 1
+
   * _jatos.joinGroup_ -> joins group and opens group channel
   * _jatos.nextComponent_ -> closes group channel and jumps to next component
 
 Component 2
+
   * _jatos.joinGroup_ -> opens group channel in the **same group**
   * _jatos.nextComponent_ -> closes group channel and jumps to next component
 
 Component 3
+
   * _jatos.joinGroup_ -> opens group channel **same group**
   * _jatos.endStudy_ -> closes group channel, leaves group, ends component, and ends study
 
