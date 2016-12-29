@@ -40,7 +40,7 @@ entries:
     folderitems:
 
     - title: Run your Study with Batch Manager & Worker Setup
-      url: /Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html
+      url: /Run-your-Study-with-Batch-Manager-and-Worker-Setup.html
       output: web, pdf
 
     - title: Worker Types
@@ -52,11 +52,11 @@ entries:
       output: web, pdf
 
     - title: Mandatory lines in your components' HTML
-      url: /Mandatory-lines-in-your-components%27-HTML.html
+      url: /Mandatory-lines-in-your-components-HTML.html
       output: web, pdf
 
     - title: Adapt Pre written Code to run it in JATOS (Jatosify)
-      url: /Adapt-Pre-written-Code-to-run-it-in-JATOS-%28Jatosify%29.html
+      url: /Adapt-Pre-written-Code-to-run-it-in-JATOS.html
       output: web, pdf
 
     - title: jsPsych and JATOS
@@ -64,7 +64,7 @@ entries:
       output: web, pdf
 
     - title: Tips & Tricks
-      url: /Tips-%26-Tricks.html
+      url: /Tips-and-Tricks.html
       output: web, pdf
 
     - title: Connect to Mechanical Turk
