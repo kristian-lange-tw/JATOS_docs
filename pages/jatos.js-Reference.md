@@ -12,7 +12,7 @@ last_updated: 28 Dec 2016
 
 jatos.js is a small JavaScript library that helps you to communicate with your JATOS server (in more technical terms: it conveniently wraps calls to JATOS' public API).
 
-Two [bits of code](Mandatory-lines-in-your-components-HTML) are mandatory in all your components' HTML files. One of them is the following line in the head section:
+Two [bits of code](Mandatory-lines-in-your-components-HTML.html) are mandatory in all your components' HTML files. One of them is the following line in the head section:
 `<script src="/assets/javascripts/jatos.js"></script>`
 which includes the jatos.js library into your HTML file. 
 
