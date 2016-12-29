@@ -20,7 +20,7 @@ Here are the necessary changes if you want to adapt your jsPsych experiment so t
 
 1. Include the `jatos.js` library in the `<head>`
 
-   ~~~ javascript
+   ~~~ html
    <script src="/assets/javascripts/jatos.js"></script>
    ~~~ 
    
