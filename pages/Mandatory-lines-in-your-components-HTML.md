@@ -23,8 +23,8 @@ Here are the absolute basics that any component HTML file MUST have in order to 
      </head>
    </html>   
    ~~~
-   
-   [Remember](https://github.com/JATOS/JATOS/wiki/Troubleshooting#a-library-included-in-the-html-header-fails-to-load): Any URL or file path in a HTML file should only use '/' as a file path separator - even on Windows systems. 
+
+   [Remember](Troubleshooting.html#a-file-library-image--included-in-the-html-fails-to-load): Any URL or file path in a HTML file should only use '/' as a file path separator - even on Windows systems. 
 
 1. A callback function that will execute after a component has finished loading
 
