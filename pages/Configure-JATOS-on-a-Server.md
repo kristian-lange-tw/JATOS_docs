@@ -25,7 +25,7 @@ By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to
    port="8080"
    ~~~
   
-2. Via command-line arguments `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
+1. Via command-line arguments `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
 
    ~~~ bash
    loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
@@ -41,13 +41,13 @@ By default the study assets root folder (where all your study's HTML, JavaScript
    loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
   
-2. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
+1. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
 
    ~~~ bash
    jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
    ~~~
      
-3. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
+1. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
   
    ~~~ bash
    export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
