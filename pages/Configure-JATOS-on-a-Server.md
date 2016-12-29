@@ -37,10 +37,12 @@ By default the study assets root folder (where all your study's HTML, JavaScript
    ~~~ bash
    loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
+   
 1. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
    ~~~ bash
    jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
    ~~~
+   
 1. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
    ~~~ bash
    export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
