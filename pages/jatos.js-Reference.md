@@ -12,13 +12,13 @@ last_updated: 28 Dec 2016
 
 jatos.js is a small JavaScript library that helps you to communicate with your JATOS server (in more technical terms: it conveniently wraps calls to JATOS' public API).
 
-Two [bits of code](Mandatory-lines-in-your-components%27-HTML) are mandatory in all your components' HTML files. One of them is the following line in the head section:
+Two [bits of code](Mandatory-lines-in-your-components-HTML) are mandatory in all your components' HTML files. One of them is the following line in the head section:
 `<script src="/assets/javascripts/jatos.js"></script>`
 which includes the jatos.js library into your HTML file. 
 
 All variables or calls to jatos.js start with `jatos.`. For example, if you want to get the study's ID you can use `jatos.studyId`. If you want to submit some result data of your component back to your JATOS server you can call `jatos.submitResultData(resultData)`, where resultData can be any kind text.
 
-And, please, if you find a mistake or have a question don't hesitate to [contact us](Contact us).
+And, please, if you find a mistake or have a question don't hesitate to [contact us](Contact-us.html).
 
 Below we list and describe the variables and functions of the jatos.js library:
 
@@ -67,7 +67,7 @@ There's a convenient function that adds all these IDs to a given object. See fun
 
 ## Study's session data
 
-The session data can be accessed and modified by every component of a study. It's a very convenient way to share data between different components. However, remember that the session data will be deleted after the study is finished (see also [[Two Types of Session Data]]).
+The session data can be accessed and modified by every component of a study. It's a very convenient way to share data between different components. However, remember that the session data will be deleted after the study is finished (see also [Two Types of Session Data](Two-Types-of-Session-Data.html)).
 
 * `jatos.studySessionData`
 
@@ -95,7 +95,7 @@ The group variables are part of jatos.js since JATOS 2. They are only filled wit
 
 ## Group's session data
 
-* `jatos.groupSessionData` - Group session data shared in between members of the group (see also [[Two Types of Session Data]])
+* `jatos.groupSessionData` - Group session data shared in between members of the group (see also [Two Types of Session Data](Two-Types-of-Session-Data.html))
 
 
 ## Other variables
@@ -110,7 +110,7 @@ The group variables are part of jatos.js since JATOS 2. They are only filled wit
 
 ### `jatos.onLoad(callback)`
 
-Defines callback function that jatos.js will call when it's finished initialising. Only [mandatory](Mandatory-lines-in-your-components%27-HTML) call in every component.
+Defines callback function that jatos.js will call when it's finished initialising. Only [mandatory](Mandatory-lines-in-your-components-HTML.html) call in every component.
 
 ### `jatos.onError(callback)`
 
@@ -123,7 +123,7 @@ Logs an msg in the log of the JATOS installation.
 
 ### `jatos.addJatosIds(obj)`
 
-Convenience function that adds some [IDs](jatos.js-Reference#ids) (study ID, study title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
+Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study ID, study title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
 * _param {Object} obj_ - Object to which the IDs will be added
 
 
