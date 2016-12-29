@@ -21,9 +21,8 @@ By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to
 1. In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port.
 
    ~~~ javascript
-   jatos.onLoad(function() {
-     // initialize and start your JavaScript here 
-   });
+   address="172.16.0.1"
+   port="8080"
    ~~~
 
    ~~~ 
