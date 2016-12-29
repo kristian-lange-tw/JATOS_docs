@@ -83,6 +83,7 @@ There are three ways to set up the database.
    ~~~
     
 1. Via production.conf (description analog to 1.)
+
    ~~~ bash
    db.default.url="jdbc:mysql://localhost/MyDatabase?characterEncoding=UTF-8"
    db.default.user=myusername
