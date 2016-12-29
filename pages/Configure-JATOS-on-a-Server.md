@@ -47,7 +47,7 @@ By default the study assets root folder (where all your study's HTML, JavaScript
    jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
    ~~~
      
-  3. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
+3. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
   
    ~~~ bash
    export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
@@ -59,7 +59,7 @@ By default JATOS uses an embedded H2 database, but it can be easily configured t
 
 You can confirm that JATOS is accessing the correct database by looking in the logs. One of the lines after JATOS starts should look like this (with your JDBC URL).
 
-~~~
+~~~ bash
 19:03:42.000 [info] - p.a.d.DefaultDBApi - Database [default] connected at jdbc:mysql://localhost/jatos?characterEncoding=UTF-8
 ~~~
 
