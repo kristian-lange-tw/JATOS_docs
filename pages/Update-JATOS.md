@@ -13,7 +13,7 @@ last_updated: 29 Dec 2016
 We'll periodically update JATOS with new features and bug fixes. We recommend you stay up to date with the [latest release](https://github.com/JATOS/JATOS/releases). However if you are currently running a study it's always safest to keep the same JATOS version throughout the whole experiment.
 
 ## Updating a local installation of JATOS 
-(The procedure is different if you want to [update JATOS on a server installation](https://github.com/JATOS/JATOS/wiki/Updating-a-JATOS-server-installation))
+(The procedure is different if you want to [update JATOS on a server installation](Updating-a-JATOS-server-installation.html))
 
 To be absolutely safe you can install the new JATOS version and keep the old one untouched. This way you can switch back if something fails. Just remember that only one JATOS can run at the same time. Always end JATOS before starting another one.
 
