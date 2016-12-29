@@ -16,7 +16,7 @@ Here are the absolute basics that any component HTML file MUST have in order to 
 
 1. A link to the jatos.js library in the head section
 
-   ~~~ javascript
+   ~~~ html
    <html>
      <head>
        <script src="/assets/javascripts/jatos.js"></script>
@@ -28,7 +28,7 @@ Here are the absolute basics that any component HTML file MUST have in order to 
 
 1. A callback function that will execute after a component has finished loading
 
-   ~~~ javascript
+   ~~~ html
    <script>
      jatos.onLoad();
    </script>   
@@ -36,7 +36,7 @@ Here are the absolute basics that any component HTML file MUST have in order to 
 
    The code above is valid, but your component will do nothing after being loaded, which is probably not what you want. Typically, you would define the function that would get your JavaScript going after component load. Something like this, for example, will show an alert box:
 
-   ~~~ javascript
+   ~~~ html
    <script>
      jatos.onLoad(function() {
        alert("I am an alert box!");
