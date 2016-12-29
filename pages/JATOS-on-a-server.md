@@ -53,28 +53,28 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
 1. Rename it to `jatos`
 1. Change access permission with `chmod og+x jatos`
 1. Edit `/etc/init.d/jatos`
-  1. Specify the IP address and port you want to use
-  1. Comment out the line `#dir="$( cd "$( dirname "$0" )" && pwd )"`
-  1. Add variable `dir=` with the path to your JATOS installation
+   1. Specify the IP address and port you want to use
+   1. Comment out the line `#dir="$( cd "$( dirname "$0" )" && pwd )"`
+   1. Add variable `dir=` with the path to your JATOS installation
 
-  The beginning of your `/etc/init.d/jatos` should look like:
+   The beginning of your `/etc/init.d/jatos` should look like:
   
-  ~~~ bash
-  #!/bin/bash
-  # JATOS loader for Linux and MacOS X
-
-  # Change IP address and port here
-  address="127.0.0.1"
-  port="9000"
-  dir="/path/to/my/JATOS/installation"
-
-  # Don't change after here unless you know what you're doing
-  #####################################
-  # Get JATOS directory
-  #dir="$( cd "$( dirname "$0" )" && pwd )"
-  pidfile=$dir/RUNNING_PID
-  ...
-  ~~~
+   ~~~ bash
+   #!/bin/bash
+   # JATOS loader for Linux and MacOS X
+  
+   # Change IP address and port here
+   address="127.0.0.1"
+   port="9000"
+   dir="/path/to/my/JATOS/installation"
+   
+   # Don't change after here unless you know what you're doing
+   #####################################
+   # Get JATOS directory
+   #dir="$( cd "$( dirname "$0" )" && pwd )"
+   pidfile=$dir/RUNNING_PID
+   ...
+   ~~~ 
   
 1. Make it auto-start with the command `sudo update-rc.d jatos defaults`
 
