@@ -12,7 +12,7 @@ last_updated: 28 Dec 2016
 
 ## Get started in 4 steps
 
-1. **Download JATOS and [install a local instance](Installation#easy-installation-on-your-local-computer)**
+1. **Download JATOS and [install a local instance](Installation.html#easy-installation-on-your-local-computer)**
 
 1. **Open JATOS' GUI by going to <a href="http://localhost:9000/" target="_blank">http://localhost:9000/</a> in your browser window**
 
