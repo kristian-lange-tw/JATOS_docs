@@ -4,8 +4,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" mandatory, HTML, jatos.js">
-<title>Mandatory lines in your components' HTML | JATOS Documentatio</title>
+<meta name="keywords" content=" group">
+<title>Write Your Own Group Studies | JATOS Documentatio</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -88,7 +88,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
+            <a class="navbar-brand" href="index.html"><img src="images/jatos_logo_color.svg" height="20">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -129,7 +129,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Mandatory lines in your components\ HTML">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Write Your Own Group Studies">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -206,7 +206,7 @@
             
             
             
-            <li><a href="Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
+            <li><a href="Run-your-Study-with-Batch-Manager-and-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
             
             
             
@@ -227,14 +227,14 @@
             
             
             
-            <li class="active"><a href="Mandatory-lines-in-your-components%27-HTML.html">Mandatory lines in your components' HTML</a></li>
+            <li><a href="Mandatory-lines-in-your-components-HTML.html">Mandatory lines in your components' HTML</a></li>
             
             
             
             
             
             
-            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS-%28Jatosify%29.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
+            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
             
             
             
@@ -248,7 +248,7 @@
             
             
             
-            <li><a href="Tips-%26-Tricks.html">Tips & Tricks</a></li>
+            <li><a href="Tips-and-Tricks.html">Tips & Tricks</a></li>
             
             
             
@@ -277,6 +277,92 @@
             
             
             <li><a href="Data-Privacy-and-Ethics.html">Data Privacy and Ethics</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Group Studies</a>
+        <ul>
+            
+            
+            
+            <li><a href="Example-Group-Studies.html">Example Group Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Group-Study-Properties.html">Group Study Properties</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="active"><a href="Write-Your-Own-Group-Studies.html">Write Your Own Group Studies</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">For admins</a>
+        <ul>
+            
+            
+            
+            <li><a href="JATOS-on-a-server.html">JATOS on a server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Configure-JATOS-on-a-Server.html">Configure JATOS on a Server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Nginx.html">JATOS with Nginx</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Apache.html">JATOS with Apache</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Install-JATOS-via-Docker.html">Install JATOS via Docker</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-in-Amazons-Cloud-without-Docker.html">JATOS in Amazon's Cloud (without Docker)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Updating-a-JATOS-server-installation.html">Updating a JATOS server installation</a></li>
             
             
             
@@ -315,7 +401,7 @@
     <!-- Content Column -->
     <div class="col-md-9">
         <div class="post-header">
-   <h1 class="post-title-main">Mandatory lines in your components' HTML</h1>
+   <h1 class="post-title-main">Write Your Own Group Studies</h1>
 </div>
 
 
@@ -352,49 +438,78 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" href="https://github.com/JATOS/JATOS_docs/blob/gh-pages/pages//Mandatory-lines-in-your-components%27-HTML.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" href="https://github.com/JATOS/JATOS_docs/blob/gh-pages/pages//Write-Your-Own-Group-Studies.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-  <p>The best way to write an HTML/JavaScript file that runs with JATOS is to use one of the HTML files from the <a href="https://github.com/JATOS/JATOS_examples/wiki/Example-Studies">Example Studies</a> as a starting point.</p>
+  <h2 id="writing-javascripts-for-group-studies">Writing JavaScripts for group studies</h2>
 
-<p>Here are the absolute basics that any component HTML file MUST have in order to correctly run with JATOS</p>
+<p>Group studies differ from single-worker studies simply in that the JavaScript needs to handle groups and communications between members. The jatos.js library provides some useful functions for this.</p>
+
+<p>If you like to dive right into jatos.js’ reference:</p>
+
+<ul>
+  <li><a href="jatos.js-Reference.html#functions-for-group-studies">jatos.js functions for group studies</a></li>
+  <li><a href="jatos.js-Reference.html#group-variables">jatos.js group variables</a></li>
+  <li><a href="jatos.js-Reference.html#groups-session-data">jatos.js group session</a></li>
+</ul>
+
+<h3 id="joining-a-group-and-opening-group-channels">Joining a group and opening group channels</h3>
+
+<p>There are two requisites for allowing group members to interact:</p>
 
 <ol>
   <li>
-    <p>A link to the jatos.js library in the head section</p>
-
-    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">html</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"/assets/javascripts/jatos.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
-</span>  <span class="o">&lt;</span><span class="sr">/head</span><span class="err">&gt;
-</span><span class="o">&lt;</span><span class="sr">/html&gt;  </span><span class="err"> 
-</span></code></pre>
-    </div>
-
-    <p><a href="https://github.com/JATOS/JATOS/wiki/Troubleshooting#a-library-included-in-the-html-header-fails-to-load">Remember</a>: Any URL or file path in a HTML file should only use ‘/’ as a file path separator - even on Windows systems.</p>
+    <p>Workers can only communicate with members of their own group. So, interacting workers must all join the same group. 
+<strong>A worker will remain in a group until jatos.js is explicitly told to leave the group (or the study run is finished). This means that if a worker moves between components or reloads a page they will remain in the same group.</strong> This feature makes groups much more robust.</p>
   </li>
   <li>
-    <p>A callback function that will execute after a component has finished loading</p>
-
-    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-  <span class="nx">jatos</span><span class="p">.</span><span class="nx">onLoad</span><span class="p">();</span>
-<span class="o">&lt;</span><span class="sr">/script&gt;  </span><span class="err"> 
-</span></code></pre>
-    </div>
-
-    <p>The code above is valid, but your component will do nothing after being loaded, which is probably not what you want. Typically, you would define the function that would get your JavaScript going after component load. Something like this, for example, will show an alert box:</p>
-
-    <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-  <span class="nx">jatos</span><span class="p">.</span><span class="nx">onLoad</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="s2">"I am an alert box!"</span><span class="p">);</span>
-  <span class="p">});</span>
-<span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
-</span></code></pre>
-    </div>
+    <p>Communication can only be done if a group channel is open. Although jatos.js opens and closes all necessary group channels so you don’t have to care for them directly while writing components. Group channels in turn use <a href="https://en.wikipedia.org/wiki/WebSocket">WebSockets</a>. WebSockets are supported by <a href="http://caniuse.com/#feat=websockets">all modern browsers</a>.</p>
   </li>
 </ol>
 
+<p>So here’s how a typical JATOS group study run would look like:</p>
+
+<p>Component 1</p>
+
+<ul>
+  <li><em>jatos.joinGroup</em> -&gt; joins group and opens group channel</li>
+  <li><em>jatos.nextComponent</em> -&gt; closes group channel and jumps to next component</li>
+</ul>
+
+<p>Component 2</p>
+
+<ul>
+  <li><em>jatos.joinGroup</em> -&gt; opens group channel in the <strong>same group</strong></li>
+  <li><em>jatos.nextComponent</em> -&gt; closes group channel and jumps to next component</li>
+</ul>
+
+<p>Component 3</p>
+
+<ul>
+  <li><em>jatos.joinGroup</em> -&gt; opens group channel <strong>same group</strong></li>
+  <li><em>jatos.endStudy</em> -&gt; closes group channel, leaves group, ends component, and ends study</li>
+</ul>
+
+<p>Notice that by calling <em><a href="jatos.js-Reference.html#jatosjoingroupcallbacks">jatos.joinGroup</a></em> in the second and third component JATOS does not let workers join a new group but just opens a group channel in the already joined group. To make a worker leave a group,  use the function <a href="jatos.js-Reference.html#jatosleavegrouponsuccess-onerror"><em>jatos.leaveGroup</em></a>.</p>
+
+<h3 id="reassigning-to-a-different-group">Reassigning to a different group</h3>
+
+<p>To move a worker from one group to a different one, use <a href="jatos.js-Reference.html#jatosreassigngrouponsuccess-onfail"><em>jatos.reassignGroup</em></a>. This function will make a worker leave their group and join a different one. JATOS can only reassign to a different group if there is another group available. If there is no other group JATOS will not start a new one but put the worker into the same old group again.</p>
+
+<h3 id="fixing-a-group">Fixing a group</h3>
+
+<p>Sometimes you want to stay with the group like it is in the moment and don’t let new members join - although it would be allowed according to the group properties. For example in the <a href="https://github.com/JATOS/JATOS_examples/wiki/Example-Studies#prisoners-dilemma">Prisoner’s Example study</a> after the group is assembled in the waiting room component it is necessary to keep the two members as it is. Even if one of the members leaves in the middle of the game, JATOS shouldn’t just assign a new member. To do this call jatos.js’ function <a href="jatos.js-Reference.html#jatossetgroupfixed"><em>jatos.setGroupFixed</em></a>.</p>
+
+<h2 id="communication-between-group-members">Communication between group members</h2>
+
+<p>JATOS provides two ways for communicating within the group: direct messaging between group members or via the group session.</p>
+
+<h3 id="direct-messaging">Direct messaging</h3>
+<p>Members can send direct messages to other members of the same group with the <a href="jatos.js-Reference.html#jatossendgroupmsgmsg"><em>jatos.sendGroupMsg</em></a> and <a href="jatos.js-Reference.html#jatossendgroupmsgtorecipient-msg"><em>jatos.sendGroupMsgTo</em></a> functions. This way of communication is fast but can be unreliable in case of an unstable network connection. We use direct messaging in the <a href="https://github.com/JATOS/JATOS_examples/wiki/Example-Studies#snake">Snake example</a> to send the coordinates of the snakes on every step. Here, speed is more critical than reliability in the messages, because a few dropped frames will probably go unnoticed.</p>
+
+<h3 id="group-session">Group session</h3>
+<p>Members can set the group session data with the <a href="jatos.js-Reference.html#jatossetgroupsessiondatagroupsessiondata-onerror"><em>jatos.setGroupSessionData</em></a> function. At any time the group session data are available in jatos.js’ variable <a href="jatos.js-Reference.html#groups-session-data"><em>jatos.groupSessionData</em></a>. The group session data are stored in JATOS’ database <strong>only while the group is active. It is deleted when the group is finished.</strong> Communication via group session is slower, but more reliable than group messaging. If one member has an unstable internet connection or does a page reload, the group session will be automatically restored after the member reopens the group channel. Workers communicate via the group session data in the <a href="https://github.com/JATOS/JATOS_examples/wiki/Example-Studies#prisoners-dilemma">Prisoner’s Example study</a>, because it is important that each message reaches the other player.</p>
 
 
     <div class="tags">
@@ -410,7 +525,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-<span>Page last updated:</span> 28 Dec 2016
+<span>Page last updated:</span> 29 Dec 2016
                 </div>
             </div>
 </footer>

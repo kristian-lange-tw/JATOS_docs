@@ -88,7 +88,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
+            <a class="navbar-brand" href="index.html"><img src="images/jatos_logo_color.svg" height="20">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -206,7 +206,7 @@
             
             
             
-            <li><a href="Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
+            <li><a href="Run-your-Study-with-Batch-Manager-and-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
             
             
             
@@ -227,14 +227,14 @@
             
             
             
-            <li><a href="Mandatory-lines-in-your-components%27-HTML.html">Mandatory lines in your components' HTML</a></li>
+            <li><a href="Mandatory-lines-in-your-components-HTML.html">Mandatory lines in your components' HTML</a></li>
             
             
             
             
             
             
-            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS-%28Jatosify%29.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
+            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
             
             
             
@@ -248,7 +248,7 @@
             
             
             
-            <li><a href="Tips-%26-Tricks.html">Tips & Tricks</a></li>
+            <li><a href="Tips-and-Tricks.html">Tips & Tricks</a></li>
             
             
             
@@ -277,6 +277,92 @@
             
             
             <li><a href="Data-Privacy-and-Ethics.html">Data Privacy and Ethics</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Group Studies</a>
+        <ul>
+            
+            
+            
+            <li><a href="Example-Group-Studies.html">Example Group Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Group-Study-Properties.html">Group Study Properties</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Write-Your-Own-Group-Studies.html">Write Your Own Group Studies</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">For admins</a>
+        <ul>
+            
+            
+            
+            <li><a href="JATOS-on-a-server.html">JATOS on a server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Configure-JATOS-on-a-Server.html">Configure JATOS on a Server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Nginx.html">JATOS with Nginx</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Apache.html">JATOS with Apache</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Install-JATOS-via-Docker.html">Install JATOS via Docker</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-in-Amazons-Cloud-without-Docker.html">JATOS in Amazon's Cloud (without Docker)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Updating-a-JATOS-server-installation.html">Updating a JATOS server installation</a></li>
             
             
             
@@ -371,24 +457,24 @@ $('#toc').on('click', 'a', function() {
 </ol>
 
 <h3 id="write-your-own-studies-in-javascript">Write your own studies in JavaScript</h3>
-<p>The most difficult part - though it’s still easy! - is to learn to write your own study component scripts, using HTML, CSS and JavaScripts. Or, instead of reinventing the wheel, you could use a framework like jsPsych that helps you with this (see [[jsPsych and JATOS]]).</p>
+<p>The most difficult part - though it’s still easy! - is to learn to write your own study component scripts, using HTML, CSS and JavaScripts. Or, instead of reinventing the wheel, you could use a framework like jsPsych that helps you with this (see <a href="jsPsych-and-JATOS.html">jsPsych and JATOS</a>).</p>
 
-<p>Check out the [[Mandatory lines in your components’ HTML]] page to know what you absolutely must include in your scripts in order to let JATOS see them. Also check out the [[jatos.js Reference]], that contains a set of very useful functions that you have to use to communicate with jatos (to e.g. submit and receive data).</p>
+<p>Check out the <a href="Mandatory-lines-in-your-components%27-HTML.html">Mandatory lines in your components’ HTML</a> page to know what you absolutely must include in your scripts in order to let JATOS see them. Also check out the <a href="jatos.js-Reference.html">jatos.js Reference</a>, that contains a set of very useful functions that you have to use to communicate with jatos (to e.g. submit and receive data).</p>
 
 <p>If you are a newbie to HTML/JavaScript programming, there are LOADS of free and excellent tutorials online. Like <a href="https://www.khanacademy.org/computing/computer-programming">this one from the Kahn Academy</a> or more searchable tutorials like the simple ones from the <a href="http://www.w3schools.com/">w3 schools</a>. In addition, <a href="http://stackoverflow.com/questions/tagged/html">StackOverflow</a> is the best place to solve the problems that hundreds of others have encountered before.</p>
 
 <h3 id="import--export-of-studies">Import / Export of studies</h3>
-<p>Usually you conveniently develop your study on your local computer where you have a <a href="Installation">local installation of JATOS</a>. Then just use the export and import buttons in your installations to transfer the study to your <a href="JATOS-on-a-server">JATOS server</a>.</p>
+<p>Usually you conveniently develop your study on your local computer where you have a <a href="Installation.html">local installation of JATOS</a>. Then just use the export and import buttons in your installations to transfer the study to your <a href="JATOS-on-a-server.html">JATOS server</a>.</p>
 
 <ol>
   <li>In the GUI of your local installation press <strong>Export</strong> in the Study Toolbar. JATOS saves your study asset folder and some data about your study and it’s components (mostly the properties) into a ZIP file and lets you download it. Leave the ZIP file as it is.</li>
   <li>In the GUI of your server installations press <strong>Import</strong> in the header. Select the ZIP you saved in step 1. JATOS will upload and unpack your study.</li>
 </ol>
 
-<p>If you have trouble with the export and you are using a Safari browser have a look into <a href="Troubleshooting#export-study-not-downloading-a-zip-in-safari-browsers">this issue in our Troubleshooting section</a>.</p>
+<p>If you have trouble with the export and you are using a Safari browser have a look into <a href="Troubleshooting.html#export-study-not-downloading-a-zip-in-safari-browsers">this issue in our Troubleshooting section</a>.</p>
 
 <h3 id="decide-how-youre-going-to-recruit-your-workers-and-generate-the-links">Decide how you’re going to recruit your workers and generate the links</h3>
-<p>Once you have your study running and have it on a server instance, you’ll need to get your workers to access your study. <a href="Worker-Types">Different types of workers</a> might be allowed to run your study. You could, but you don’t have to, recruit your workers <a href="Connect-to-Mechanical-Turk">using MTurk</a>. You could also generate direct links in the <a href="Run-your-Study-with-Batch-Manager-%26-Worker-Setup">Worker Setup</a> to send to different workers.</p>
+<p>Once you have your study running and have it on a server instance, you’ll need to get your workers to access your study. <a href="Worker-Types.html">Different types of workers</a> might be allowed to run your study. You could, but you don’t have to, recruit your workers <a href="Connect-to-Mechanical-Turk.html">using MTurk</a>. You could also generate direct links in the <a href="Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html">Worker Setup</a> to send to different workers.</p>
 
 <h3 id="export-your-result-data">Export your result data</h3>
 <p>After you let workers run your study and you gathered result data you probably want to export them to your local computer for further analysis. Go to one of the <strong>Results</strong> views and select the results you want to export (select them by just clicking somewhere in the row). Then click ‘Export Selected’. This will download all your results in one text file.</p>

@@ -88,7 +88,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
+            <a class="navbar-brand" href="index.html"><img src="images/jatos_logo_color.svg" height="20">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -206,7 +206,7 @@
             
             
             
-            <li><a href="Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
+            <li><a href="Run-your-Study-with-Batch-Manager-and-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
             
             
             
@@ -227,14 +227,14 @@
             
             
             
-            <li><a href="Mandatory-lines-in-your-components%27-HTML.html">Mandatory lines in your components' HTML</a></li>
+            <li><a href="Mandatory-lines-in-your-components-HTML.html">Mandatory lines in your components' HTML</a></li>
             
             
             
             
             
             
-            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS-%28Jatosify%29.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
+            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
             
             
             
@@ -248,7 +248,7 @@
             
             
             
-            <li><a href="Tips-%26-Tricks.html">Tips & Tricks</a></li>
+            <li><a href="Tips-and-Tricks.html">Tips & Tricks</a></li>
             
             
             
@@ -277,6 +277,92 @@
             
             
             <li><a href="Data-Privacy-and-Ethics.html">Data Privacy and Ethics</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Group Studies</a>
+        <ul>
+            
+            
+            
+            <li><a href="Example-Group-Studies.html">Example Group Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Group-Study-Properties.html">Group Study Properties</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Write-Your-Own-Group-Studies.html">Write Your Own Group Studies</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">For admins</a>
+        <ul>
+            
+            
+            
+            <li><a href="JATOS-on-a-server.html">JATOS on a server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Configure-JATOS-on-a-Server.html">Configure JATOS on a Server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Nginx.html">JATOS with Nginx</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Apache.html">JATOS with Apache</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Install-JATOS-via-Docker.html">Install JATOS via Docker</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-in-Amazons-Cloud-without-Docker.html">JATOS in Amazon's Cloud (without Docker)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Updating-a-JATOS-server-installation.html">Updating a JATOS server installation</a></li>
             
             
             
@@ -379,7 +465,7 @@ Personalized single links with single access are useful in small studies, where 
 <p><strong>DATA PRIVACY NOTE:</strong> If the same worker from AMT does two of your studies, the two results will be paired with the same MTurk Worker in JATOS. This means that you could gather data from different studies, without your workers ever consenting to it. For this reason, we recommend that you delete your data from JATOS as soon as you finish a study. This way, if the same worker from AMT takes part in a different study, they will get a new MTurk Worker, and you will not be able to automatically link their data between different studies. See our [[Data Privacy and Ethics]] page for more details on this.</p>
 
 <h3 id="general-single-worker">General Single Worker</h3>
-<p>These are external workers that can <strong>run a study only once</strong> (<a href="##preview-links">*But see Preview Links</a>). You could distribute a <em>General Single</em> link through a mailing list or posting it on a public website. It is essentially useful for cases where you want to collect data from a large numbers of workers. Each new worker accessing the study will be assigned a new General Single Worker.</p>
+<p>These are external workers that can <strong>run a study only once</strong> (<a href="#preview-links">*But see Preview Links</a>). You could distribute a <em>General Single</em> link through a mailing list or posting it on a public website. It is essentially useful for cases where you want to collect data from a large numbers of workers. Each new worker accessing the study will be assigned a new General Single Worker.</p>
 
 <p>Keep in mind, however, that JATOS uses the browser’s cookies to decide whether a worker has already accessed a study. If a worker uses a different computer, a new browser, or simply deletes their browser’s cookies, then JATOS will assume that it’s a new worker. So the same person can easily use a General Single link several times.</p>
 

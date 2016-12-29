@@ -4,8 +4,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" batch manager, worker setup, worker, batch properties, worker setup, group properties">
-<title>Run your Study with Batch Manager & Worker Setup | JATOS Documentatio</title>
+<meta name="keywords" content=" update, server">
+<title>Updating a JATOS server installation | JATOS Documentatio</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -88,7 +88,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
+            <a class="navbar-brand" href="index.html"><img src="images/jatos_logo_color.svg" height="20">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -129,7 +129,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Run your Study with Batch Manager & Worker Setup">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Updating a JATOS server installation">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -206,7 +206,7 @@
             
             
             
-            <li class="active"><a href="Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
+            <li><a href="Run-your-Study-with-Batch-Manager-and-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
             
             
             
@@ -227,14 +227,14 @@
             
             
             
-            <li><a href="Mandatory-lines-in-your-components%27-HTML.html">Mandatory lines in your components' HTML</a></li>
+            <li><a href="Mandatory-lines-in-your-components-HTML.html">Mandatory lines in your components' HTML</a></li>
             
             
             
             
             
             
-            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS-%28Jatosify%29.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
+            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
             
             
             
@@ -248,7 +248,7 @@
             
             
             
-            <li><a href="Tips-%26-Tricks.html">Tips & Tricks</a></li>
+            <li><a href="Tips-and-Tricks.html">Tips & Tricks</a></li>
             
             
             
@@ -277,6 +277,92 @@
             
             
             <li><a href="Data-Privacy-and-Ethics.html">Data Privacy and Ethics</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Group Studies</a>
+        <ul>
+            
+            
+            
+            <li><a href="Example-Group-Studies.html">Example Group Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Group-Study-Properties.html">Group Study Properties</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Write-Your-Own-Group-Studies.html">Write Your Own Group Studies</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">For admins</a>
+        <ul>
+            
+            
+            
+            <li><a href="JATOS-on-a-server.html">JATOS on a server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Configure-JATOS-on-a-Server.html">Configure JATOS on a Server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Nginx.html">JATOS with Nginx</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Apache.html">JATOS with Apache</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Install-JATOS-via-Docker.html">Install JATOS via Docker</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-in-Amazons-Cloud-without-Docker.html">JATOS in Amazon's Cloud (without Docker)</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="active"><a href="Updating-a-JATOS-server-installation.html">Updating a JATOS server installation</a></li>
             
             
             
@@ -315,7 +401,7 @@
     <!-- Content Column -->
     <div class="col-md-9">
         <div class="post-header">
-   <h1 class="post-title-main">Run your Study with Batch Manager & Worker Setup</h1>
+   <h1 class="post-title-main">Updating a JATOS server installation</h1>
 </div>
 
 
@@ -352,69 +438,38 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" href="https://github.com/JATOS/JATOS_docs/blob/gh-pages/pages//Run-your-Study-with-Batch-Manager-%26-Worker-Setup.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" href="https://github.com/JATOS/JATOS_docs/blob/gh-pages/pages//Updating-a-JATOS-server-installation.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-  <p>If you run a study during development from within the JATOS GUI you will do so as a Jatos worker. There are <a href="Worker-Types">other worker types</a> to distribute to real participants.</p>
+  <p>Updating the server instance is equivalent to doing it <a href="Update-JATOS.html">locally</a>, but make sure that you know what you’re doing; especially if you have paired JATOS with a MySQL database.</p>
 
-<p>A worker in JATOS is a person who runs a study. A batch organizes workers and their study runs and results. Each study has a Batch Manager.</p>
+<p>To be absolutely safe you can install the new JATOS version and keep the old one untouched. This way you can switch back if something fails. Just remember that only one JATOS can run at the same time.</p>
 
-<p><strong>Generate links to send to your workers</strong></p>
+<p>Note: If you are using a MySQL database and to be on the safe side in case something goes wrong, make a backup of your MySQL database. Dump the database using <code class="highlighter-rouge">mysqldump -u yourUserName -p yourDatabaseName &gt; yourDatabaseName.out</code>.</p>
 
-<p>For all worker types except Jatos and MTurk you’ll need to generate links to send to your potential workers, which they can follow to access and run your study. Those links are generated in the <strong>Worker Setup</strong> (Batch Manager –&gt; Worker Setup).</p>
+<p>As when <a href="Update-JATOS.html">updating of a local JATOS installation</a> you have two options: 1. Keep your studies but discard all your result data and batches. 2. Keep everything, including your studies and result data (might not always be possible).</p>
 
-<h2 id="restrictions">Restrictions</h2>
+<h2 id="first-option-quick-and-dirty-discarding-result-data">First option: quick and dirty (discarding result data)</h2>
+
+<p>You can just follow the <a href="Update-JATOS.html#first-easy-way-discarding-your-result-data">update instructions for the local installation</a>. If you use a mySQL database don’t forget to <a href="Configure-JATOS-on-a-Server.html">configure it with a clean and new one</a> (not the one from your old JATOS). Do not use the new JATOS with the old MySQL database unless you choose to keep your data, as described below.</p>
+
+<h2 id="second-option-keeping-everything">Second option: keeping everything</h2>
+
+<p>This means that we have to configure the MySQL database or copy the H2 database files.</p>
+
+<p><strong>However: Occasionally (on major version updates such as 1.X.X to 2.1.1) we will make big changes in JATOS, which will require some restructuring of the database. In these cases, the second way described here will not be possible. We will do our best to prevent these big changes and inform you explicitly in the release description.</strong></p>
 
 <ol>
-  <li>
-    <p>Common to all worker types is that <strong>the same worker can do only one study at the same time</strong>. If a worker is running a study and starts another study run, the first study run will automatically be finished with an error. This is independent of whether the study runs are in the same or different browsers.</p>
-  </li>
-  <li>
-    <p><strong>[Valid only for versions 2.1.12 and older]</strong>
-<strong>The same browser can only run one study at the same time</strong>. If you start a second study in a browser where you have started a first study, the first study will automatically be finished with an error.</p>
-  </li>
-  <li>
-    <p><strong>[Valid only for versions 2.2.1 and newer]</strong>
-<strong>The same browser can run one study in up to 10 different tabs</strong>. This is useful if you want to test a group study. You can open up to 10 different tabs in the same browser (with a personal multiple link or as the jatos worker) and all these 10 “different” workers will interact with each other. Once you open the 11th tab, the first worker will be thrown out of the group.</p>
-  </li>
+  <li>Stop the old JATOS using <code class="highlighter-rouge">./loader.sh stop</code></li>
+  <li>Copy the new JATOS version to your server, e.g. copy it into the same folder where your old JATOS is located. Don’t yet remove the old JATOS instance.</li>
+  <li>Unzip the new JATOS (<code class="highlighter-rouge">unzip jatos-x.x.x-beta.zip</code>)</li>
+  <li>From the old JATOS installation copy your assets root folder to the new JATOS installation (Note: By default your assets root folder is called <code class="highlighter-rouge">study_assets_root</code> and lays in the JATOS folder but you might have <a href="Configure-JATOS-on-a-Server.html">changed this</a>.</li>
+  <li>If you are using the default H2 database: From your the folder of your old JATOS installation copy the folder <code class="highlighter-rouge">database</code> to the new JATOS installation. For an external MySQL or H2 database you don’t have to change anything on the database side.</li>
+  <li><a href="Configure-JATOS-on-a-Server.html">Configure the new JATOS like the old one</a></li>
+  <li>That’s it! Start the new JATOS using <code class="highlighter-rouge">./loader.sh start</code></li>
 </ol>
 
-<h2 id="batch-manager">Batch Manager</h2>
-
-<p>Since JATOS 2 you run studies in batches. A batch consists of its properties and a collection of workers that do the study. Using different batches is useful to organize your study runs, separate their results and vary their setup. E.g. you could separate a pilot run from the ‘proper’ experiment, or you could use different batches for different worker types.</p>
-
-<p>Batches are organized in the Batch Manager. Here you can create and delete batches and access each batch’s properties, worker setup and study results.</p>
-
-<p>Each study comes with a ‘Default’ batch.</p>
-
-<p><img src="images/batch manager.png" alt="Batch manager screenshot" /></p>
-
-<h3 id="batch-properties">Batch Properties</h3>
-
-<p>For each batch, you can limit the maximum number of workers that will ever be able to run a study in this batch by setting the <strong>Maximum Total Workers</strong>.</p>
-
-<p><img src="images/Batch Max worker types.png" alt="Batch manager screenshot" /></p>
-
-<p>Additionally you can switch on or off worker types in the <strong>Allowed Worker Types</strong>. Forbidden worker types are not able to run a study. Always check before you send out links to study runs that the corresponding worker types are switched on. You can do the same in the Worker Setup.</p>
-
-<p><img src="images/Batch Max total workers.png" alt="Worker types" /></p>
-
-<p>The <strong>Group Properties</strong> relate to <a href="Run-Group-Studies">group studies</a>.</p>
-
-<h3 id="worker-setup">Worker Setup</h3>
-
-<p><img src="images/Worker types screenshot.png" alt="Worker types" /></p>
-
-<p>This is the place where you generate the links to study runs for most of your workers types (except for Jatos and MTurk).</p>
-
-<p>For <strong>Personal Single Workers</strong> and <strong>Personal Multiple Workers</strong> click <strong>Add</strong>. You can enter a worker description or identification in the ‘Comments’ box.</p>
-
-<p><strong>General Single Workers</strong> only have one link and each link will create a new separate worker. Get this link by clicking on <strong>Link</strong> in its row.</p>
-
-<p>How to connect to MTurk and create links to run for <strong>MTurk Workers</strong> is described in the page [[Connect to Mechanical Turk]].</p>
-
-<p>The differences between the worker types is explained in the <a href="Worker-Types">Worker Types wiki page</a>.</p>
 
 
     <div class="tags">
@@ -430,7 +485,7 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-<span>Page last updated:</span> 28 Dec 2016
+<span>Page last updated:</span> 29 Dec 2016
                 </div>
             </div>
 </footer>

@@ -31,8 +31,7 @@ The steps to create a project are part of the MTurk interface.
 
 1. In JATOS, go to the Study Toolbar ---> Batch Manager ---> Worker Setup ---> MTurk Worker row ---> Source Code.
 
-<img src="images/Screenshot from 2016-03-09 21:30:34.png" width="300">
-![JATOS GUI screenshot](images/Screenshot from 2016-03-09 21:30:34.png){:width="300"}
+![JATOS GUI screenshot](images/Screenshot from 2016-03-09 21:30:34.png){:width="200"}
 
 1. You'll see a box with HTML code, similar to the one shown here. Copy paste the code from JATOS to the MTurk source section. 
 
@@ -44,6 +43,6 @@ The steps to create a project are part of the MTurk interface.
 
 1. When an MTurk worker finishes a study they'll see a confirmation code. To assign payment to individual workers, just compare the confirmation codes stored in JATOS' results view to those stored in MTurk.
 
-![Confirmation code](images/Screenshot from 2015-04-09 15_17_03.png){:height="50"}
+![Confirmation code](images/Screenshot from 2015-04-09 15_17_03.png){:height="100"}
 
 See the [Tips & Tricks](Tips-and-Tricks.html) page for some useful information on how to test your study before officially posting it on MTurk. 

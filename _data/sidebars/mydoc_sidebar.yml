@@ -83,14 +83,6 @@ entries:
       url: /Data-Privacy-and-Ethics.html
       output: web, pdf
 
-  - title: Reference
-    output: web, pdf
-    folderitems:
-
-    - title: jatos.js Reference
-      url: /jatos.js-Reference.html
-      output: web, pdf
-
   - title: Group Studies
     output: web, pdf
     folderitems:
@@ -139,4 +131,10 @@ entries:
       url: /Updating-a-JATOS-server-installation.html
       output: web, pdf
       
-   
+  - title: Reference
+    output: web, pdf
+    folderitems:
+
+    - title: jatos.js Reference
+      url: /jatos.js-Reference.html
+      output: web, pdf   

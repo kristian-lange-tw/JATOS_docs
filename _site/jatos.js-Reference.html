@@ -88,7 +88,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
+            <a class="navbar-brand" href="index.html"><img src="images/jatos_logo_color.svg" height="20">&nbsp;<span class="projectTitle"> JATOS Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -206,7 +206,7 @@
             
             
             
-            <li><a href="Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
+            <li><a href="Run-your-Study-with-Batch-Manager-and-Worker-Setup.html">Run your Study with Batch Manager & Worker Setup</a></li>
             
             
             
@@ -227,14 +227,14 @@
             
             
             
-            <li><a href="Mandatory-lines-in-your-components%27-HTML.html">Mandatory lines in your components' HTML</a></li>
+            <li><a href="Mandatory-lines-in-your-components-HTML.html">Mandatory lines in your components' HTML</a></li>
             
             
             
             
             
             
-            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS-%28Jatosify%29.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
+            <li><a href="Adapt-Pre-written-Code-to-run-it-in-JATOS.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a></li>
             
             
             
@@ -248,7 +248,7 @@
             
             
             
-            <li><a href="Tips-%26-Tricks.html">Tips & Tricks</a></li>
+            <li><a href="Tips-and-Tricks.html">Tips & Tricks</a></li>
             
             
             
@@ -277,6 +277,92 @@
             
             
             <li><a href="Data-Privacy-and-Ethics.html">Data Privacy and Ethics</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Group Studies</a>
+        <ul>
+            
+            
+            
+            <li><a href="Example-Group-Studies.html">Example Group Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Group-Study-Properties.html">Group Study Properties</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Write-Your-Own-Group-Studies.html">Write Your Own Group Studies</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">For admins</a>
+        <ul>
+            
+            
+            
+            <li><a href="JATOS-on-a-server.html">JATOS on a server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Configure-JATOS-on-a-Server.html">Configure JATOS on a Server</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Nginx.html">JATOS with Nginx</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-with-Apache.html">JATOS with Apache</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Install-JATOS-via-Docker.html">Install JATOS via Docker</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="JATOS-in-Amazons-Cloud-without-Docker.html">JATOS in Amazon's Cloud (without Docker)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="Updating-a-JATOS-server-installation.html">Updating a JATOS server installation</a></li>
             
             
             
@@ -325,29 +411,6 @@
    
 
     
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
-});
-</script>
-
-<div id="toc"></div>
-
-    
 
 
     
@@ -358,13 +421,13 @@ $('#toc').on('click', 'a', function() {
 
   <p>jatos.js is a small JavaScript library that helps you to communicate with your JATOS server (in more technical terms: it conveniently wraps calls to JATOS’ public API).</p>
 
-<p>Two <a href="Mandatory-lines-in-your-components%27-HTML">bits of code</a> are mandatory in all your components’ HTML files. One of them is the following line in the head section:
+<p>Two <a href="Mandatory-lines-in-your-components-HTML.html">bits of code</a> are mandatory in all your components’ HTML files. One of them is the following line in the head section:
 <code class="highlighter-rouge">&lt;script src="/assets/javascripts/jatos.js"&gt;&lt;/script&gt;</code>
 which includes the jatos.js library into your HTML file.</p>
 
 <p>All variables or calls to jatos.js start with <code class="highlighter-rouge">jatos.</code>. For example, if you want to get the study’s ID you can use <code class="highlighter-rouge">jatos.studyId</code>. If you want to submit some result data of your component back to your JATOS server you can call <code class="highlighter-rouge">jatos.submitResultData(resultData)</code>, where resultData can be any kind text.</p>
 
-<p>And, please, if you find a mistake or have a question don’t hesitate to <a href="Contact us">contact us</a>.</p>
+<p>And, please, if you find a mistake or have a question don’t hesitate to <a href="Contact-us.html">contact us</a>.</p>
 
 <p>Below we list and describe the variables and functions of the jatos.js library:</p>
 
@@ -420,7 +483,7 @@ which includes the jatos.js library into your HTML file.</p>
 
 <h2 id="studys-session-data">Study’s session data</h2>
 
-<p>The session data can be accessed and modified by every component of a study. It’s a very convenient way to share data between different components. However, remember that the session data will be deleted after the study is finished (see also [[Two Types of Session Data]]).</p>
+<p>The session data can be accessed and modified by every component of a study. It’s a very convenient way to share data between different components. However, remember that the session data will be deleted after the study is finished (see also <a href="Two-Types-of-Session-Data.html">Two Types of Session Data</a>).</p>
 
 <ul>
   <li><code class="highlighter-rouge">jatos.studySessionData</code></li>
@@ -455,7 +518,7 @@ which includes the jatos.js library into your HTML file.</p>
 <h2 id="groups-session-data">Group’s session data</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">jatos.groupSessionData</code> - Group session data shared in between members of the group (see also [[Two Types of Session Data]])</li>
+  <li><code class="highlighter-rouge">jatos.groupSessionData</code> - Group session data shared in between members of the group (see also <a href="Two-Types-of-Session-Data.html">Two Types of Session Data</a>)</li>
 </ul>
 
 <h2 id="other-variables">Other variables</h2>
@@ -470,7 +533,7 @@ which includes the jatos.js library into your HTML file.</p>
 
 <h3 id="jatosonloadcallback"><code class="highlighter-rouge">jatos.onLoad(callback)</code></h3>
 
-<p>Defines callback function that jatos.js will call when it’s finished initialising. Only <a href="Mandatory-lines-in-your-components%27-HTML">mandatory</a> call in every component.</p>
+<p>Defines callback function that jatos.js will call when it’s finished initialising. Only <a href="Mandatory-lines-in-your-components-HTML.html">mandatory</a> call in every component.</p>
 
 <h3 id="jatosonerrorcallback"><code class="highlighter-rouge">jatos.onError(callback)</code></h3>
 
@@ -483,7 +546,7 @@ which includes the jatos.js library into your HTML file.</p>
 
 <h3 id="jatosaddjatosidsobj"><code class="highlighter-rouge">jatos.addJatosIds(obj)</code></h3>
 
-<p>Convenience function that adds some <a href="jatos.js-Reference#ids">IDs</a> (study ID, study title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
+<p>Convenience function that adds some <a href="jatos.js-Reference.html#ids">IDs</a> (study ID, study title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
 * <em>param {Object} obj</em> - Object to which the IDs will be added</p>
 
 <h2 id="functions-to-control-study-flow">Functions to control study flow</h2>
