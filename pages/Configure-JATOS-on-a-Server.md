@@ -81,11 +81,11 @@ There are three ways to set up the database.
    ~~~ bash
    loader.sh start -DJATOS_DB_URL='jdbc:mysql://172.17.0.2/jatos?characterEncoding=UTF-8' -DJATOS_DB_USERNAME=sa -DJATOS_DB_PASSWORD=sa -DJATOS_JPA=mysqlPersistenceUnit -DJATOS_DB_DRIVER=com.mysql.jdbc.Driver
    ~~~
-    
+
 1. Via production.conf (description analog to 1.)
 
    ~~~ bash
-   db.default.url="jdbc:mysql://localhost/MyDatabase?characterEncoding=UTF-8"
+   db.default.url="jdbc:mysql://localhost/MyDatabase?characterEncoding=UTF-8"
    db.default.user=myusername
    db.default.password=mypassword
    db.default.driver=com.mysql.jdbc.Driver
