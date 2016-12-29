@@ -74,12 +74,10 @@ There are three ways to set up the database.
    * `-DJATOS_DB_USERNAME` and `-DJATOS_DB_PASSWORD` - set username and password
    * `-DJATOS_DB_DRIVER` - can be either `org.h2.Driver` or `com.mysql.jdbc.Driver`
    * `-DJATOS_JPA` - can be either `h2PersistenceUnit` or `mysqlPersistenceUnit`
-
    E.g. to connect to a MySQL database running on 172.17.0.2 and a table named 'jatos' use:
    ~~~ bash
    loader.sh start -DJATOS_DB_URL='jdbc:mysql://172.17.0.2/jatos?characterEncoding=UTF-8' -DJATOS_DB_USERNAME=sa -DJATOS_DB_PASSWORD=sa -DJATOS_JPA=mysqlPersistenceUnit -DJATOS_DB_DRIVER=com.mysql.jdbc.Driver
    ~~~
-
 1. Via production.conf (description analog to 1.)
    ~~~ bash
    db.default.url="jdbc:mysql://localhost/MyDatabase?characterEncoding=UTF-8"
@@ -88,14 +86,12 @@ There are three ways to set up the database.
    db.default.driver=com.mysql.jdbc.Driver
    jpa.default=mysqlPersistenceUnit
    ~~~
-  
 1. Via environment variables (description analog to 1.)
    * `JATOS_DB_URL`
    * `JATOS_DB_USERNAME`
    * `JATOS_DB_PASSWORD`
    * `JATOS_DB_DRIVER`
    * `JATOS_JPA`
-
    E.g. to set all database environment variables for a MySQL database and table called 'jatos' you could use a command (change the values):
    ~~~ bash
    export JATOS_DB_URL='jdbc:mysql://localhost/jatos?characterEncoding=UTF-8' JATOS_DB_USERNAME='jatosuser' JATOS_DB_PASSWORD='mypassword' JATOS_DB_DRIVER=com.mysql.jdbc.Driver JATOS_JPA=mysqlPersistenceUnit
