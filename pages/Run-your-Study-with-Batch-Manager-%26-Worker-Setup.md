@@ -4,7 +4,7 @@ keywords: batch manager, worker setup, worker, batch properties, worker setup, g
 tags:
 summary:
 sidebar: mydoc_sidebar
-permalink: Run-your-Study-with-Batch-Manager-%26-Worker-Setup.html
+permalink: Run-your-Study-with-Batch-Manager-and-Worker-Setup.html
 folder:
 toc: true
 last_updated: 28 Dec 2016
