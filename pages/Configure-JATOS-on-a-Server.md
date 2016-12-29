@@ -20,7 +20,7 @@ By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to
 
   1. In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port.
 
-     ~~~
+     ~~~ javascript
      address="172.16.0.1"
      port="8080"
      ~~~
@@ -37,7 +37,7 @@ By default the study assets root folder (where all your study's HTML, JavaScript
 
   1. Via the command-line argument `-DJATOS_STUDY_ASSETS_ROOT_PATH`, e.g. 
 
-     ~~~
+     ~~~ javascript
      loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
      ~~~
   
