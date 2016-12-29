@@ -70,7 +70,7 @@ Note: We tried JATOS extensively with the H2 database. It's reliable and doesn't
 There are three ways to set up the database.
 
 1. Via command-line arguments:
-  
+
    * `-DJATOS_DB_URL` - specifies the JDBC URL to the database
    * `-DJATOS_DB_USERNAME` and `-DJATOS_DB_PASSWORD` - set username and password
    * `-DJATOS_DB_DRIVER` - can be either `org.h2.Driver` or `com.mysql.jdbc.Driver`
@@ -93,7 +93,7 @@ There are three ways to set up the database.
    ~~~
   
 1. Via environment variables (description analog to 1.)
-  
+
    * `JATOS_DB_URL`
    * `JATOS_DB_USERNAME`
    * `JATOS_DB_PASSWORD`
