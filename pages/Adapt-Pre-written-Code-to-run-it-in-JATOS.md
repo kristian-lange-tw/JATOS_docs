@@ -40,8 +40,8 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
    
    ~~~ javascript
    jatos.onLoad(function() {
-     // initialize and start your JavaScript here
-   });
+     // initialize and start your JavaScript here 
+   });
    ~~~
    
    E.g. if you want to initialize a jsPsych experiment:
