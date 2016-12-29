@@ -54,7 +54,7 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
 1. Change access permission with `chmod og+x jatos`
 1. Edit `/etc/init.d/jatos`
    1. Specify the IP address and port you want to use
-   1. Comment out the line `#dir="$( cd "$( dirname "$0" )" && pwd )"`
+   1. Comment out the line `dir="$( cd "$( dirname "$0" )" && pwd )"`
    1. Add variable `dir=` with the path to your JATOS installation
 
       The beginning of your `/etc/init.d/jatos` should look like:
