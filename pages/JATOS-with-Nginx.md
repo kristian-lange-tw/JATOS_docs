@@ -14,7 +14,7 @@ This is an example for a configuration of [Nginx](https://www.nginx.com/) as a p
 
 The following is the content of `/etc/nginx/nginx.conf`. Change it to your needs. You probably want to change your servers address (`www.example.com` in the example) and the path to the SSL certificate and its key.
 
-```shell
+~~~ shell
 user www-data;
 worker_processes 1;
 pid /run/nginx.pid;
@@ -94,4 +94,4 @@ http {
         include /etc/nginx/conf.d/*.conf;
         include /etc/nginx/sites-enabled/*;
 }
-```
+~~~
