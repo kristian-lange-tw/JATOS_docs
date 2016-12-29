@@ -58,6 +58,7 @@ It's nice to have JATOS starts automatically after a start or a reboot of your m
   1. Add variable `dir=` with the path to your JATOS installation
 
   The beginning of your `/etc/init.d/jatos` should look like:
+  
   ~~~ bash
   #!/bin/bash
   # JATOS loader for Linux and MacOS X
