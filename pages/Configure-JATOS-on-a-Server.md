@@ -18,7 +18,7 @@ If JATOS runs locally it's usually not necessary to change the defaults. On a se
 
 By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to configure the host name or IP address and the port:
 
-  1. In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port.
+1. In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port.
 
    ~~~ javascript
    jatos.onLoad(function() {
@@ -26,16 +26,16 @@ By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to
    });
    ~~~
 
-     ~~~ 
-     address="172.16.0.1"
-     port="8080"
-     ~~~
+   ~~~ 
+   address="172.16.0.1"
+   port="8080"
+   ~~~
   
-  2. Via command-line arguments `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
+2. Via command-line arguments `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
 
-     ~~~
-     loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
-     ~~~
+   ~~~
+   loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
+   ~~~
      
 ## Study assets root path
 
