@@ -91,4 +91,19 @@ entries:
       url: /jatos.js-Reference.html
       output: web, pdf
 
+  - title: Group Studies
+    output: web, pdf
+    folderitems:
+
+    - title: Example Group Studies
+      url: /Example-Group-Studies.html
+      output: web, pdf
+      
+    - title: Group Study Properties
+      url: /Group-Study-Properties.html
+      output: web, pdf
+
+    - title: Write Your Own Group Studies
+      url: /Write-Your-Own-Group-Studies.html
+      output: web, pdf
 
