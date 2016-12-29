@@ -2,7 +2,7 @@
 title: Group Study Properties
 keywords: group, properties
 tags:
-summary:
+summary: Lern how to set up a group study and the different ways in how to assign workers to groups.
 sidebar: mydoc_sidebar
 permalink: Group-Study-Properties.html
 folder:
