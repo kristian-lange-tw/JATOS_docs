@@ -13,7 +13,7 @@ JATOS (Just Another Tool for Online Studies) helps you setup and run your online
 
 JATOS 2 allows you to [run group studies](Example-Group-Studies.html), where multiple workers can interact with each other.
  
-You can read our [open access paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) for the basics, but this docs contain up-to-date information about the new group feature.
+You can read our [open access paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) for the basics, but these docs contain up-to-date information about the new group feature.
 
 We also started a [blog about JATOS and online experiments in general](http://blog.jatos.org). There we'll post about topics that do not necessarily fit into these docs.
 
