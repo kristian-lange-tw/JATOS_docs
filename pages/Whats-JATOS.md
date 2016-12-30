@@ -17,7 +17,7 @@ You can read our [open access paper](http://journals.plos.org/plosone/article?id
 
 We also started a [blog about JATOS and online experiments in general](http://blog.jatos.org). There we'll post about topics that do not necessarily fit into this wiki.
 
-This documentation is also available as [PDF](https://github.com/JATOS/JATOS_docs/raw/gh-pages/pdf/jatos-docs.pdf).
+This documentation is available as [PDF](https://github.com/JATOS/JATOS_docs/raw/gh-pages/pdf/jatos-docs.pdf).
 
 ![GUI Screenshot](https://github.com/JATOS/JATOS/wiki/images/Home screenshot.png)
 
