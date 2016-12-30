@@ -48,7 +48,7 @@ Additionally you can switch on or off worker types in the **Allowed Worker Types
 
 ![Worker types](images/Batch Max total workers.png)
 
-The **Group Properties** relate to [group studies](Run-Group-Studies.html).
+The **Group Properties** relate to [group studies](Group-Study-Properties.html).
 
 ### Worker Setup
 

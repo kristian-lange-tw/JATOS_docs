@@ -30,7 +30,12 @@
       
               
                  
-                    http://localhost:4010/jatos-pdf/Whats_JATOS.html
+                    http://localhost:4010/jatos-pdf/Whats-JATOS.html
+                          
+                
+             
+                 
+                    http://localhost:4010/jatos-pdf/Contact-us.html
                           
                 
              

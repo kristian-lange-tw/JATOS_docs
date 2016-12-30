@@ -6,7 +6,6 @@ output: pdf
 product: jatos-docs
 print_title: JATOS Documentation
 print_subtitle:
-output: pdf
 defaults:
   -
     scope:

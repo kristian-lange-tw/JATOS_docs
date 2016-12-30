@@ -24,8 +24,12 @@ entries:
     folderitems:
 
     - title: What's JATOS
-      url: /Whats_JATOS.html
+      url: /Whats-JATOS.html
       output: web, pdf
+
+    - title: Contact us
+      url: /Contact-us.html
+      output: pdf
 
     - title: Installation
       url: /Installation.html

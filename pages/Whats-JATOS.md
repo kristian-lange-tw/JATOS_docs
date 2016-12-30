@@ -4,14 +4,14 @@ keywords: summary, docs, glance, introduction
 tags: 
 summary:
 sidebar: mydoc_sidebar
-permalink: Whats_JATOS.html
+permalink: Whats-JATOS.html
 toc: false
 last_updated: 28 Dec 2016
 ---
 
 JATOS (Just Another Tool for Online Studies) helps you setup and run your online studies on your own server.
 
-JATOS 2 allows you to [run group studies](Example-Group-Studies), where multiple workers can interact with each other.
+JATOS 2 allows you to [run group studies](Example-Group-Studies.html), where multiple workers can interact with each other.
  
 You can read our [open access paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) for the basics, but this wiki contains up-to-date information about the new group feature.
 
@@ -29,7 +29,7 @@ We also started a [blog about JATOS and online experiments in general](http://bl
 * Manage workers, to e.g. make sure that each participant does your study only once.
 * **Export/Import** studies to facilitate exchange with other researchers.
 * It's open-source and free to use.
-* It's very easy to [Get started](Get-started)!
+* It's very easy to [Get started](Get-started.html)!
 
 Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) if you use JATOS for your research.
 
