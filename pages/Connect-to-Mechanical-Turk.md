@@ -1,6 +1,6 @@
 ---
 title: Connect to Mechanical Turk
-keywords: Mechanical Turk, MTurk, AMT
+keywords: Mechanical Turk, MTurk, AMT, Amazon
 tags:
 summary:
 sidebar: mydoc_sidebar
