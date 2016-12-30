@@ -3,19 +3,19 @@
   
   
   <url>
-    <loc>http://localhost:4000/samplepost.html</loc>
+    <loc>http://localhost:4010/samplepost.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/myupdate.html</loc>
+    <loc>http://localhost:4010/myupdate.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/test-post-from-last-year.html</loc>
+    <loc>http://localhost:4010/test-post-from-last-year.html</loc>
   </url>
   
   
@@ -26,680 +26,178 @@
   
   
   <url>
-    <loc>http://localhost:4000/Adapt-Pre-written-Code-to-run-it-in-JATOS.html</loc>
+    <loc>http://localhost:4010/Adapt-Pre-written-Code-to-run-it-in-JATOS.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Configure-JATOS-on-a-Server.html</loc>
+    <loc>http://localhost:4010/Configure-JATOS-on-a-Server.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Connect-to-Mechanical-Turk.html</loc>
+    <loc>http://localhost:4010/Connect-to-Mechanical-Turk.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Contact-us.html</loc>
+    <loc>http://localhost:4010/Contact-us.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Data-Privacy-and-Ethics.html</loc>
+    <loc>http://localhost:4010/Data-Privacy-and-Ethics.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Example-Group-Studies.html</loc>
+    <loc>http://localhost:4010/Example-Group-Studies.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Get-started.html</loc>
+    <loc>http://localhost:4010/Get-started.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Group-Study-Properties.html</loc>
+    <loc>http://localhost:4010/Group-Study-Properties.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Install-JATOS-via-Docker.html</loc>
+    <loc>http://localhost:4010/Install-JATOS-via-Docker.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Installation.html</loc>
+    <loc>http://localhost:4010/Installation.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/JATOS-in-Amazons-Cloud-without-Docker.html</loc>
+    <loc>http://localhost:4010/Installation.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/JATOS-on-a-server.html</loc>
+    <loc>http://localhost:4010/JATOS-in-Amazons-Cloud-without-Docker.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/JATOS-with-Apache.html</loc>
+    <loc>http://localhost:4010/JATOS-on-a-server.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/JATOS-with-Nginx.html</loc>
+    <loc>http://localhost:4010/JATOS-with-Apache.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Mandatory-lines-in-your-components-HTML.html</loc>
+    <loc>http://localhost:4010/JATOS-with-Nginx.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Run-your-Study-with-Batch-Manager-and-Worker-Setup.html</loc>
+    <loc>http://localhost:4010/Mandatory-lines-in-your-components-HTML.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Set-up-your-own-studies.html</loc>
+    <loc>http://localhost:4010/Run-your-Study-with-Batch-Manager-and-Worker-Setup.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Tips-and-Tricks.html</loc>
+    <loc>http://localhost:4010/Set-up-your-own-studies.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Troubleshooting.html</loc>
+    <loc>http://localhost:4010/Tips-and-Tricks.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Two-Types-of-Session-Data.html</loc>
+    <loc>http://localhost:4010/Troubleshooting.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Update-JATOS.html</loc>
+    <loc>http://localhost:4010/Two-Types-of-Session-Data.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Updating-a-JATOS-server-installation.html</loc>
+    <loc>http://localhost:4010/Update-JATOS.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Worker-Types.html</loc>
+    <loc>http://localhost:4010/Updating-a-JATOS-server-installation.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/Write-Your-Own-Group-Studies.html</loc>
+    <loc>http://localhost:4010/Whats_JATOS.html</loc>
   </url>
   
   
   
-  
-  
-  <url>
-    <loc>http://localhost:4000/index.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/jatos.js-Reference.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/jsPsych-and-JATOS.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_about.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_about_ruby_gems_etc.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_adding_tooltips.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_alerts.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_atom_text_editor.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_build_arguments.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_build_scripts.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_code_samples.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_collections.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_commenting_on_files.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_conditional_logic.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_content_reuse.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_exluding_files.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_faq_layout.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_generating_pdfs.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_glossary.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_help_api.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_hyperlinks.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_icons.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_images.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_install_jekyll_on_mac.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_install_jekyll_on_windows.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_introduction.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_iterm_profiles.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_kb_layout.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_labels.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_lists.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_navtabs.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_no_password_prompts_scp.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_pages.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_posts.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_publishing_github_pages.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_push_build_to_server.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_release_notes_50.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_release_notes_60.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/js/mydoc_scroll.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_scroll.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_search_configuration.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_series.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_seriesdemo1.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_seriesdemo2.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_seriesdemo3.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_seriesdemo4.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_shuffle.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_sidebar_navigation.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_special_layouts.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_support.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_supported_features.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_syntax_highlighting.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_tables.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_tag_archives_overview.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_tags.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_themes.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_troubleshooting.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_webstorm_text_editor.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_workflow_maps.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_yaml_tutorial.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/news.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/news_archive.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_landing_page.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_sample1.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_sample2.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_sample3.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_sample4.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_sample5.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_sample6.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p1_sample7.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_landing_page.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample1.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample10.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample11.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample12.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample13.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample14.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample2.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/p2_sample3.html</loc>
-  </url>
-  
-  
-  
   <url>
-    <loc>http://localhost:4000/p2_sample4.html</loc>
+    <loc>http://localhost:4010/Worker-Types.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/p2_sample5.html</loc>
+    <loc>http://localhost:4010/Write-Your-Own-Group-Studies.html</loc>
   </url>
-  
   
   
-  <url>
-    <loc>http://localhost:4000/p2_sample6.html</loc>
-  </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/p2_sample7.html</loc>
+    <loc>http://localhost:4010/jatos.js-Reference.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/p2_sample8.html</loc>
+    <loc>http://localhost:4010/jsPsych-and-JATOS.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/p2_sample9.html</loc>
+    <loc>http://localhost:4010/js/mydoc_scroll.html</loc>
   </url>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
