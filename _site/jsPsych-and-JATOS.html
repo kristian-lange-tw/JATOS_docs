@@ -448,7 +448,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and send the result data to) JATOS. Additionally you can have a look at <a href="Adapt-Pre-written-Code-to-run-it-in-JATOS.html">Adapt Pre written Code to run it in JATOS (Jatosify)</a>.</p>
 
-<h2 id="how-to-turn-your-jspsych-experiment-into-a-jatos-study">How to turn your jsPsych experiment into a JATOS study</h2>
+<h3 id="how-to-turn-your-jspsych-experiment-into-a-jatos-study">How to turn your jsPsych experiment into a JATOS study</h3>
 
 <ol>
   <li>
@@ -475,7 +475,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>That’s all. If you additionally want to send your result data to JATOS read on.</p>
 
-<h2 id="send-jspsychs-result-data-back-to-jatos">Send jsPsych’s result data back to JATOS</h2>
+<h3 id="send-jspsychs-result-data-back-to-jatos">Send jsPsych’s result data back to JATOS</h3>
 
 <p>Here we use jsPsych’s function <code class="highlighter-rouge">jsPsych.data.getData()</code> to collect the data into a variable and then ‘stringify’ the JSON format into a simple string.
 Then we use JATOS’ function <code class="highlighter-rouge">jatos.submitResultData</code> to send your result to JATOS and asks JATOS to move to the next component, if there is one.</p>

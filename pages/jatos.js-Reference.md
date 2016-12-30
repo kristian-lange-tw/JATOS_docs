@@ -2,19 +2,15 @@
 title: jatos.js Reference
 keywords: reference, jatos.js
 tags:
-summary:
+summary: jatos.js is a small JavaScript library that helps you to communicate from JavaScript with your JATOS server (in more technical terms, it wraps calls to JATOS' public REST API). Below we list and describe the variables and functions of the jatos.js library.
 sidebar: mydoc_sidebar
 permalink: jatos.js-Reference.html
 folder:
-toc: false
+toc: true
 last_updated: 28 Dec 2016
 ---
 
-jatos.js is a small JavaScript library that helps you to communicate with your JATOS server (in more technical terms: it conveniently wraps calls to JATOS' public API).
-
-Two [bits of code](Mandatory-lines-in-your-components-HTML.html) are mandatory in all your components' HTML files. One of them is the following line in the head section:
-`<script src="/assets/javascripts/jatos.js"></script>`
-which includes the jatos.js library into your HTML file. 
+Two [bits of code](Mandatory-lines-in-your-components-HTML.html) are mandatory in all your components' HTML files. One of them is the following line in the head section: `<script src="/assets/javascripts/jatos.js"></script>` which includes the jatos.js library into your HTML file. 
 
 All variables or calls to jatos.js start with `jatos.`. For example, if you want to get the study's ID you can use `jatos.studyId`. If you want to submit some result data of your component back to your JATOS server you can call `jatos.submitResultData(resultData)`, where resultData can be any kind text.
 
@@ -24,9 +20,9 @@ Below we list and describe the variables and functions of the jatos.js library:
 
 
 
-# jatos.js variables
+## jatos.js variables
 
-## IDs
+### IDs
 
 You can call any of these variables below at any point in your HTML file after `jatos.onload()` is done. All those IDs are generated and stored by JATOS. jatos.js automatically sets these variables with the corresponding values if you included the `jatos.onLoad()` callback function at the beginning of your JavaScript.
 
@@ -40,7 +36,7 @@ You can call any of these variables below at any point in your HTML file after `
 There's a convenient function that adds all these IDs to a given object. See function `jatos.addJatosIds(obj)` below.
 
 
-## Study variables
+### Study variables
 
 * `jatos.studyProperties` - All the properties (except the JSON input data) you entered for this study
   * `jatos.studyProperties.title` - Study's title
@@ -53,7 +49,7 @@ There's a convenient function that adds all these IDs to a given object. See fun
 * `jatos.studyLength` - Number of component this study has
 
 
-## Component variables
+### Component variables
 
 * `jatos.componentProperties` - All the properties (except the JSON input data) you entered for this component
   * `jatos.componentProperties.title` - Component's title
@@ -65,14 +61,14 @@ There's a convenient function that adds all these IDs to a given object. See fun
 * `jatos.componentPos` - Position of this component within the study starting with 1 (like shown in the GUI)
 
 
-## Study's session data
+### Study's session data
 
 The session data can be accessed and modified by every component of a study. It's a very convenient way to share data between different components. However, remember that the session data will be deleted after the study is finished (see also [Two Types of Session Data](Two-Types-of-Session-Data.html)).
 
 * `jatos.studySessionData`
 
 
-## Batch variables
+### Batch variables
 
 * `jatos.batchProperties` - All the properties you entered for this batch.
   * `jatos.batchProperties.allowedWorkerTypes` - List of worker types that are currently allowed to run in this batch.
@@ -82,7 +78,7 @@ The session data can be accessed and modified by every component of a study. It'
   * `jatos.batchProperties.title` - Title of this batch
 
 
-## Group variables
+### Group variables
 
 The group variables are part of jatos.js since JATOS 2. They are only filled with values if the current study is a group study.
 
@@ -93,18 +89,16 @@ The group variables are part of jatos.js since JATOS 2. They are only filled wit
 * `jatos.groupChannels` - List of member IDs of the currently open group channels
 
 
-## Group's session data
+### Group's session data
 
 * `jatos.groupSessionData` - Group session data shared in between members of the group (see also [Two Types of Session Data](Two-Types-of-Session-Data.html))
 
 
-## Other variables
+### Other variables
 
 * `jatos.version` - Current version of the jatos.js library
 
 
-
-# jatos.js functions
 
 ## General jatos.js functions
 
@@ -119,11 +113,13 @@ Defines callback function that is to be called in case jatos.js produces an erro
 ### `jatos.log(logMsg)`
 
 Logs an msg in the log of the JATOS installation.
+
 * _param {String} logMsg_ - The messages to be logged
 
 ### `jatos.addJatosIds(obj)`
 
 Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study ID, study title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
+
 * _param {Object} obj_ - Object to which the IDs will be added
 
 
@@ -132,11 +128,13 @@ Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study ID
 ### `jatos.startComponent(componentId)`
 
 Starts the component with the given ID. You can pass on information to the next component by adding a query string.
+
 * _param {Object} componentId_ - ID of the component to start
 
 ### `jatos.startComponentByPos(componentPos)`
 
 Starts the component with the given position (# of component within study). 
+
 * _param {Object} componentPos_ - Position of the component to start
 
 ### `jatos.startNextComponent()`
@@ -150,6 +148,7 @@ Starts the last component of this study or if it's inactive the component with t
 ### `jatos.endComponent(successful, errorMsg, onSuccess, onError)`
 
 Finishes component. Usually this is not necessary because the last component is automatically finished if the new component is started. Nevertheless it's useful to explicitly tell about a FAIL and submit an error message. Finishing the component doesn't finish the study.
+
 * _param {optional Boolean} successful_ - 'true' if study should finish successful and the participant should get the confirmation code - 'false' otherwise.
 * _param {optional String} errorMsg_ - Error message that should be logged.
 * _param {optional Function} onSuccess_ - Function to be called in case of successful submit
@@ -158,6 +157,7 @@ Finishes component. Usually this is not necessary because the last component is 
 ### `jatos.abortStudyAjax(message, success, error)`
 
 Aborts study. All previously submitted data will be deleted.
+
 * _param {optional String} message_ - Message that should be logged
 * _param {optional Function} success_ - Function to be called in case of successful submit
 * _param {optional Function} error_ - Function to be called in case of error
@@ -165,11 +165,13 @@ Aborts study. All previously submitted data will be deleted.
 ### `jatos.abortStudy(message)`
 
 Aborts study. All previously submitted data will be deleted.
+
 * _param {optional String} message_ - Message that should be logged
 
 ### `jatos.endStudyAjax(successful, errorMsg, onSuccess, onError)`
 
 Ends study with an Ajax call.
+
 * _param {optional Boolean} successful_ - 'true' if study should finish successful and the participant should get the confirmation code - 'false' otherwise.
 * _param {optional String} errorMsg_ - Error message that should be logged.
 * _param {optional Function} onSuccess_ - Function to be called in case of successful submit
@@ -178,6 +180,7 @@ Ends study with an Ajax call.
 ### `jatos.endStudy(successful, errorMsg)`
 
 Ends study.
+
 * _param {optional Boolean} successful_ - 'true' if study should finish successfully, 'false' otherwise.
 * _param {optional String} errorMsg_ - Error message that should be logged.
 
@@ -187,6 +190,7 @@ Ends study.
 ### `jatos.submitResultData(resultData, onSuccess, onError)`
 
 Posts resultData back to the JATOS server.
+
 * _param {Object} resultData_ - String to be submitted
 * _param {optional Function} success_ - Function to be called in case of successful submit
 * _param {optional Function} error_ - Function to be called in case of error
@@ -194,8 +198,9 @@ Posts resultData back to the JATOS server.
 ### `jatos.setStudySessionData(sessionData, complete)`
 
 Posts study session data to the JATOS server. This function is called automatically in the end of a component's life cycle (it's called by all jatos.js functions that start or end a component). So unless you want to store the session data in between a component run it's not necessary to call this function manually (in opposite to the group session's _jatos.setGroupSessionData_).
- * _param {Object} sessionData_ - Object to be submitted
- * _param {optional Function} complete_ - Function to be called after this function is finished
+
+* _param {Object} sessionData_ - Object to be submitted
+* _param {optional Function} complete_ - Function to be called after this function is finished
 
 
 ## Functions for group studies
@@ -204,7 +209,7 @@ Posts study session data to the JATOS server. This function is called automatica
 
 Tries to join a group (actually a group result) and if it succeeds opens the group channel's WebSocket.
 
- * _param {Object} callbacks_ - Defining callback functions for group events. All callbacks are optional. These callbacks functions can be:
+* _param {Object} callbacks_ - Defining callback functions for group events. All callbacks are optional. These callbacks functions can be:
   * **onOpen**: Is called when the group channel is successfully opened
   * **onClose**: Is be called when the group channel is closed
   * **onError**: Is called if an error during opening of the group channel's WebSocket occurs or if an error is received via the group channel (e.g. the group session data couldn't be updated). If this function is not defined jatos.js will try to call the global _onJatosError_ function.
@@ -219,31 +224,36 @@ Tries to join a group (actually a group result) and if it succeeds opens the gro
 ### `jatos.sendGroupMsg(msg)`
 
 Sends a message to all group members with an open group channel. Like with most transmissions in the Internet these messages are send on a best effort basis. This means that if everything (e.g. network, browser, script) works fine the message gets delivered - but if the message transmission encounters a problem and is not delivered neither the sender nor the receiver will be notified. If you want more reliable message transmission use the group session and _jatos.setGroupSessionData_ instead. Compared to the transmission via group session the group messaging is fast but less reliable. 
- * _param {Object} msg_ - Any JavaScript object
+
+* _param {Object} msg_ - Any JavaScript object
 
 ### `jatos.sendGroupMsgTo(recipient, msg)`
 
 Sends a message to a single group member specified with the given group member ID (only if group channel is open).
- * _param {String} recipient_ - Recipient's group member ID
- * _param {Object} msg_ - Any JavaScript object
+
+* _param {String} recipient_ - Recipient's group member ID
+* _param {Object} msg_ - Any JavaScript object
 
 ### `jatos.leaveGroup(onSuccess, onError)`
 
 Tries to leave the group (actually a group result) it has previously joined. The group channel is not closed in this function - it's closed from the JATOS' side.
- * _param {optional Function} onSuccess_ - Function to be called after the group is left
- * _param {optional Function} onError_ - Function to be called in case of error
+
+* _param {optional Function} onSuccess_ - Function to be called after the group is left
+* _param {optional Function} onError_ - Function to be called in case of error
 
 ### `jatos.reassignGroup(onSuccess, onFail)`
 
 Asks the JATOS server to reassign this study run to a different group.
- * _param {optional Function} onSuccess_ - Function to be called if the reassignment was successful
- * _param {optional Function} onFail_ - Function to be called if the reassignment was unsuccessful
+
+* _param {optional Function} onSuccess_ - Function to be called if the reassignment was successful
+* _param {optional Function} onFail_ - Function to be called if the reassignment was unsuccessful
 
 ### `jatos.setGroupSessionData(groupSessionData, onError)`
 
 Sends the group session data via the group channel to the JATOS server where it's stored and broadcasted to all members of this group. It either takes an Object as parameter or uses _jatos.groupSessionData_ if the groupSessionData isn't provided. jatos.js tries several times to upload the session data, but if there are many concurrent members updating at the same time it might fail. But jatos.js/JATOS guarantees that it either persists the updated session data or calls the _onError_ callback. In this way it is more reliable but slower compared to _jatos.sendGroupMsg_ or _jatos.sendGroupMsgTo_. Since the group session is stored in the JATOS server it can be retrieved after a page reload or Internet connection problem to continue at the point of the interruption.
- * _param {optional Object} groupSessionData_ - An object in JSON; If it's not given take _jatos.groupSessionData_
- * _param {optional Object} onError_ - Function to be called if this upload was unsuccessful
+
+* _param {optional Object} groupSessionData_ - An object in JSON; If it's not given take _jatos.groupSessionData_
+* _param {optional Object} onError_ - Function to be called if this upload was unsuccessful
 
 ### `jatos.setGroupFixed()`
 

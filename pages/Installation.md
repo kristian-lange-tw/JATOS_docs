@@ -10,7 +10,7 @@ toc: true
 last_updated: 28 Dec 2016
 ---
 
-## Easy installation on your local computer
+### Easy installation on your local computer
 
 **JATOS runs on MacOS X, MS Windows and Linux**
 
@@ -26,7 +26,7 @@ To run JATOS, you need Java installed on your computer (to be precise, you need 
 If you don't have Java installed, you can either [download and install it directly](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or download and install JATOS bundled with Java, according to your operating system. 
 
 
-## Installation MS Windows 
+### Installation MS Windows 
 
 1. Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest) (exchange 'xxx' with the current version)
  * Without Java: *jatos-xxx.zip*
@@ -35,7 +35,7 @@ If you don't have Java installed, you can either [download and install it direct
 1. In the File Explorer move to the unzipped JATOS folder and double-click on `loader.bat`. (Or `loader` alone, if your filename extensions are hidden). A command window will open and run your local JATOS installation. Simply close this window if you want to stop JATOS.
 1. All set! Now go to the browser of your choice and open [http://localhost:9000](http://localhost:9000). You should see the login screen (wait a moment and reload the page if you don't). Login with username 'admin' and password 'admin'.
 
-## Installation MacOS X and Linux
+### Installation MacOS X and Linux
 
 1. Download the [latest JATOS release](https://github.com/JATOS/JATOS/releases/latest) (exchange 'xxx' with the current version)
    * Without Java: *jatos-xxx.zip*
@@ -48,6 +48,6 @@ If you don't have Java installed, you can either [download and install it direct
 
 Your local JATOS installation will run in the background. If you want to stop it, just type `./loader.sh stop` in your terminal window.
 
-## How to go on from here
+### How to go on from here
 
 The easiest way to start with JATOS is to download and import one of the [example studies](https://github.com/JATOS/JATOS_examples/wiki/Example-Studies) and [play around with it](Get-started.html).

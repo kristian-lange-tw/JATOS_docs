@@ -502,12 +502,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/mydoc_test.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/mydoc_themes.html</loc>
   </url>
   

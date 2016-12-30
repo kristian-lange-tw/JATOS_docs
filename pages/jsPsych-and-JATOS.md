@@ -16,7 +16,7 @@ In [our example studies](https://github.com/JATOS/JATOS_examples/wiki/Example-St
 
 Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and send the result data to) JATOS. Additionally you can have a look at [Adapt Pre written Code to run it in JATOS (Jatosify)](Adapt-Pre-written-Code-to-run-it-in-JATOS.html).
 
-## How to turn your jsPsych experiment into a JATOS study
+### How to turn your jsPsych experiment into a JATOS study
 
 1. Include the `jatos.js` library in the `<head>`
 
@@ -38,7 +38,7 @@ Here are the necessary changes if you want to adapt your jsPsych experiment so t
    
 That's all. If you additionally want to send your result data to JATOS read on.
 
-## Send jsPsych's result data back to JATOS
+### Send jsPsych's result data back to JATOS
 
 Here we use jsPsych's function `jsPsych.data.getData()` to collect the data into a variable and then 'stringify' the JSON format into a simple string.
 Then we use JATOS' function `jatos.submitResultData` to send your result to JATOS and asks JATOS to move to the next component, if there is one.

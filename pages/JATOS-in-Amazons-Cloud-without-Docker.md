@@ -1,5 +1,5 @@
 ---
-title: Adapt Pre written Code to run it in JATOS (Jatosify)
+title: JATOS in Amazon's Cloud (without Docker)
 keywords: cloud, aws, amazon, installation, server
 tags:
 summary:

@@ -10,7 +10,7 @@ toc: false
 last_updated: 28 Dec 2016
 ---
 
-## Get started in 4 steps
+### Get started in 4 steps
 
 1. **Download JATOS and [install a local instance](Installation.html#easy-installation-on-your-local-computer)**
 
@@ -38,7 +38,7 @@ last_updated: 28 Dec 2016
 
 ![GUI screenshot](images/Results Screenshot.png)
 
-## Explore
+### Explore
 
 Now it's time to explore a little bit more.
 

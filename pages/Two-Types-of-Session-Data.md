@@ -14,7 +14,7 @@ Often you want to store information during a study run and share it with other c
 
 The difference between session data and the result data is that the results are stored **permanently** in the database, and will stay there after the study is finished. All results should therefore go into the result data. 
 
-## Study Session Data
+### Study Session Data
 
 The Study Session Data is useful to share information between components of a given study. Some examples include: 
 
@@ -22,7 +22,7 @@ The Study Session Data is useful to share information between components of a gi
 * Having a study-wide progress bar, showing how much of the entire study has been completed.
 * Keeping track of the number of iterations of a given component that is repeated.
 
-## Group Session Data
+### Group Session Data
 
 The Group Session Data is useful to share information between members of a given group. Some examples include:
 

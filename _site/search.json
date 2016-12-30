@@ -114,7 +114,7 @@
 
 
 {
-"title": "Adapt Pre written Code to run it in JATOS (Jatosify)",
+"title": "JATOS in Amazon&#39;s Cloud (without Docker)",
 "tags": "",
 "keywords": "cloud, aws, amazon, installation, server",
 "url": "JATOS-in-Amazons-Cloud-without-Docker.html",
@@ -285,7 +285,7 @@
 "tags": "",
 "keywords": "reference, jatos.js",
 "url": "jatos.js-Reference.html",
-"summary": ""
+"summary": "jatos.js is a small JavaScript library that helps you to communicate from JavaScript with your JATOS server (in more technical terms, it wraps calls to JATOS' public REST API). Below we list and describe the variables and functions of the jatos.js library."
 }
 ,
 
@@ -869,17 +869,6 @@
 "keywords": "tags, navigation, buttons, links, association",
 "url": "mydoc_tags.html",
 "summary": "Tags provide another means of navigation for your content. Unlike the table of contents, tags can show the content in a variety of arrangements and groupings. Implementing tags in this Jekyll theme is somewhat of a manual process."
-}
-,
-
-
-
-{
-"title": "Home",
-"tags": "",
-"keywords": "summary, home",
-"url": "mydoc_test.html",
-"summary": ""
 }
 ,
 

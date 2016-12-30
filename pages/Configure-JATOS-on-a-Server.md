@@ -12,7 +12,7 @@ last_updated: 29 Dec 2016
 
 **Restart JATOS after making any changes to the configuration (`loader.sh restart`)**
 
-## IP / domain and port
+### IP / domain and port
 
 By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to configure the host name or IP address and the port:
 
@@ -29,7 +29,7 @@ By default JATOS uses the address 127.0.0.1 and port 9000. There are two ways to
    loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
    ~~~
      
-## Study assets root path
+### Study assets root path
 
 By default the study assets root folder (where all your study's HTML, JavaScript files etc. are stored) is located within JATOS installation's folder in `study_assets_root`. There are three ways to change this path:
 
@@ -51,7 +51,7 @@ By default the study assets root folder (where all your study's HTML, JavaScript
    export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
      
-## Database
+### Database
 
 By default JATOS uses an embedded H2 database, but it can be easily configured to work with an external H2 or a MySQL database. 
 
