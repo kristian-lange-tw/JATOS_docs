@@ -23,6 +23,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: What's JATOS
+      url: /Whats_JATOS.html
+      output: web, pdf
+
     - title: Installation
       url: /Installation.html
       output: web, pdf
