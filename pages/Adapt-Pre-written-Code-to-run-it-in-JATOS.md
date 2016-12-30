@@ -10,7 +10,7 @@ toc: true
 last_updated: 29 Dec 2016
 ---
 
-**Make Your Existing Code Run in JATOS - or How To Jatosify a Study**
+**Make Your Existing Code Run in JATOS - or How To Jatosify a Study** 
 
 You might have a  task, experiment, survey, or study running in a browser. You might have all its files like HTML, JavaScripts, images, etc. Maybe you wrote it with [jsPsych](http://www.jspsych.org) or got it from [The Experiment Factory](http://expfactory.github.io). Do you want to run it with JATOS? That's easy! 
 
