@@ -26,7 +26,7 @@ The actual JATOS instance on a server isn't too different from a local one. It b
 We've produced multiple versions of JATOS. The simplest version is JATOS alone, but other versions are bundled with Java JRE. On a server, it's best (though not necessary) to install JATOS without a bundled Java. This will make it easier to upgrade to new Java releases.
 
 ### Configuration
-If JATOS runs locally it's usually not necessary to change the defaults but on a server you probably want to set up the IP and port or maybe use a different database and change the path of the study assets root folder. This wiki has an extra page how to [Configure JATOS on a Server](Configure-JATOS-on-a-Server.html).
+If JATOS runs locally it's usually not necessary to change the defaults but on a server you probably want to set up the IP and port or maybe use a different database and change the path of the study assets root folder. These docs have an extra page on how to [Configure JATOS on a Server](Configure-JATOS-on-a-Server.html).
 
 ### Change admin's password
 Every JATOS installation has the same default admin password 'admin'. You must change it before the server goes live. This can be done in the GUI: 1) login as 'admin', 2) click on your user in the header 3) Click 'Change Password'. 
