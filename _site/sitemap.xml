@@ -62,6 +62,12 @@
   
   
   <url>
+    <loc>http://localhost:4010/Example-Studies.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4010/Get-started.html</loc>
   </url>
   
@@ -75,12 +81,6 @@
   
   <url>
     <loc>http://localhost:4010/Install-JATOS-via-Docker.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4010/Installation.html</loc>
   </url>
   
   

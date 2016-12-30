@@ -6,7 +6,7 @@ topnav:
     - title: Download
       external_url: https://github.com/JATOS/JATOS/releases
     - title: Example Studies
-      external_url: https://github.com/JATOS/JATOS_examples/wiki/Example-Studies
+      external_url: Example-Studies.html
     - title: Blog
       external_url: http://blog.jatos.org
     - title: Contact

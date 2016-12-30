@@ -70,6 +70,17 @@
 
 
 {
+"title": "Example Studies",
+"tags": "",
+"keywords": "examples, jspsych, javascript",
+"url": "Example-Studies.html",
+"summary": "These examples here are mainly a showcase for what JATOS can do for you while you are writing your studies (like easy import/export, safe results storing and presentation, messaging in group studies). They are not meant to show what JATOS itself does (since JATOS doesn't care for the browser side)."
+}
+,
+
+
+
+{
 "title": "Get started",
 "tags": "",
 "keywords": "installation",
@@ -96,17 +107,6 @@
 "tags": "",
 "keywords": "docker, container, installation, server",
 "url": "Install-JATOS-via-Docker.html",
-"summary": ""
-}
-,
-
-
-
-{
-"title": "Installation",
-"tags": "",
-"keywords": "installation",
-"url": "Installation.html",
 "summary": ""
 }
 ,
@@ -259,7 +259,7 @@
 {
 "title": "What&#39;s JATOS",
 "tags": "",
-"keywords": "summary, docs, glance, introduction",
+"keywords": "summary, docs, glance, introduction, pdf",
 "url": "Whats-JATOS.html",
 "summary": ""
 }
