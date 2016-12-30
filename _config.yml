@@ -59,7 +59,7 @@ kramdown:
 
 collections:
   tooltips:
-    output: true
+    output: false
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -80,7 +80,7 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      tooltip: true
+      tooltip: false
 
   -
     scope:
