@@ -15,7 +15,9 @@ JATOS 2 allows you to [run group studies](Example-Group-Studies.html), where mul
  
 You can read our [open access paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) for the basics, but this wiki contains up-to-date information about the new group feature.
 
-We also started a [blog about JATOS and online experiments in general](http://blog.jatos.org). There we'll post about topics that do not necessarily fit into this wiki. 
+We also started a [blog about JATOS and online experiments in general](http://blog.jatos.org). There we'll post about topics that do not necessarily fit into this wiki.
+
+This documentation is also available as [PDF](https://github.com/JATOS/JATOS_docs/blob/gh-pages/pdf/jatos-docs.pdf).
 
 ![GUI Screenshot](https://github.com/JATOS/JATOS/wiki/images/Home screenshot.png)
 
