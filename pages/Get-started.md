@@ -18,7 +18,7 @@ last_updated: 28 Dec 2016
 
 1. **Download and import an example study**
 
-  1. Download one of the [Example Studies](http://www.jatos.org/http://www.jatos.org/Example-Studies.html), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
+  1. Download one of the [Example Studies](http://www.jatos.org/Example-Studies.html), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
 
   1. Import the study into JATOS: Go to JATOS' GUI in your browser and click on **Import Study** in the header. Choose the .zip file you just downloaded. The imported study should appear in the sidebar on the left.
 
