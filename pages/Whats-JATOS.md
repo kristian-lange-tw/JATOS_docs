@@ -1,6 +1,6 @@
 ---
 title: What's JATOS
-keywords: summary, docs, glance, introduction
+keywords: summary, docs, glance, introduction, pdf
 tags: 
 summary:
 sidebar: mydoc_sidebar
