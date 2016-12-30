@@ -4,7 +4,7 @@ keywords: jatos.js, jatosify, javascript, jsPsych, initialize
 tags:
 summary:
 sidebar: mydoc_sidebar
-permalink: JATOS_docs/Adapt-Pre-written-Code-to-run-it-in-JATOS.html
+permalink: Adapt-Pre-written-Code-to-run-it-in-JATOS.html
 folder:
 toc: true
 last_updated: 29 Dec 2016
