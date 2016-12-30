@@ -62,4 +62,4 @@ For **Personal Single Workers** and **Personal Multiple Workers** click **Add**.
 
 How to connect to MTurk and create links to run for **MTurk Workers** is described in the page [Connect to Mechanical Turk](Connect-to-Mechanical-Turk.html).
 
-The differences between the worker types is explained in the [Worker Types wiki page](Worker-Types.html).
+The differences between the worker types is explained in the [Worker Types page](Worker-Types.html).
