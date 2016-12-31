@@ -19,7 +19,7 @@ We also started a [blog about JATOS and online experiments in general](http://bl
 
 This documentation is available as [PDF](https://github.com/JATOS/JATOS_docs/raw/gh-pages/pdf/jatos-docs.pdf).
 
-![GUI Screenshot](https://github.com/JATOS/JATOS/wiki/images/Home screenshot.png)
+![GUI Screenshot](images/Home screenshot.png)
 
 ### JATOS at a glance: 
 * Run studies on your **own server**. This means that you keep complete control over who can access your result data.
