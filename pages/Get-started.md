@@ -18,25 +18,26 @@ last_updated: 28 Dec 2016
 
 1. **Download and import an example study**
 
-  1. Download one of the [Example Studies](http://www.jatos.org/Example-Studies.html), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
+   1. Download one of the [Example Studies](http://www.jatos.org/Example-Studies.html), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
 
-  1. Import the study into JATOS: Go to JATOS' GUI in your browser and click on **Import Study** in the header. Choose the .zip file you just downloaded. The imported study should appear in the sidebar on the left.
+   1. Import the study into JATOS: Go to JATOS' GUI in your browser and click on **Import Study** in the header. Choose the .zip file you just downloaded. The imported study should appear in the sidebar on the left.
 
 1. **Explore the GUI**
 
-  In the sidebar click the study to get into the study's page. 
+   In the sidebar click the study to get into the study's page. 
 
-  To do a test run of the entire study, click on **Run** in the toolbar on top of the page.
+   To do a test run of the entire study, click on **Run** in the toolbar on top of the page.
 
-  If you finished running through the study, you can check the results. 
-  * To see whole-study results, click on the **Results** button on the top of the page.
-  * To see results from individual components, click on the **Results** buttons on each component's row.
+   If you finished running through the study, you can check the results.
+   
+   * To see whole-study results, click on the **Results** button on the top of the page.
+   * To see results from individual components, click on the **Results** buttons on each component's row.
 
-  You can see each result's details be clicking on the little arrow to the left of its row.
+   You can see each result's details be clicking on the little arrow to the left of its row.
 
-  _Here's a screenshot of a study's results view:_
+   _Here's a screenshot of a study's results view:_
 
-![GUI screenshot](images/Results Screenshot.png)
+   ![GUI screenshot](images/Results Screenshot.png)
 
 ### Explore
 
