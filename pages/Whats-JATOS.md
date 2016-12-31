@@ -35,7 +35,7 @@ This documentation is available as [PDF](https://github.com/JATOS/JATOS_docs/raw
 
 Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) if you use JATOS for your research.
 
-JATOS is open-source and released under the [Apache 2 Licence](http://www.apache.org/licenses/LICENSE-2.0.html).  
+JATOS is open-source and released under the [Apache 2 Licence](http://www.apache.org/licenses/LICENSE-2.0.html). The source code is available on [GitHub](https://github.com/JATOS/JATOS).
 
 This is the Documentation for JATOS 2 - Are you looking for the Docs of [JATOS 1.x](https://github.com/JATOS/JATOS_docs_v1/wiki/Home)?
 
