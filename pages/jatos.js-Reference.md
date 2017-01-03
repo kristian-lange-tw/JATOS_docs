@@ -63,7 +63,7 @@ There's a convenient function that adds all these IDs to a given object. See fun
 
 ### Study's session data
 
-The session data can be accessed and modified by every component of a study. It's a very convenient way to share data between different components. However, remember that the session data will be deleted after the study is finished (see also [Two Types of Session Data](Two-Types-of-Session-Data.html)).
+The session data can be accessed and modified by every component of a study. It's a very convenient way to share data between different components. Whatever is written in this variable will be available in the subsequent components. However, remember that the session data will be deleted after the study is finished (see also [Two Types of Session Data](Two-Types-of-Session-Data.html)).
 
 * `jatos.studySessionData`
 
