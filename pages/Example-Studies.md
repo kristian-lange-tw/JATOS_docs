@@ -170,7 +170,7 @@ Simple example of how to store results in CSV format
 
 
 
-#### Group Study Examples    
+# Group Study Examples    
 
 ### Group Chat
 
