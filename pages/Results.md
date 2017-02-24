@@ -1,13 +1,13 @@
 ---
 title: Results
-keywords: installation
+keywords: results
 tags:
 summary:
 sidebar: mydoc_sidebar
-permalink: Get-started.html
+permalink: Results.html
 folder:
 toc: false
-last_updated: 28 Dec 2016
+last_updated: 28 Feb 2017
 ---
 
 ### Get started in 4 steps
