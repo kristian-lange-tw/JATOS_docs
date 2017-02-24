@@ -122,6 +122,12 @@ Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study ID
 
 * _param {Object} obj_ - Object to which the IDs will be added
 
+### `jatos.setHeartbeatPeriod(heartbeatPeriod)`
+
+Every running component sends regularly a HTTP request (the heartbeat) back to the JATOS server to signal that it is still running. As soon as the browser tab running the component is closed the heartbeat ceased. The time of the last heartbeat is visible in the GUI, in the study results page in the 'Last Seen' row. This way you can easily see if a worker is still running your study or if he abandonend it. By default the heartbeat period is 2 min. By careful not set the period too low (few seconds or milliseconds) since it might overload your network or your JATOS server.
+
+* _param {heartbeatPeriod} obj_ - Time period between two heartbeats in milliseconds
+
 
 ## Functions to control study flow
 
