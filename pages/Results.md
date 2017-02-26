@@ -6,46 +6,66 @@ summary:
 sidebar: mydoc_sidebar
 permalink: Results.html
 folder:
-toc: false
-last_updated: 28 Feb 2017
+toc: true
+last_updated: 26 Feb 2017
 ---
 
-### Get started in 4 steps
+### Results view
 
-1. **Download JATOS and [install a local instance](Installation.html#easy-installation-on-your-local-computer)**
+Once you ran a study, you can see and manage the results by clicking on the Study Results button. The Coponent Results view is similar, so we describe the Study Results view only. 
 
-1. **Open JATOS' GUI by going to <a href="http://localhost:9000/" target="_blank">http://localhost:9000/</a> in your browser window**
+![Results Link](images/ResultsLink.png)
 
-1. **Download and import an example study**
+The image below is an example of the results for the Prisonner's Dilemma exameple study. The results view includes quite a lot of information so we'll go through each bit here.
 
-   1. Download one of the [Example Studies](http://www.jatos.org/Example-Studies.html), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
+![Results View screenshot](images/ResultsView Screenshot.png)
 
-   1. Import the study into JATOS: Go to JATOS' GUI in your browser and click on **Import Study** in the header. Choose the .zip file you just downloaded. The imported study should appear in the sidebar on the left.
+### Table actions
+JATOS displays results in the form of interactive tables. Here's what you can do in them:
 
-1. **Explore the GUI**
+#### Selecting individual results
+You'll notice that the first two results are selected (in dark blue) in the example. You can select/deselect specific results by clicking anywhere on the row. You can also use the buttons on the bar above to select all results in the table.
 
-   In the sidebar click the study to get into the study's page. 
+#### Filter 
+If you type, for example, "Personal Single" in the Filter Results field, only the results ran by a Personal Single worker will appear on the table. You can then click on Select Filtered to select and then export only those results that you're interested in. All fields in the table are searchable and you can combine fields (e.g. by filtering for "Personal Single Finished"). 
 
-   To do a test run of the entire study, click on **Run** in the toolbar on top of the page.
+#### View component results
+Each study result has a little arrow on the left. If you click on it, the individual component results for the study will be displayed like in the last result of the screenshot above. 
 
-   If you finished running through the study, you can check the results.
-   
-   * To see whole-study results, click on the **Results** button on the top of the page.
-   * To see results from individual components, click on the **Results** buttons on each component's row.
+#### Export 
+Once you selected the results you're interested in, click export and your browser will download a text file that contains your results in whatever format (text, csv, json) you stored them. 
 
-   You can see each result's details be clicking on the little arrow to the left of its row.
+#### Delete
+You can delete or all only some selected results. Keep in mind there's no undo function for this. 
 
-   _Here's a screenshot of a study's results view:_
+### Table Information
 
-   ![GUI screenshot](images/Results Screenshot.png)
+#### Result ID 
+A number assigned by JATOS to each Study Result. Keep in mind that a Study Result is actually a group of Component Results, each of them with their own (different) Component ID. 
 
-### Explore
+#### Start Time
+Time (set at the server's time zone) at which the first component of the study was loaded. 
 
-Now it's time to explore a little bit more.
+#### Last seen
+You can how how long each worker worked on a study by looking at the Duration field. However, Duration is given by the time when the study was finished and is therefore not available if a worker never finished the study and is either still working on it or just closed the browser tab. To distinguish these two situations, JATOS records by default a "heartbeat" from each component. The default period of the heartbeat is 2 minutes but you can change it thorugh a jatos.js function [link here]. The heartbeat is there while the component is loaded (i.e., the browser tab running the study is open) and stops either when the browser tab is closed, or when the study is finished.   
+#### Duration
+Simply the time  difference between the the study Finish (the last command of the last component sent to the JATOS server) and the start of the first study component. It will display 'not yet' for studies that are not finished.  
 
-* You can click on any component's position button and drag it to a new position within the study. 
-* Each component has a **Properties** button. The component's HTML file may read the data in the field 'JSON data'. This is a way to make changes in the details of the code (wording of instructions, stimuli, timing, number of trials, etc) without having to hard-code them into JavaScript. 
-* Where are the actual HTML, JavaScript, and CSS files? They are the files that actually run your study, so make sure you can locate them. They will be in `/path_to_my_JATOS/study_assets_root/name_of_my_study/`.
+#### Worker ID
+Assigned by JATOS. Each unique worker has its own Worker ID. The JATOS worker will always have Worker ID 1. You can click on a Worker ID to see all the worker's results. As we said in the Ethics and Privacy section, keep in mind that MTurk workers with the same MTurk ID will have the same JATOS Worker ID. 
+If you run two different studies in MTurk, chances are that some workers will take part in both studies. Because workers might not be aware that two different studies were done by the same person, we recommend deleting the MTurk results from the server from the first study before running the second study. Alternatively, if you do want to link results from different studies, you should explicitly say so and obtain consent from your workers.  
 
-_Here's a screenshot of a component's properties view:_
-![GUI screenshot](images/Component properties screenshot.png)
+#### Worker Type
+
+
+#### MTurk Worker ID
+This is given by Amazon Mechanical Turk's platform, not by JATOS.
+
+#### Group ID
+Only available for group studies, like the Prisonner's Dilemma in the example.
+
+#### State
+Possible states are DATA_RETRIEVED, ABORTED, FINISHED 
+
+#### Messages
+
