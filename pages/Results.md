@@ -12,7 +12,7 @@ last_updated: 27 Feb 2017
 
 ### Results view
 
-Once you ran a study, you can see and manage the results by clicking on the Study Results button. The Coponent Results view is similar, so we describe the Study Results view only. 
+Once you collected data for a study, you can see and manage the results by clicking on the Study Results button. The Component Results view is similar, so we describe the Study Results view only. 
 
 ![Results Link](images/ResultsLink.png)
 
