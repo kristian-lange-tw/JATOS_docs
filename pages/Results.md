@@ -16,7 +16,7 @@ Once you ran a study, you can see and manage the results by clicking on the Stud
 
 ![Results Link](images/ResultsLink.png)
 
-The image below is an example of the results for the Prisonner's Dilemma exameple study. The results view includes quite a lot of information so we'll go through each bit here.
+The image below is an example of the results for the Prisonner's Dilemma exameple study. There's quite a lot of information here, so we'll go through each piece.
 
 ![Results View screenshot](images/ResultsView Screenshot.png)
 
@@ -39,6 +39,7 @@ Once you selected the results you're interested in, click export and your browse
 You can delete or all only some selected results. Keep in mind there's no undo function for this. 
 
 ### Table Information
+You can control the information displayed in the table with the drop-down menu under the Display Columns button. 
 
 #### Result ID 
 A number assigned by JATOS to each Study Result. Keep in mind that a Study Result is actually a group of Component Results, each of them with their own (different) Component ID. 
