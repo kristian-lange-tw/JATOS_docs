@@ -19,6 +19,8 @@ We also started a [blog about JATOS and online experiments in general](http://bl
 
 This documentation is available as [PDF](https://github.com/JATOS/JATOS_docs/raw/gh-pages/pdf/jatos-docs.pdf).
 
+<a target="_blank" class="noCrossRef" href="/pdf/mydoc.pdf"><button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> PDF Download</button></a>
+
 ![GUI Screenshot](images/Home screenshot.png)
 
 ### JATOS at a glance: 
