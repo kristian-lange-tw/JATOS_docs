@@ -91,4 +91,4 @@ Possible states for component results are:
 
 #### Messages
 
-Either an error message if the study failed (can be set by [jatos.endStudy()](jatos.js-Reference.html#jatosendstudysuccessful-errormsg)) or a message if the study was aborted (can be set via [jatos.abortStudy()](jatos.js-Reference.html#jatosabortstudymessage)).
+Either an error message if the study failed (can be set by [jatos.endStudy](jatos.js-Reference.html#jatosendstudysuccessful-errormsg)) or a message if the study was aborted (can be set via [jatos.abortStudy](jatos.js-Reference.html#jatosabortstudymessage)).
