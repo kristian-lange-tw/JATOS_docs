@@ -18,7 +18,7 @@ Once you collected data for a study, you can see and manage the results by click
 
 The image below is an example of the results for the Prisonner's Dilemma example study. There's quite a lot of information here, so we'll go through each piece.
 
-![Results View screenshot](images/ResultsView Screenshot.png){:width="100%"}
+![Results View screenshot](images/ResultsView Screenshot.png)
 
 
 ### Interacting With The Results Table
