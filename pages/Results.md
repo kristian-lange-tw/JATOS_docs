@@ -10,7 +10,7 @@ toc: true
 last_updated: 27 Feb 2017
 ---
 
-### Results view
+### Results View
 
 Once you collected data for a study, you can see and manage the results by clicking on the study *Results* button. The component Results view is similar, so we describe the study Results view only. 
 
@@ -20,17 +20,18 @@ The image below is an example of the results for the Prisonner's Dilemma example
 
 ![Results View screenshot](images/ResultsView Screenshot.png){:width="100%"}
 
-### Table Actions
+
+### Interacting With The Results Table
 JATOS displays results in the form of interactive tables. Here's what you can do in them:
 
-#### Selecting results
+#### Selecting Results
 You'll notice that the first two results are selected (in dark blue) in the example. You can select/deselect specific results by clicking anywhere on the row. You can also use the buttons on the bar above to select all results in the table.
 
 #### Filter Results
 The filter lets you search all text in the whole results table (excluding the actual result data).  
 If you type, for example, "Personal Single" in the *Filter Results* field, only the results ran by a Personal Single worker will appear on the table. You can then click on *Select Filtered* to select and then export only those results that you're interested in. All fields in the table are searchable and you can combine fields (e.g. by filtering for "Personal Single Finished"). 
 
-#### View component results
+#### View Component Results
 Each study result has a little arrow on the left. If you click on it, the individual component results for the study will be displayed like in the bottom-most result of the screenshot above. 
 
 #### Export 
@@ -38,6 +39,7 @@ Once you selected the results you're interested in, click *Export* and your brow
 
 #### Delete
 You can click *Delete* to remove all or only some selected results. Keep in mind **there's no undo function for this**. 
+
 
 ### Table Columns
 You can show and hide the columns displayed in the table with the drop-down menu under the *Display Columns* button. 
@@ -48,7 +50,7 @@ An identifier assigned by JATOS to each study result. A study result is actually
 #### Start Time
 Time (set at the server's time zone) at which the first component of the study was loaded. 
 
-#### Last seen
+#### Last Seen
 You can know how long each worker worked on a study by looking at the Duration field. However, *Duration* is given by the time when the study was finished and is therefore not available if a worker never finished the study and is either still working on it or just closed the browser tab. To distinguish these two situations, JATOS records by default a "heartbeat" from each component. The default period of the heartbeat is 2 minutes but you can change it thorugh a jatos.js [function](jatos.js-Reference.html#jatossetheartbeatperiodheartbeatperiod). The heartbeat is there while the component is loaded (i.e., the browser tab running the study is open) and stops either when the browser tab is closed, or when the study is finished.   
 
 #### Duration
