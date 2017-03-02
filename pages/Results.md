@@ -72,7 +72,7 @@ Only available for group studies. It identifies the group.
 
 Possible states for study result are: 
 
-* PRE - Preview of study (exists only in PersonalSingleWorker and GeneralSingleWorker)
+* PRE - [Preview of study](Worker-Types.html#preview-links) (exists only in PersonalSingleWorker and GeneralSingleWorker)
 * STARTED - Study was started
 * DATA_RETRIEVED - Study's jsonData were retrieved
 * FINISHED - Study successfully finished
@@ -91,3 +91,4 @@ Possible states for component results are:
 
 #### Messages
 
+Either an error message if the study failed (can be set by [jatos.endStudy()](jatos.js-Reference.html#jatosendstudysuccessful-errormsg)) or a message if the study was aborted (can be set via [jatos.abortStudy()](jatos.js-Reference.html#jatosabortstudymessage))
