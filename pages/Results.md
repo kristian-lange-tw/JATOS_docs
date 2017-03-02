@@ -18,7 +18,7 @@ Once you collected data for a study, you can see and manage the results by click
 
 The image below is an example of the results for the Prisonner's Dilemma exameple study. There's quite a lot of information here, so we'll go through each piece.
 
-![Results View screenshot](images/ResultsView Screenshot.png)
+![Results View screenshot](images/ResultsView Screenshot.png){:width="100%"}
 
 ### Table actions
 JATOS displays results in the form of interactive tables. Here's what you can do in them:
