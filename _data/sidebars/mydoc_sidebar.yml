@@ -54,6 +54,10 @@ entries:
     - title: Worker Types
       url: /Worker-Types.html
       output: web, pdf
+      
+    - title: Results
+      url: /Results.html
+      output: web, pdf
 
     - title: Two Types of Session Data
       url: /Two-Types-of-Session-Data.html
