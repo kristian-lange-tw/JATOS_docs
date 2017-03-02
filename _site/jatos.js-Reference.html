@@ -10,19 +10,19 @@
 <title>jatos.js Reference  | JATOS Documentatio</title>
 
 
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/syntax.css">
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/modern-business.css">
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/lavish-bootstrap.css">
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/customstyles.css">
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/theme-green.css">
-<link rel="stylesheet" href="http://localhost:4010/jatos-pdf/css/syntax.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/syntax.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/modern-business.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/lavish-bootstrap.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/customstyles.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/theme-green.css">
+<link rel="stylesheet" href="http://127.0.0.1:4010/jatos-pdf/css/syntax.css">
 <link rel="stylesheet" href="/jatos-pdf/css/printstyles.css">
 
 <script>
     Prince.addScriptFunc("datestamp", function() {
-        return "PDF last generated: December 30, 2016";
+        return "PDF last generated: March 03, 2017";
     });
 </script>
 
@@ -116,7 +116,7 @@
 
 <h3 id="studys-session-data">Study’s session data</h3>
 
-<p>The session data can be accessed and modified by every component of a study. It’s a very convenient way to share data between different components. However, remember that the session data will be deleted after the study is finished (see also <a href="Two-Types-of-Session-Data.html">Two Types of Session Data</a>).</p>
+<p>The session data can be accessed and modified by every component of a study. It’s a very convenient way to share data between different components. Whatever is written in this variable will be available in the subsequent components. However, remember that the session data will be deleted after the study is finished (see also <a href="Two-Types-of-Session-Data.html">Two Types of Session Data</a>).</p>
 
 <ul>
   <li><code class="highlighter-rouge">jatos.studySessionData</code></li>
@@ -184,6 +184,14 @@
 
 <ul>
   <li><em>param {Object} obj</em> - Object to which the IDs will be added</li>
+</ul>
+
+<h3 id="jatossetheartbeatperiodheartbeatperiod"><code class="highlighter-rouge">jatos.setHeartbeatPeriod(heartbeatPeriod)</code></h3>
+
+<p>Every running component sends regularly a HTTP request (the heartbeat) back to the JATOS server. This signals that it is still running. As soon as the browser tab running the component is closed the heartbeat ceases. The time of the last heartbeat is visible in the GUI, in the study results page in the ‘Last Seen’ row. This way you can easily see if a worker is still running your study or if (and when) he abandonend it. By default the heartbeat period is 2 min. By careful not to set the period too low (few seconds or milliseconds) since it might overload your network or your JATOS server.</p>
+
+<ul>
+  <li><em>param {Number} heartbeatPeriod</em> - Time period between two heartbeats in milliseconds</li>
 </ul>
 
 <h2 id="functions-to-control-study-flow">Functions to control study flow</h2>

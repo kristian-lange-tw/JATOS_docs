@@ -180,6 +180,17 @@
 
 
 {
+"title": "Results",
+"tags": "",
+"keywords": "results",
+"url": "Results.html",
+"summary": "The results pages (study, component or worker) presents all the data that were collected during the study runs, including the result data and meta data (e.g. worker ID, start time etc.)."
+}
+,
+
+
+
+{
 "title": "Run your Study with Batch Manager &amp; Worker Setup",
 "tags": "",
 "keywords": "batch manager, worker setup, worker, batch properties, worker setup, group properties",

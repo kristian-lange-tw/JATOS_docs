@@ -16,41 +16,12 @@
       
               
                  
-                    http://localhost:4010/jatos-pdf/titlepage
+                    http://127.0.0.1:4010/jatos-pdf/titlepage
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/tocpage
-                          
-                
-             
-      
-  
-      
-              
-                 
-                    http://localhost:4010/jatos-pdf/Whats-JATOS.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Contact-us.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Installation.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Get-started.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Set-up-your-own-studies.html
+                    http://127.0.0.1:4010/jatos-pdf/tocpage
                           
                 
              
@@ -59,57 +30,27 @@
       
               
                  
-                    http://localhost:4010/jatos-pdf/Run-your-Study-with-Batch-Manager-and-Worker-Setup.html
+                    http://127.0.0.1:4010/jatos-pdf/Whats-JATOS.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/Worker-Types.html
+                    http://127.0.0.1:4010/jatos-pdf/Contact-us.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/Two-Types-of-Session-Data.html
+                    http://127.0.0.1:4010/jatos-pdf/Installation.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/Mandatory-lines-in-your-components-HTML.html
+                    http://127.0.0.1:4010/jatos-pdf/Get-started.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/Adapt-Pre-written-Code-to-run-it-in-JATOS.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/jsPsych-and-JATOS.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Tips-and-Tricks.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Connect-to-Mechanical-Turk.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Troubleshooting.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Update-JATOS.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Data-Privacy-and-Ethics.html
+                    http://127.0.0.1:4010/jatos-pdf/Set-up-your-own-studies.html
                           
                 
              
@@ -118,17 +59,62 @@
       
               
                  
-                    http://localhost:4010/jatos-pdf/Example-Group-Studies.html
+                    http://127.0.0.1:4010/jatos-pdf/Run-your-Study-with-Batch-Manager-and-Worker-Setup.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/Group-Study-Properties.html
+                    http://127.0.0.1:4010/jatos-pdf/Worker-Types.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/Write-Your-Own-Group-Studies.html
+                    http://127.0.0.1:4010/jatos-pdf/Results.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Two-Types-of-Session-Data.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Mandatory-lines-in-your-components-HTML.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Adapt-Pre-written-Code-to-run-it-in-JATOS.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/jsPsych-and-JATOS.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Tips-and-Tricks.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Connect-to-Mechanical-Turk.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Troubleshooting.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Update-JATOS.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Data-Privacy-and-Ethics.html
                           
                 
              
@@ -137,37 +123,17 @@
       
               
                  
-                    http://localhost:4010/jatos-pdf/JATOS-on-a-server.html
+                    http://127.0.0.1:4010/jatos-pdf/Example-Group-Studies.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/Configure-JATOS-on-a-Server.html
+                    http://127.0.0.1:4010/jatos-pdf/Group-Study-Properties.html
                           
                 
              
                  
-                    http://localhost:4010/jatos-pdf/JATOS-with-Nginx.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/JATOS-with-Apache.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Install-JATOS-via-Docker.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/JATOS-in-Amazons-Cloud-without-Docker.html
-                          
-                
-             
-                 
-                    http://localhost:4010/jatos-pdf/Updating-a-JATOS-server-installation.html
+                    http://127.0.0.1:4010/jatos-pdf/Write-Your-Own-Group-Studies.html
                           
                 
              
@@ -176,7 +142,46 @@
       
               
                  
-                    http://localhost:4010/jatos-pdf/jatos.js-Reference.html
+                    http://127.0.0.1:4010/jatos-pdf/JATOS-on-a-server.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Configure-JATOS-on-a-Server.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/JATOS-with-Nginx.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/JATOS-with-Apache.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Install-JATOS-via-Docker.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/JATOS-in-Amazons-Cloud-without-Docker.html
+                          
+                
+             
+                 
+                    http://127.0.0.1:4010/jatos-pdf/Updating-a-JATOS-server-installation.html
+                          
+                
+             
+      
+  
+      
+              
+                 
+                    http://127.0.0.1:4010/jatos-pdf/jatos.js-Reference.html
                           
                 
              
