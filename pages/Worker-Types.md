@@ -16,11 +16,11 @@ Following Amazon Mechanical Turk’s terminology, a worker in JATOS is a person 
 |-|-------|-----------------|-------------------|-------|----------------|
 | **Typical use** | During study development | Small targeted group, each one of them gets a link | Small targeted group of workers who pilot the study or need to do it multiple times | For Amazon Mechanical Turk | Bigger groups but with less control; link shared e.g. via social media |
 | **Created when?** | Together with the JATOS user | In the Worker Setup | In the Worker Setup | On-the-fly after a MTurk worker clicked on the HIT link | On-the-fly whenever someone clicks on the link |
-| **Run different studies with the same worker ID** | ![yes](images/ok-24.ico) | n | n | y | n |
-| **Repeat the same study with the same worker ID** | y | n | y | n | n |
-| **Supports preview [link] of studies** | n | y | n | n | y |
-| **Possible bulk creation** | n | y | y | n | n |
-| **Run group studies** | y | y | y | y | y |
+| **Run different studies with the same worker ID** | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) |
+| **Repeat the same study with the same worker ID** | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) |
+| **Supports preview [link] of studies** | n | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) |
+| **Possible bulk creation** | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) |
+| **Run group studies** | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) |
 
 
 ### Jatos Worker
