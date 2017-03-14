@@ -2,7 +2,7 @@
 title: Worker Types
 keywords: worker types, Jatos Worker, Personal Single Worker, Personal Multiple Worker, MTurk Worker, Preview Links
 tags:
-summary:
+summary: Following Amazon Mechanical Turk’s terminology, a worker in JATOS is a person who runs a study. Different worker types access a study in different ways. For example, some workers can run the same study multiple times, whereas others can do it only once. 
 sidebar: mydoc_sidebar
 permalink: Worker-Types.html
 folder:
@@ -10,17 +10,17 @@ toc: true
 last_updated: 28 Dec 2016
 ---
 
-Following Amazon Mechanical Turk’s terminology, a worker in JATOS is a person who runs a study. Different worker types access a study in different ways. For example, some workers can run the same study multiple times, whereas others can do it only once. Below we describe the different workers:
+### Overview
 
-| | Jatos | Personal Single | Personal Multiple | MTurk | General Single |
-|-|-------|-----------------|-------------------|-------|----------------|
+| | Jatos             | Personal Single   | Personal Multiple | MTurk             | General Single    |
+|-|-------------------|-------------------|-------------------|-------------------|-------------------|
 | **Typical use** | During study development | Small targeted group, each one of them gets a link | Small targeted group of workers who pilot the study or need to do it multiple times | For Amazon Mechanical Turk | Bigger groups but with less control; link shared e.g. via social media |
-| **Created when?** | Together with the JATOS user | By you in the Worker Setup | By you in the Worker Setup | On-the-fly after a MTurk worker clicked on the HIT link | On-the-fly whenever someone clicks on the link |
+| **Created when?** | Together with the JATOS user | By yourself in the Worker Setup | By yourself in the Worker Setup | On-the-fly after a MTurk worker clicked on the HIT link | On-the-fly whenever someone clicks on the link |
 | **Run different studies with the same worker ID** | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) |
 | **Repeat the same study with the same worker ID** | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) |
-| **Supports preview [link] of studies** | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) |
+| **Supports [preview of studies](Worker-Types.html#preview-links)** | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) |
 | **Possible bulk creation** | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) |
-| **Run group studies** | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) |
+| **Run [group studies](Example-Group-Studies)** | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) | ![yes](images/ok-24.ico) |
 
 
 ### Jatos Worker
