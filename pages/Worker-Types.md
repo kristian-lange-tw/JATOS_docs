@@ -12,6 +12,17 @@ last_updated: 28 Dec 2016
 
 Following Amazon Mechanical Turk’s terminology, a worker in JATOS is a person who runs a study. Different worker types access a study in different ways. For example, some workers can run the same study multiple times, whereas others can do it only once. Below we describe the different workers:
 
+| | Jatos | Personal Single | Personal Multiple | MTurk | General Single |
+|-|-------|-----------------|-------------------|-------|----------------|
+| **Typical use** | During study development | Small targeted group, each one of them gets a link | Small targeted group of workers who pilot the study or need to do it multiple times | For Amazon Mechanical Turk | Bigger groups but with less control; link shared e.g. via social media |
+| **Created when?** | Together with the JATOS user | In the Worker Setup | In the Worker Setup | On-the-fly after a MTurk worker clicked on the HIT link | On-the-fly whenever someone clicks on the link |
+| **Run different studies with the same worker ID** | ![yes](images/ok-48.png) | n | n | y | n |
+| **Repeat the same study with the same worker ID** | y | n | y | n | n |
+| **Supports preview [link] of studies** | n | y | n | n | y |
+| **Possible bulk creation** | n | y | y | n | n |
+| **Run group studies** | y | y | y | y | y |
+
+
 ### Jatos Worker
 Jatos workers run a study (or any of its components individually) by clicking on the _Run_ buttons from the GUI. Jatos workers are usually the researchers trying out their own studies. Each JATOS user (i.e., anybody with a JATOS login) has their own Jatos worker.  
 **Jatos workers can run the same study as many times as they want.**
