@@ -12,9 +12,9 @@ last_updated: 28 Dec 2016
 
 ### Overview
 
-| | Jatos ![](images/jatos-24.png) | Personal Single ![](images/personal_single-24.png) | Personal Multiple ![](images/personal_multiple-24.png) | MTurk ![](images/mturk-24.png) | General Single ![](images/general_single-24.png) | 
-| | ![](images/jatos-24.png) | ![](images/personal_single-24.png) | ![](images/personal_multiple-24.png) | ![](images/mturk-24.png) | ![](images/general_single-24.png) |
+| | Jatos             | Personal Single   | Personal Multiple | MTurk             | General Single    | 
 |-|-------------------|-------------------|-------------------|-------------------|-------------------|
+| **Icon** | ![](images/jatos-24.png) | ![](images/personal_single-24.png) | ![](images/personal_multiple-24.png) | ![](images/mturk-24.png) | ![](images/general_single-24.png) |
 | **Typical use** | During study development | Small targeted group, each one of them gets a link | Small targeted group of workers who pilot the study or need to do it multiple times | For Amazon Mechanical Turk | Bigger groups but with less control; link shared e.g. via social media |
 | **Created when?** | Together with the JATOS user | By yourself in the Worker Setup | By yourself in the Worker Setup | On-the-fly after a MTurk worker clicked on the HIT link | On-the-fly whenever someone clicks on the link |
 | **Run different studies with the same worker ID** | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) | ![no](images/x-24.ico) | ![yes](images/ok-24.ico) | ![no](images/x-24.ico) |
