@@ -112,7 +112,7 @@ Defines callback function that is to be called in case jatos.js produces an erro
 
 ### `jatos.log(logMsg)`
 
-Logs an msg in the log of the JATOS installation.
+Logs an message in the log on the JATOS server.
 
 * _param {String} logMsg_ - The messages to be logged
 
