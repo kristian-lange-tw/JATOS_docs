@@ -1,5 +1,5 @@
 ---
-title: What's JATOS
+title: What is JATOS?
 keywords: summary, docs, glance, introduction, pdf
 tags: 
 summary:
