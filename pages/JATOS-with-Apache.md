@@ -12,7 +12,7 @@ last_updated: 3 April 2017
 
 This is an example for a configuration of [Apache](https://httpd.apache.org/) as a proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common, mostly for encryption purpose.
 
-Here I used Apache 2.4.18 on a Ubuntu system. It is recommended to use at least *Apache version 2.4* since JATOS relies on WebSockets and Apache doesn't support them in prior versions. 
+Here I used Apache 2.4.18 on a Ubuntu system. It is recommended to use at least **version 2.4** since JATOS relies on WebSockets and Apache doesn't support them in prior versions. 
 
 I had to add some modules to Apache to get it working:
 
