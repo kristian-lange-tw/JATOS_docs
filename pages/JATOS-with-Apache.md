@@ -1,18 +1,34 @@
 ---
 title: JATOS with Apache
-keywords: apache, server, httpd, installation
+keywords: apache, server, httpd, installation, websocket, proxy, mod_proxy_wstunnel module
 tags:
 summary:
 sidebar: mydoc_sidebar
 permalink: JATOS-with-Apache.html
 folder:
 toc: false
-last_updated: 29 Dec 2016
+last_updated: 3 April 2017
 ---
 
-This is an example for a configuration of [Apache](https://httpd.apache.org/) as a proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common.
+This is an example for a configuration of [Apache](https://httpd.apache.org/) as a proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common, mostly for encryption purpose.
 
-The following is the content of Apache's `httpd.conf`. Change it to your needs. You probably want to change your servers address (`www.example.com` in the example). If you want to use JATOS with group studies you have to add the [mod_proxy_wstunnel module](https://httpd.apache.org/docs/2.4/mod/mod_proxy_wstunnel.html).
+Here I used Apache 2.4.18 on a Ubuntu system. It is recommended to use at least *Apache version 2.4* since JATOS relies on WebSockets and Apache doesn't support them in prior versions. 
+
+I had to add some modules to Apache to get it working:
+
+~~~ shell
+sudo a2enmod rewrite
+sudo a2enmod proxy_wstunnel
+sudo a2enmod proxy
+sudo a2enmod headers
+sudo a2enmod ssl
+sudo a2enmod lbmethod_byrequests
+sudo a2enmod proxy_balancer
+sudo a2enmod proxy_http
+sudo a2enmod remoteip
+~~~
+
+The following is an example of a proxy config with Apache. I stored it in `/etc/apache2/sites-available/example.com.conf` and added it to Apache with the command `sudo a2ensite example.com.conf`.
 
 ~~~ shell
 <VirtualHost *:80>
