@@ -28,7 +28,7 @@ sudo a2enmod proxy_http
 sudo a2enmod remoteip
 ~~~
 
-The following is an example of a proxy config with Apache. I stored it in `/etc/apache2/sites-available/example.com.conf` and added it to Apache with the command `sudo a2ensite example.com.conf`.
+The following is an example of a proxy config with Apache. I stored it in `/etc/apache2/sites-available/example.com.conf` and added it to Apache with the command `sudo a2ensite example.com.conf`. It enforces access via HTTPS by redirecting all HTTP traffic.
 
 ~~~ shell
 <VirtualHost *:80>
