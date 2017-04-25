@@ -74,15 +74,12 @@ http {
                 keepalive_timeout    70;
                 server_name www.example.com;
 
-                # websocket location (JATOS' group and batch channel)
-                location ~ "^/publix/[\d]+/(group/join|batch/open)" {
+                # websocket location (JATOS' group channel)
+                location ~ "^/publix/[\d]+/group/join" {
                         proxy_pass              http://jatos-backend;
-                        proxy_http_version      1.1;
                         proxy_set_header        Upgrade $http_upgrade;
                         proxy_set_header        Connection $connection_upgrade;
-                        proxy_connect_timeout   7d; # keep open for 7 days even without any transmission
-                        proxy_send_timeout      7d;
-                        proxy_read_timeout      7d;
+                        proxy_read_timeout      3600; # keep open even without any transmission
                 }
 
                 # all other traffic
