@@ -28,3 +28,4 @@ The Group Session Data is useful to share information between members of a given
 
 * Responses to each trial in a group study like the Prisoner's Dilemma
 * gender of group members 
+ 
