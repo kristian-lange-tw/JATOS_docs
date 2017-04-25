@@ -1,18 +1,24 @@
 ---
-title: Two Types of Session Data
-keywords: session data, Study Session, group session
+title: Three Types of Session Data
+keywords: session data, Study Session, group session, batch session
 tags:
 summary:
 sidebar: mydoc_sidebar
-permalink: Two-Types-of-Session-Data.html
+permalink: Three-Types-of-Session-Data.html
 folder:
 toc: false
 last_updated: 28 Dec 2016
 ---
 
-Often you want to store information during a study run and share it with other components of the same study, or - if it is a group study - within the group. For this JATOS provides the Session Data. There are two different Session Data types, both of which are stored **temporarily** in your database, and will be deleted once they are no longer in use.
+Often you want to store information during a study run and share it with other components of the same study, or - if it is a group study - within the group. For this JATOS provides the Session Data. There are three different Session Data types, all of which are stored **temporarily** in your database, and will be deleted once they are no longer in use.
 
-The difference between session data and the result data is that the results are stored **permanently** in the database, and will stay there after the study is finished. All results should therefore go into the result data. 
+The difference between session data and the result data is that the results are stored **permanently** in the database, and will stay there after the study is finished. So, store any information that might be useful for data analysis in the result data. 
+
+### Batch Session Data
+The Batch Session Data is useful to share information between workers of a given batch, even if they don't belong to the same group. Some examples include: 
+ 
+ * Control a pseudo-random assignment of conditions to workers (e.g., assign conditions A and B to the same number of workers).
+ * Combine results from different groups working in the same batch. 
 
 ### Study Session Data
 
@@ -24,7 +30,7 @@ The Study Session Data is useful to share information between components of a gi
 
 ### Group Session Data
 
-The Group Session Data is useful to share information between members of a given group. Some examples include:
+The Group Session Data is useful to share information between workers of a given group. Some examples include:
 
-* Responses to each trial in a group study like the Prisoner's Dilemma
-* gender of group members 
+* Responses to each trial in a group study like the Prisoner's Dilemma.
+* Gender of group workers.
