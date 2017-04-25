@@ -91,7 +91,7 @@ The group variables are part of jatos.js since JATOS 2. They are only filled wit
 
 ### Group's session data
 
-* `jatos.groupSessionData` - Group session data shared in between members of the group (see also [Two Types of Session Data](Two-Types-of-Session-Data.html))
+* `jatos.groupSessionData` - Group session data shared in between members of the group (see also [Three Types of Session Data](Three-Types-of-Session-Data.html))
 
 
 ### Other variables
@@ -203,7 +203,7 @@ Posts resultData back to the JATOS server.
 
 ### `jatos.setStudySessionData(sessionData, complete)`
 
-Posts study session data to the JATOS server. This function is called automatically in the end of a component's life cycle (it's called by all jatos.js functions that start or end a component). So unless you want to store the session data in between a component run it's not necessary to call this function manually (in opposite to the group session's _jatos.setGroupSessionData_).
+Posts study session data to the JATOS server. This function is called automatically in the end of a component's life cycle (it's called by all jatos.js functions that start or end a component). So unless you want to store the session data in between a component run it's not necessary to call this function manually (as opposed to the group session's _jatos.setGroupSessionData_).
 
 * _param {Object} sessionData_ - Object to be submitted
 * _param {optional Function} complete_ - Function to be called after this function is finished
