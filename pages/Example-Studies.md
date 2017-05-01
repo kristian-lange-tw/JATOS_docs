@@ -183,7 +183,7 @@ Example how to use interact.js (http://interactjs.io/) to achieve draggable elem
 
 
 
-## Group Study Examples    
+#### Group Study Examples    
 
 ### Group Chat
 
