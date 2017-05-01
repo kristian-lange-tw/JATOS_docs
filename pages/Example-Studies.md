@@ -40,7 +40,7 @@ This study illustrates the compatibility between JATOS and the excellent **jsPsy
 
 ### Randomize conditions between participants (Go- / No-Go Task)
 
-Standard Go- / No-Go experiment with two different conditions. Half of the participants are assigned to condition A, the other half to condition B. Requires the Batch Session Data. 
+Standard Go- / No-Go experiment with two different conditions. Half of the participants are assigned to condition A, the other half to condition B. Uses the Batch Session. 
 
 ![Screenshot Go- / No-Go Task](images/example-studies/Screenshot_gonogo.png){:width="300"}
 
@@ -97,6 +97,17 @@ Simple example of a consent form with text and buttons 'I agree' and 'Cancel'.
 **Needs JATOS version 2.1.7 or newer**
 
 [Download Consent Form](https://github.com/JATOS/JATOS_examples/raw/master/examples/consent_form.zip)
+
+### Consent Form and Introduction with Preview Feature
+
+This mobile-friendly example just has an introduction component that includes a consent text. With pressing the start button the worker gives his consent. This is also a good showcase for the [JATOS' preview feature](Worker-Types.html#preview-links). 
+
+![Screenshot Preview Showcase (Introduction with Consent)](images/example-studies/Screenshot_preview_showcase.png){:width="300"}
+
+**Needs JATOS version 2.1.7 or newer**
+
+[Download Preview Showcase (Introduction with Consent)](https://github.com/JATOS/JATOS_examples/raw/master/examples/preview_showcase_(introduction_with_consent).zip)
+
 
 ### 2048 Game
 
@@ -170,15 +181,6 @@ Example how to use interact.js (http://interactjs.io/) to achieve draggable elem
 
 [Download Potato Compass Study](https://github.com/JATOS/JATOS_examples/raw/master/examples/potato_compass.zip)
 
-### Preview Showcase (Introduction with Consent)
-
-This mobile-friendly example just has an introduction component that includes a consent text. With pressing the start button the worker gives his consent. This is also a good showcase for the [JATOS' preview feature](Worker-Types.html#preview-links). 
-
-![Screenshot Preview Showcase (Introduction with Consent)](images/example-studies/Screenshot_preview_showcase.png){:width="300"}
-
-**Needs JATOS version 2.1.7 or newer**
-
-[Download Preview Showcase (Introduction with Consent)](https://github.com/JATOS/JATOS_examples/raw/master/examples/preview_showcase_(introduction_with_consent).zip)
 
 
 # Group Study Examples    
