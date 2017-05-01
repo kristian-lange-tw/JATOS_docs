@@ -187,13 +187,23 @@ Example how to use interact.js (http://interactjs.io/) to achieve draggable elem
 
 ### Group Chat
 
-Let members of a group study talk to each other: Here is a chat example.
+Let members of a group study talk to each other: Here is a chat example. It uses the group session. 
 
 ![Screenshot Group Chat](images/example-studies/Screenshot_chat.png){:width="300"}
 
 **Needs JATOS version 3.1.1 or newer**
 
 [Download Group Chat example](https://github.com/JATOS/JATOS_examples/raw/master/examples/group_chat.zip)
+
+### Batch Chat
+
+Let members of a group study talk to each other: Here is a chat example. It uses the batch session. 
+
+![Screenshot Group Chat](images/example-studies/Screenshot_chat.png){:width="300"}
+
+**Needs JATOS version 3.1.1 or newer**
+
+[Download Batch Chat example](https://github.com/JATOS/JATOS_examples/raw/master/examples/batch_chat.zip)
 
 ### Prisoner's Dilemma
 
