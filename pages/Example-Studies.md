@@ -183,7 +183,7 @@ Example how to use interact.js (http://interactjs.io/) to achieve draggable elem
 
 
 
-# Group Study Examples    
+## Group Study Examples    
 
 ### Group Chat
 
@@ -197,7 +197,7 @@ Let members of a group study talk to each other: Here is a chat example. It uses
 
 ### Batch Chat
 
-Let members of a group study talk to each other: Here is a chat example. It uses the batch session. 
+Let members of a batch talk to each other: Here is a chat example. It uses the batch session. 
 
 ![Screenshot Group Chat](images/example-studies/Screenshot_chat.png){:width="300"}
 
