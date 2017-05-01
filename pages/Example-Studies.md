@@ -182,9 +182,6 @@ Example how to use interact.js (http://interactjs.io/) to achieve draggable elem
 [Download Potato Compass Study](https://github.com/JATOS/JATOS_examples/raw/master/examples/potato_compass.zip)
 
 
-
-#### Group Study Examples    
-
 ### Group Chat
 
 Let members of a group study talk to each other: Here is a chat example. It uses the group session. 
