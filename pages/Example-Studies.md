@@ -44,7 +44,7 @@ Standard Go- / No-Go experiment with two different conditions. Half of the parti
 
 ![Screenshot Go- / No-Go Task](images/example-studies/Screenshot_gonogo.png){:width="300"}
 
-**Needs JATOS version 2.1.7 or newer**
+**Needs JATOS version 3.1.1 or newer**
 
 [Download Randomization with Go-/No-Go Task](https://github.com/JATOS/JATOS_examples/raw/master/examples/go-nogo_task_(randomize_between_workers).zip)
 
