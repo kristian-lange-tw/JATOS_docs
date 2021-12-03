@@ -1,7 +1,7 @@
 {
-  "name": "jatos-doc",
+  "name": "jatos-docs",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/JATOS/JATOS_docs.git",
+  "author": "JATOS contributors",
+  "license": "Apache-2.0"
 }
