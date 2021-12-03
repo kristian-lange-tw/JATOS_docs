@@ -1,0 +1,112 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #347dbe;
+  --ifm-color-primary-dark: #2f71ab;
+  --ifm-color-primary-darker: #2c6aa2;
+  --ifm-color-primary-darkest: #245885;
+  --ifm-color-primary-light: #4089cb;
+  --ifm-color-primary-lighter: #498fcd;
+  --ifm-color-primary-lightest: #66a1d5;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-wrapper .container {
+  text-align: left;
+  padding-top: 6rem;
+}
+
+.main-wrapper .header-text {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.main-wrapper .header-text h1 {
+  font-size: 3rem;
+}
+
+.main-wrapper .center {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot');
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font: normal normal 16px/1 'Glyphicons Halflings';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 4px;
+}
+.glyphicon-jatos:before{
+  content:"\e136";
+  font-size: 1.5em;
+  color: #ffcc00;
+}
+.glyphicon-personal-single:before{
+  content:"\e103";
+  font-size: 1.5em;
+  color: #00e600;
+}
+.glyphicon-personal-multiple:before {
+  content:"\e200";
+  font-size: 1.5em;
+  color: #004d00;
+}
+.glyphicon-general-single:before {
+  content:"\e001";
+  font-size: 1.5em;
+  color: #f32222;
+}
+.glyphicon-general-multiple:before {
+  content:"\2a";
+  font-size: 1.5em;
+  color: #830000;
+}
+.glyphicon-mturk-sandbox:before {
+  content:"\e215";
+  font-size: 1.5em;
+  color: #ff55ff;
+}
+.glyphicon-mturk:before {
+  content:"\e215";
+  font-size: 1.5em;
+  color: #af00ef;
+}
+.glyphicon-remove-sign:before {
+  content:"\e083";
+  font-size: 1.5em;
+  color: #b10f0f;
+}
+.glyphicon-ok-sign:before {
+  content:"\e084";
+  font-size: 1.5em;
+  color: #008600;
+}
