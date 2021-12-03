@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'JATOS',
   tagline: 'Just Another Tool for Online Studies',
-  url: 'https://jatos-test.org',
+  url: 'https://v2.jatos.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'JATOS', // Usually your GitHub org/user name.
   projectName: 'JATOS_docs', // Usually your repo name.
+  trailingSlash: false,
 
   presets: [
     [
