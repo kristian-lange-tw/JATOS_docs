@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'JATOS', // Usually your GitHub org/user name.
-  projectName: 'jatos_docusaurus', // Usually your repo name.
+  projectName: 'JATOS_docs', // Usually your repo name.
 
   presets: [
     [
