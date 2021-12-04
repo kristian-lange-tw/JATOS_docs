@@ -1,9 +1,9 @@
 ---
 title: What is JATOS
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
-## This is in new version
 JATOS (Just Another Tool for Online Studies) helps you set up and run your online studies on your own server.
 
 **New: [MindProbe](https://mindprobe.eu/), a free server for hosting online experiments. Powered by JATOS. Sponsored by the [European Society for Cognitive Psychology (ESCoP)](https://www.escop.eu/) with [Journal of Cognition](https://www.journalofcognition.org/) as their official journal and [OpenSesame](https://osdoc.cogsci.nl/).**
@@ -24,15 +24,12 @@ JATOS (Just Another Tool for Online Studies) helps you set up and run your onlin
 * You can **try out** [JATOS on _cortex_, our test server](JATOS-Tryout-Server.html).
 
 
-<br/>
 Watch an introduction video:
 
 <iframe width="75%" height="300" src="https://www.youtube.com/embed/J1ELazppklQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/><br/>  
-
+<br /><br />  
 
 JATOS is open-source and released under the [Apache 2 Licence](http://www.apache.org/licenses/LICENSE-2.0.html). The source code is available on [github.com/JATOS/JATOS](https://github.com/JATOS/JATOS).
-
 
 [Several studies](Papers-Citing-JATOS.html) have sucessfully collected data using JATOS already! Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) if you use JATOS for your research.
 
