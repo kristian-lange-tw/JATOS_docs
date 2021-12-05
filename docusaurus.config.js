@@ -39,7 +39,7 @@ const config = {
       }),
     ],
   ],
-
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -133,11 +133,15 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `JATOS is <a href="https://github.com/JATOS/JATOS">open source</a> and published under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, version 2.0</a>`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      googleAnalytics: {
+        trackingID: 'UA-57013276-1',
+        anonymizeIP: true, // Should IPs be anonymized?
       },
     }),
 };
