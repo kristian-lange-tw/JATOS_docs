@@ -26,6 +26,21 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          routeBasePath: '/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          versions: {
+            current: {
+              label: '3.7.1 (current)',
+              path: '.',
+              banner: 'unreleased',
+            },
+            '1.0.0': {
+              label: '< 3.7.1',
+              path: 'before-3.7.1',
+              banner: 'none',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
