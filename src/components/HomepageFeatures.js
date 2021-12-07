@@ -28,8 +28,8 @@ const FeatureList = [
     Svg: require('/img/poweredBy.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Sponsored by the <b>European Society for Cognitive Psychology (ESCoP)</b> 
+        with <b>Journal of Cognition</b> as their official journal and <b> OpenSesame</b>. 
       </>
     ),
   },
