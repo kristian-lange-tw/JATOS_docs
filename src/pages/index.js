@@ -11,13 +11,26 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <header>
+            <div className="center">
+              <img src="/img/jatos_logo_color.svg" />
+            </div>
+            <div className="header-text">  
+              <h1>{siteConfig.title}</h1>
+              <p>{siteConfig.tagline}</p>
+            </div>
+        </header>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/overview/Whats-JATOS">
-            Docusaurus Tutorial - 5min ⏱️
+            to="https://github.com/JATOS/JATOS/releases/latest">
+            Download
+          </Link>
+          <div className="divider"/>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://cortex.jatos.org/jatos/login">
+            Try Out
           </Link>
         </div>
       </div>
@@ -31,17 +44,7 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description={`${siteConfig.tagline}`}>
-      <header>
-        <div className="container">
-          <div className="center">
-            <img src="/img/jatos_logo_color.svg" />
-          </div>
-          <div className="header-text">  
-            <h1>{siteConfig.title}</h1>
-            <p>{siteConfig.tagline}</p>
-          </div>
-        </div>
-      </header>
+      <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
