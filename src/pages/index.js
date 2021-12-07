@@ -20,18 +20,20 @@ function HomepageHeader() {
               <p>{siteConfig.tagline}</p>
             </div>
         </header>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="https://github.com/JATOS/JATOS/releases/latest">
-            Download
-          </Link>
-          <div className="divider"/>
-          <Link
-            className="button button--secondary button--lg"
-            to="https://cortex.jatos.org/jatos/login">
-            Try Out
-          </Link>
+        <div className="center">
+          <div>
+            <Link
+              className="button button--secondary button--lg"
+              to="https://github.com/JATOS/JATOS/releases/latest">
+              Download
+            </Link>
+            <div className="divider"/>
+            <Link
+              className="button button--secondary button--lg"
+              to="https://cortex.jatos.org/jatos/login">
+              Try Out
+            </Link>
+          </div>
         </div>
       </div>
     </header>
