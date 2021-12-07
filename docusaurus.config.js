@@ -88,11 +88,6 @@ const config = {
             position: "right",
           },
           {
-            href: 'https://github.com/JATOS/JATOS/releases/latest',
-            label: 'Download',
-            position: 'right'
-          },
-          {
             href: 'http://blog.jatos.org/',
             label: 'Blog',
             position: 'right'
