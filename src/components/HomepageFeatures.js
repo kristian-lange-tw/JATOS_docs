@@ -5,21 +5,21 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('/img/easyToUse.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        JATOS was designed from the ground up to be easily installed and
+        used to get your experiment set-up online and run quickly.
       </>
     ),
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('/img/focusOnWhatMatters.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        JATOS lets you focus on your experiment, and we&apos;ll do the chores. Go
+        ahead and move your experiment into the <code>Example Studies</code> directory.
       </>
     ),
   },
