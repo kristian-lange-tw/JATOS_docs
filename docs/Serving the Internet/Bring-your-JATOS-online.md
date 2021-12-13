@@ -1,5 +1,6 @@
 ---
 title: Bring your JATOS online
+slug: /Bring-your-JATOS-online.html
 sidebar_position: 1
 ---
 

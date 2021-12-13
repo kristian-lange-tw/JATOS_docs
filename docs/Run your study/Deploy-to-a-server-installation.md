@@ -1,5 +1,6 @@
 ---
 title: Deploy to a server installation
+slug: /Deploy-to-a-server-installation.html
 sidebar_position: 1
 ---
 

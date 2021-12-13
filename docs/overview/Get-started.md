@@ -1,5 +1,6 @@
 ---
 title: Get started
+slug: /Get-started.html
 sidebar_position: 5
 ---
 

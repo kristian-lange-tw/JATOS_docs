@@ -1,5 +1,6 @@
 ---
 title: jsPsych and JATOS
+slug: /jsPsych-and-JATOS.html
 sidebar_position: 4
 ---
 

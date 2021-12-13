@@ -1,5 +1,6 @@
 ---
 title: Submit and upload data to the server 
+slug: /Submit-and-upload-data-to-the-server.html
 sidebar_position: 7
 ---
 

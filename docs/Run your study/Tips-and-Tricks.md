@@ -1,5 +1,6 @@
 ---
 title: Tips & Tricks
+slug: /Tips-and-Tricks.html
 sidebar_position: 12
 ---
 

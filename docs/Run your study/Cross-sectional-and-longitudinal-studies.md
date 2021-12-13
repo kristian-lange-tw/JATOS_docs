@@ -1,5 +1,6 @@
 ---
 title: Write cross-sectional and longitudinal studies
+slug: /Cross-sectional-and-longitudinal-studies.html
 sidebar_position: 8
 ---
 

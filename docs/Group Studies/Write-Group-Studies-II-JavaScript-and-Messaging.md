@@ -1,5 +1,6 @@
 ---
 title: Write Group Studies II - JavaScript and Messaging
+slug: /Write-Group-Studies-II-JavaScript-and-Messaging.html
 sidebar_position: 3
 ---
 

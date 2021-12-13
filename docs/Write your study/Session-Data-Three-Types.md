@@ -1,5 +1,6 @@
 ---
 title: Session Data - Three Types
+slug: /Session-Data-Three-Types.html
 sidebar_position: 8
 ---
 
