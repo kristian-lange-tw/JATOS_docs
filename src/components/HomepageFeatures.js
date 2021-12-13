@@ -18,7 +18,8 @@ const FeatureList = [
     Svg: require('/img/focusOnWhatMatters.svg').default,
     description: (
       <>
-        JATOS lets you focus on your experiment, and we&apos;ll do the chores. Go
+        JATOS lets you focus on your experiment, and we&apos;ll do the chores. Moreover, you
+        can <b>host it on any server</b> (at your University or in the cloud). Go
         ahead and move your experiment into the <code>Example Studies</code> directory.
       </>
     ),
