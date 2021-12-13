@@ -1,5 +1,6 @@
 ---
 title: JATOS with MySQL
+slug: /JATOS-with-MySQL.html
 sidebar_position: 7
 ---
 

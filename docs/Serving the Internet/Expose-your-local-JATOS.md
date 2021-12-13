@@ -1,5 +1,6 @@
 ---
 title: Expose your local JATOS
+slug: /Expose-your-local-JATOS.html
 sidebar_position: 2
 ---
 

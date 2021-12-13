@@ -1,5 +1,6 @@
 ---
 title: Configure JATOS on a Server
+slug: /Configure-JATOS-on-a-Server.html
 sidebar_position: 6
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Install JATOS via Docker
+slug: /Install-JATOS-via-Docker.html
 sidebar_position: 12
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Updating a JATOS server installation
+slug: /Updating-a-JATOS-server-installation.html
 sidebar_position: 10
 ---
 

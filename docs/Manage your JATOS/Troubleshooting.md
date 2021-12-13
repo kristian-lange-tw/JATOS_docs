@@ -1,5 +1,7 @@
 ---
+id: Troubleshooting
 title: Troubleshooting
+slug: /Troubleshooting.html
 sidebar_position: 4
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Write Group Studies I - Setup
+slug: /Write-Group-Studies-I-Setup.html
 sidebar_position: 2
 ---
 

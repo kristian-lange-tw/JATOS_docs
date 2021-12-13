@@ -1,5 +1,6 @@
 ---
 title: JATOS on AWS
+slug: /JATOS-in-Amazons-Cloud-without-Docker.html
 sidebar_position: 4
 ---
 
