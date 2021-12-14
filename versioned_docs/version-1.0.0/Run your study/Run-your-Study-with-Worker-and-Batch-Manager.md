@@ -1,5 +1,6 @@
 ---
 title: Run your Study with Worker & Batch Manager
+slug: /Run-your-Study-with-Worker-and-Batch-Manager.html
 sidebar_position: 2
 ---
 

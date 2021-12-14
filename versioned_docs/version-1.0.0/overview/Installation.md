@@ -1,5 +1,6 @@
 ---
 title: Installation
+slug: /Installation.html
 sidebar_position: 3
 ---
 

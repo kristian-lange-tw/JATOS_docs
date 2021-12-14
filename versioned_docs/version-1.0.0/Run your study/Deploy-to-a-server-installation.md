@@ -1,5 +1,6 @@
 ---
 title: Session Data - Three Types
+slug: /Deploy-to-a-server-installation.html
 sidebar_position: 1
 ---
 

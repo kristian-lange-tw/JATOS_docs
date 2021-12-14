@@ -1,5 +1,6 @@
 ---
 title: What is JATOS
+slug: /Whats-JATOS.html
 sidebar_position: 1
 hide_table_of_contents: true
 ---
