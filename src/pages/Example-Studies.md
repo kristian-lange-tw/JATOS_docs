@@ -3,7 +3,7 @@ title: Example Studies
 keywords: example studies, jspsych, lab.js, labjs, osweb, opensesame, javascript, bootstrap, jquery, pure, css, highchart, survey, metacognition, prolific
 slug: /Example-Studies.html
 ---
-# Example Studies 
+# Example Studies
 **summary:** These study examples will (hopefully) be a helpful starting point for you to write your own studies. They also show how different client-side frameworks integrate with JATOS, and illustrate (e.g.) how to easily import/export studies, how to store and show results, and how to do messaging in group studies.
 
 ### Overview
