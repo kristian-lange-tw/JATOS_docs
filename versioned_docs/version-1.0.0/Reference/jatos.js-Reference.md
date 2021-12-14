@@ -1,5 +1,6 @@
 ---
 title: jatos.js Reference
+slug: /jatos.js-Reference.html
 tags: [reference, jatos.js, js, javascript, library]
 ---
 

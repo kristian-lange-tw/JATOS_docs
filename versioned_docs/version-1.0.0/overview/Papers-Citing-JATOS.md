@@ -1,5 +1,6 @@
 ---
 title: Papers citing JATOS
+slug: /Papers-Citing-JATOS.html
 sidebar_position: 2
 ---
 

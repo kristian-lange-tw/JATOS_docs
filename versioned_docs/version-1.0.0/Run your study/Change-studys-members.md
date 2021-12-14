@@ -1,5 +1,6 @@
 ---
 title: Change study's members
+slug: /Change-studys-members.html
 sidebar_position: 5
 ---
 
