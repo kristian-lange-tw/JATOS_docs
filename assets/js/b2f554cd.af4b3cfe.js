@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjatos_docs=self.webpackChunkjatos_docs||[]).push([[1477],{10:function(s){s.exports={blogPosts:[]}}}]);
