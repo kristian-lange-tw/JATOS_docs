@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/JATOS/JATOS_docs/tree/master',
           routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -46,7 +46,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+            'https://github.com/JATOS/JATOS_docs/tree/master/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -81,22 +81,10 @@ const config = {
             position: 'left',
             label: 'Contact'
           },
-          {type: 'docsVersionDropdown'},
           {
-            href: "https://buymeacoffee.com/jatos",
-            label: "Buy me a coffee",
+            type: 'docsVersionDropdown',
             position: "right",
           },
-          {
-            href: 'http://blog.jatos.org/',
-            label: 'Blog',
-            position: 'right'
-          },
-          {
-            href: 'https://github.com/JATOS/JATOS',
-            label: 'GitHub',
-            position: 'right'
-          }
         ],
       },
       footer: {
@@ -115,16 +103,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Google Chat',
+                to: 'https://groups.google.com/g/jatos',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'JATOS Forum',
+                to: 'https://forum.cogsci.nl/categories/jatos',
               },
             ],
           },
@@ -133,11 +117,11 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: 'http://blog.jatos.org/',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                to: 'https://github.com/JATOS/JATOS',
               },
             ],
           },
