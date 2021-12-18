@@ -30,14 +30,14 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           versions: {
-            current: {
-              label: '3.7.1 (current)',
-              path: '.',
+            '3.7.1': {
+              label: '3.7.1',
+              path: '3.7.1',
               banner: 'unreleased',
             },
-            '1.0.0': {
-              label: '< 3.7.1',
-              path: 'before-3.7.1',
+            current: {
+              label: '3.6.1 and earlier',
+              path: '',
               banner: 'none',
             },
           },
