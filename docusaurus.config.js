@@ -66,7 +66,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'overview/Whats-JATOS',
+            docId: 'Overview/Whats-JATOS',
             position: 'left',
             label: 'Documentation',
           },
@@ -77,7 +77,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'overview/Contact-us',
+            docId: 'Overview/Contact-us',
             position: 'left',
             label: 'Contact'
           },
@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/overview/Whats-JATOS',
+                to: '/docs/Overview/Whats-JATOS',
               },
             ],
           },

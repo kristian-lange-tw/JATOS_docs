@@ -27,13 +27,12 @@ JATOS (Just Another Tool for Online Studies) helps you set up and run your onlin
 
 Watch an introduction video:
 
-<iframe width="75%" height="300" src="https://www.youtube.com/embed/J1ELazppklQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br /><br />  
+<iframe width="75%" height="300" src="https://www.youtube.com/embed/J1ELazppklQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<br /><br />
 
 JATOS is open-source and released under the [Apache 2 Licence](http://www.apache.org/licenses/LICENSE-2.0.html). The source code is available on [github.com/JATOS/JATOS](https://github.com/JATOS/JATOS).
 
 [Several studies](Papers-Citing-JATOS.html) have sucessfully collected data using JATOS already! Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130834) if you use JATOS for your research.
-
 
 **[Download the latest release](https://github.com/JATOS/JATOS/releases/latest)**
 
