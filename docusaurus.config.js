@@ -30,12 +30,12 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           versions: {
-            '3.7.1': {
+            current: {
               label: '3.7.1',
               path: '3.7.1',
               banner: 'unreleased',
             },
-            current: {
+            '3.6.1': {
               label: '3.6.1 and earlier',
               path: '',
               banner: 'none',
