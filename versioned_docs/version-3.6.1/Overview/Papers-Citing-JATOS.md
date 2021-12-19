@@ -10,11 +10,23 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
+
 ### 2022
 
 Vandendaele, A., Grainger, J. (2022). Now you see it, now you don't: Flanker presence induces the word concreteness effect. *Cognition*. 218. 104945. [DOI](10.1016/j.cognition.2021.104945).
 
+
 ### 2021
+
+Román-Caballero, R., Marotta, A., & Lupiáñez, J. (2021). Target–background segregation in a spatial interference paradigm reveals shared and specific attentional mechanisms triggered by gaze and arrows. Journal of Experimental Psychology: Human Perception and Performance, 47(11), 1561–1573. [DOI](https://doi.org/10.1037/xhp0000953)
+
+van Moorselaar, D., & Theeuwes, J. (2021). Statistical distractor learning modulates perceptual sensitivity. Journal of Vision, 21(12), 3. [DOI](https://doi.org/10.1167/jov.21.12.3)
+
+Verkhodanova, V., Coler, M., Jonkers, R., & Lowie, W. (2021) How expertise and language familiarity influence perception of speech of people with Parkinson’s disease, *Clinical Linguistics & Phonetics*, [DOI](DOI: 10.1080/02699206.2021.2003433)
+
+Gorin, S. (2021). EXPRESS: Temporal grouping effects in verbal and musical short-term memory: Is serial order representation domain-general? *Quarterly Journal of Experimental Psychology*. [DOI](https://doi.org/10.1177/17470218211057466)
+
+van Moorselaar, D., Theeuwes, J. (2021) Spatial suppression due to statistical regularities in a visual detection task. *Atten Percept Psychophys.* [DOI](https://doi.org/10.3758/s13414-021-02330-0)
 
 Del Popolo Cristaldi, F., Gambarota, F., & Oosterwijk, S. (2021). The role of previous visual experience in subjective reactions to new affective pictures and sounds. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/z4mgh)
 
@@ -60,8 +72,7 @@ Ciston, AB., Forster, C., Brick, TR., Kühn, S., Verrel, J., Filevich, E. (2021)
 
 Los, S.A., Nieuwenstein, J., Bouharab, A., Stephens, D.J., Meeter, M., Kruijne, W. (2021) The warning stimulus as retrieval cue: The role of associative memory in temporal preparation. *Cognitive Psychology* 125(2):101378 [DOI](https://doi.org/10.1016/j.cogpsych.2021.101378)
 
-
-Vogt, A. Hauber, R.C., Kuhlen, A.K., Abdel Rahman, R. (2021) Internet based language production research with overt articulation: Proof of concept, challenges, and practical advice. *PsyArXiv*. [DOI](https://doi.org/10.31234/osf.io/cyvwf)
+Vogt, A., Hauber, R., Kuhlen, A.K. et al. (2021) Internet-based language production research with overt articulation: Proof of concept, challenges, and practical advice. *Behav Res* (2021). [DOI](https://doi.org/10.3758/s13428-021-01686-3)
 
 Neto, P. A. S. O., Cui, A.-X., Rojas, P., Vanzella, P., & Cuddy, L. L. (2021). Not just cents: Physical and psychological influences on interval perception. *Psychomusicology: Music, Mind, and Brain.* Advance online publication. [DOI](https://doi.org/10.1037/pmu0000272)
 
@@ -111,4 +122,3 @@ Presaghi, F., & Rullo, M. (2018). Is Social Categorization Spatially Organized i
 Niemann, M., Elischberger, F., Diedam, P., Hopkins, J., Thapa, R., de Siqueira Braga, D., … de L. Neto, F. B. (2017). A Novel Serious Game for Trust-Related Data Collection in Supply Chains. In M. Alcañiz, S. Göbel, M. Ma, M. Fradinho Oliveira, J. Baalsrud Hauge, & T. Marsh (Eds.), *Serious Games* (pp. 121–125). [DOI](https://doi.org/10.1007/978-3-319-70111-0_11)
 
 Filevich, E., Horn, S. S., & Kühn, S. (2017). Within-person adaptivity in frugal judgments from memory. *Psychological Research*, 1–18. [DOI](https://doi.org/10.1007/s00426-017-0962-7)
-

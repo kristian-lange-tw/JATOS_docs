@@ -31,13 +31,13 @@ const config = {
           showLastUpdateTime: true,
           versions: {
             current: {
-              label: '3.7.1 (current)',
-              path: '.',
+              label: '3.7.1',
+              path: '3.7.1',
               banner: 'unreleased',
             },
-            '1.0.0': {
-              label: '< 3.7.1',
-              path: 'before-3.7.1',
+            '3.6.1': {
+              label: '3.6.1 and earlier',
+              path: '',
               banner: 'none',
             },
           },
@@ -66,7 +66,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'overview/Whats-JATOS',
+            docId: 'Overview/Whats-JATOS',
             position: 'left',
             label: 'Documentation',
           },
@@ -77,7 +77,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'overview/Contact-us',
+            docId: 'Overview/Contact-us',
             position: 'left',
             label: 'Contact'
           },
@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/overview/Whats-JATOS',
+                to: '/docs/Overview/Whats-JATOS',
               },
             ],
           },
@@ -107,8 +107,12 @@ const config = {
                 to: 'https://forum.cogsci.nl/categories/jatos',
               },
               {
-                label: 'Google Chat',
+                label: 'Google Group',
                 to: 'https://groups.google.com/g/jatos',
+              },
+              {
+                label: 'GitHub Issues',
+                to: 'https://github.com/JATOS/JATOS/issues',
               },
             ],
           },
