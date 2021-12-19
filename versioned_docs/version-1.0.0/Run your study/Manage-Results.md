@@ -26,11 +26,7 @@ Each study result has an arrow on the left. If you click on it, the result data 
 
 ### Selecting Results
 
-Prior to JATOS version 3.3.1 you could select/deselect a specific result by clicking anywhere on the row. Selected results change color to gray. 
-
-From version 3.3.1 on there is a checkbox on the left side of each row.
-
-You can also use the buttons on the bar above to select/deselect all results in the table. Additionally you can select only the filtered ones or only the visible ones.
+There is a checkbox on the left side of each row to select/deselect a specific result. You can also use the buttons on the bar above to select/deselect all results in the table. Additionally you can select only the filtered ones or only the visible ones.
 
 ![Results View screenshot](/img/ResultsView-Screenshot2.png)
 

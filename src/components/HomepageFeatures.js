@@ -4,33 +4,30 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Flexible',
     Svg: require('/img/easyToUse.svg').default,
     description: (
       <>
-        JATOS was designed from the ground up to be easily installed and
-        used to get your experiment set-up online and run quickly.
+        You can use <b>OpenSesame, jsPsych, lab.js</b> - or write your own experiment in JavaScipt/HTML/CSS.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Be in charge of your data',
     Svg: require('/img/focusOnWhatMatters.svg').default,
     description: (
       <>
-        JATOS lets you focus on your experiment, and we&apos;ll do the chores. Moreover, you
-        can <b>host it on any server</b> (at your University or in the cloud). Go
-        ahead and move your experiment into the <code>Example Studies</code> directory.
+        You can install JATOS on your <b>own server</b> (at your university) - or in the cloud.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'JATOS on MindProbe',
     Svg: require('/img/poweredBy.svg').default,
     description: (
       <>
-        Sponsored by the <b>European Society for Cognitive Psychology (ESCoP)</b> 
-        with <b>Journal of Cognition</b> as their official journal and <b> OpenSesame</b>. 
+        Sponsored by the <b>European Society for Cognitive Psychology (ESCoP) </b> 
+         with <b>Journal of Cognition</b> as their official journal and <b> OpenSesame</b>. 
       </>
     ),
   },
