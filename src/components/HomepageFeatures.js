@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'JATOS on MindProbe',
-    Svg: require('/img/poweredBy.svg').default,
+    Svg: require('/img/mindprobe.svg').default,
     description: (
       <>
         Sponsored by the <b>European Society for Cognitive Psychology (ESCoP)</b> with <b>Journal of Cognition</b> as their official journal and <b>OpenSesame</b>. 
