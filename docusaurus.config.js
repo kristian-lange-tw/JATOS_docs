@@ -103,12 +103,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Google Chat',
+                label: 'JATOS Forum',
+                to: 'https://forum.cogsci.nl/categories/jatos',
+              },
+              {
+                label: 'Google Group',
                 to: 'https://groups.google.com/g/jatos',
               },
               {
-                label: 'JATOS Forum',
-                to: 'https://forum.cogsci.nl/categories/jatos',
+                label: 'GitHub Issues',
+                to: 'https://github.com/JATOS/JATOS/issues',
               },
             ],
           },
