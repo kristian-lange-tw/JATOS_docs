@@ -13,12 +13,12 @@ Please [cite us](http://journals.plos.org/plosone/article?id=10.1371/journal.pon
 
 ### 2022
 
-Del Popolo Cristaldi, F., Buodo, G., Gambarota, F., Oosterwijk, S., & Mento, G. (2021, December 16). The role of implicit learning and cue ambiguity on the subjective experience of affective predictions: a follow-up behavioral investigation. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/y7bxn)
-
 Vandendaele, A., Grainger, J. (2022). Now you see it, now you don't: Flanker presence induces the word concreteness effect. *Cognition*. 218. 104945. [DOI](10.1016/j.cognition.2021.104945).
 
 
 ### 2021
+
+Del Popolo Cristaldi, F., Buodo, G., Gambarota, F., Oosterwijk, S., & Mento, G. (2021, December 16). The role of implicit learning and cue ambiguity on the subjective experience of affective predictions: a follow-up behavioral investigation. *PsyArXiv* [DOI](https://doi.org/10.31234/osf.io/y7bxn)
 
 Román-Caballero, R., Marotta, A., & Lupiáñez, J. (2021). Target–background segregation in a spatial interference paradigm reveals shared and specific attentional mechanisms triggered by gaze and arrows. Journal of Experimental Psychology: Human Perception and Performance, 47(11), 1561–1573. [DOI](https://doi.org/10.1037/xhp0000953)
 
