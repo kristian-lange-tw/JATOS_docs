@@ -31,7 +31,7 @@ const config = {
           showLastUpdateTime: true,
           versions: {
             current: {
-              label: '3.7.1',
+              label: '3.7.1-alpha',
               path: '3.7.1',
               banner: 'unreleased',
             },
@@ -130,7 +130,7 @@ const config = {
             ],
           },
         ],
-        copyright: `JATOS is <a href="https://github.com/JATOS/JATOS">open source</a> and published under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, version 2.0</a>`,
+        copyright: `JATOS is free and <a href="https://github.com/JATOS/JATOS" class="footer__link-item">open source</a> and published under <a href="https://www.apache.org/licenses/LICENSE-2.0" class="footer__link-item">Apache License, version 2.0</a>`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -10,7 +10,7 @@ You might have a  task, experiment, survey, or study running in a browser. You m
 
 **Developement of a JATOS study usually happens on your local JATOS: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow.html)**
 
-### Create the study in your local JATOS
+## Create the study in your local JATOS
 
 1. Create a new study with the '**New Study**' button in JATOS' header. Choose a study title and a folder name. Leave the other fields empty for now and click 'Create'. JATOS will have created a new folder within your assets root folder (default is `/path_to_your_JATOS/study_assets_root/`).
 1. Copy all your files (HTML, JavaScripts, images, audio, ...) into your new study folder. 
@@ -44,7 +44,7 @@ You might have a  task, experiment, survey, or study running in a browser. You m
 
 1. Now it's time for a first glimpse: Click the '**Run**' button in either the study's or the component's toolbar. Your experiment should run like it did before without JATOS. Use the browser's developer tools to check for eventually missing files and other occurring errors.
 
-### Edit your HTML and JavaScript
+## Edit your HTML and JavaScript
 
 Up to this point JATOS served as a mere provider of your files. Now we want to use a feature of JATOS: We want to store your result data in JATOS' safe database. 
 
@@ -106,7 +106,7 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
 
 That's about it. Infos about other jatos.js functions and variables you can find in the [reference](jatos.js-Reference.html). 
 
-### Beyond the basics
+## Beyond the basics
 
 * Think about dividing your study into **several components**. You could have separate components e.g. for introduction, training, experiment and feedback. You could even consider splitting the experiment into several parts. One advantage is that if your participant stops in the middle of your study you still have the result data of the first components. Also, you can re-use components in different studies.
 * Use the study's and component's '**JSON input data**'. With them you can change variables of your code directly through JATOS' GUI, which might come handy if someone isn't good in JavaScript.

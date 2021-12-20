@@ -79,6 +79,6 @@ The **Group Properties** relate to [group studies](Write-Group-Studies-I-Setup.h
 
 A batch is also the place where [JATOS groups](Write-Group-Studies-I-Setup.html) are handled. Here you can an get an overview of the Groups that belong to this batch: see what their member workers are or edit the **Group Session Data**.
 
-![Groups table](/img/groups view.png)
+![Groups table](/img/groups_view.png)
 
 _Screenshot of a Groups table (available JATOS >= 3.3.1): "Active Workers" are the workers that are currently members in the group, "Past Workers" the ones that were members at one point in the past. "Results" shows only the study results that belong to this group. "Group State" can be START, FINISHED, or FIXED._

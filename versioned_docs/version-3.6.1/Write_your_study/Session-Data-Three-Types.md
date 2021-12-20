@@ -4,7 +4,7 @@ slug: /Session-Data-Three-Types.html
 sidebar_position: 8
 ---
 
-### When to use the sessions?
+## When to use the sessions?
 
 <div style={{float: 'right'}}>
 
@@ -20,7 +20,7 @@ The data stored in the sessions are not exported or imported together with a stu
 
 <br clear="right" />
 
-### Comparative Overview
+## Comparative Overview
 
 | | Batch Session     | Group Session     | Study Session     |
 |-|-------------------|-------------------|-------------------|
@@ -33,7 +33,7 @@ The data stored in the sessions are not exported or imported together with a stu
 | **Requires WebSockets** | ![yes](/img/ok-24.ico) | ![yes](/img/ok-24.ico) | ![no](/img/x-24.ico) |
 | **Included in exported studies** | ![no](/img/x-24.ico) | ![no](/img/x-24.ico) | ![no](/img/x-24.ico) |
 
-### Example Study
+## Example Study
 
 We have an [example study](Example-Studies.html#study-group-and-batch-session-example-study), where we show the three different session types in action. Try it yourself:
 

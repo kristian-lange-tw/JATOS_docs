@@ -4,7 +4,7 @@ slug: /Get-started.html
 sidebar_position: 5
 ---
 
-### Get started in 4 steps
+## Get started in 4 steps
 
 1. **Download JATOS and [install a local instance](Installation.html)**
 
@@ -32,7 +32,7 @@ sidebar_position: 5
    _Here's a screenshot of a study's results view:_
    ![Results View screenshot](/img/ResultsView-Screenshot3.png)
 
-### Explore
+## Explore
 
 Now it's time to explore a little bit more.
 
@@ -41,4 +41,4 @@ Now it's time to explore a little bit more.
 * Where are the actual HTML, JavaScript, and CSS files? They are the files that actually run your study, so make sure you can locate them. All these files, together with any images, sound files, etc. you might have, are called "Study assets". They will be in `/path_to_my_JATOS/study_assets_root/name_of_my_study/`.
 
 _Here's a screenshot of a component's properties view:_
-![GUI screenshot](/img/Component properties screenshot.png)
+![GUI screenshot](/img/Component_properties_screenshot.png)

@@ -12,7 +12,7 @@ JATOS gives you complete freedom on the client side. You can do whatever you lik
 
 Click on the study name to download the .jzip file and [import it into JATOS](http://www.jatos.org/Get-started.html).  
 
-<b>If you have trouble downloading a study (common in Safari browsers) check [this troubleshooting tip](Troubleshooting.html#downloading-a-study--exporting-a-study-fails-eg-in-safari-browsers).</b>
+**If you have trouble downloading a study (common in Safari browsers) check [this troubleshooting tip](Troubleshooting.html#downloading-a-study--exporting-a-study-fails-eg-in-safari-browsers).**
 
 If you wrote an example study that you'd like to share, please feel free to [contact us](Contact-us.html) and we'll include it in this page!
 

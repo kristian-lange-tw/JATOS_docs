@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('/img/easyToUse.svg').default,
     description: (
       <>
-        You can use <b>OpenSesame, jsPsych, lab.js</b> - or write your own experiment in JavaScipt/HTML/CSS.
+        You can use <b>OpenSesame</b>, <b>jsPsych</b>, <b>lab.js</b> - or write your own experiment in JavaScipt/HTML/CSS. Get participants from <b>Prolific</b> or <b>MTurk</b>. 
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('/img/focusOnWhatMatters.svg').default,
     description: (
       <>
-        You can install JATOS on your <b>own server</b> (at your university) - or in the cloud.
+        You can install JATOS on your <b>own server</b> (at your university) - or in the cloud - wherever you want.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('/img/mindprobe.svg').default,
     description: (
       <>
-        Sponsored by the <b>European Society for Cognitive Psychology (ESCoP)</b> with <b>Journal of Cognition</b> as their official journal and <b>OpenSesame</b>. 
+        Use this free JATOS sponsored by the <b>European Society for Cognitive Psychology (ESCoP)</b> with <b>Journal of Cognition</b> as their official journal and <b>OpenSesame</b>. 
       </>
     ),
   },

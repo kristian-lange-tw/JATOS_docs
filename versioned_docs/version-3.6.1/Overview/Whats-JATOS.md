@@ -11,7 +11,7 @@ JATOS (Just Another Tool for Online Studies) helps you set up and run your onlin
 
 **Please complete our short [survey](https://forms.gle/Jtjw4LxpyWVFEtG17) on how (much) you use JATOS (ca. 3 min). It’s very important for us!**
 
-### JATOS at a glance: 
+## JATOS at a glance
 * Run studies on your **own server**. This means that you keep complete control over who can access your result data and can comply with your ethics.
 * Studies run on **mobile phones, tablets, desktops, and lab computers** - any device with a browser.
 * Use tools like **jsPsych**, **lab.js**, **OSWeb/OpenSesame**, or **PsyToolkit** to prepare your study - or write all **HTML / JavaScript / CSS** yourself and have full control.

@@ -10,12 +10,12 @@ Since JATOS v3.6.1 JATOS includes an _Administration_ page. Here [users with adm
 
 On the menu you will find links to two additional administration pages: 
 
-### User Manager
+## User Manager
 
 Manage users, passwords, and rights from here. Find more details on [its documentation page](/User-Manager.html)
 
 
-### Study Administration
+## Study Administration
 
 By clicking the _Studies_ button you'll get to an overview about all studies that are on the JATOS instance. You'll also see, for each study: whom it belongs to (the study members), how much disk space it takes, and when it was active last.
 
