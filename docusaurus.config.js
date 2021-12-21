@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'JATOS',
   tagline: 'Just Another Tool for Online Studies',
-  url: 'https://v2.jatos.org',
+  url: 'https://www.jatos.org',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
