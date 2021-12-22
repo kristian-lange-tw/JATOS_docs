@@ -82,6 +82,11 @@ const config = {
             label: 'Contact'
           },
           {
+            to: 'https://ko-fi.com/jatos',
+            label: 'Support us',
+            position: 'right'
+          },
+          {
             type: 'docsVersionDropdown',
             position: "right",
           },
