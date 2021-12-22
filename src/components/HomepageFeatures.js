@@ -7,7 +7,7 @@ const FeatureList = [
     title: 'Flexible',
     description: (
       <>
-        You can use <b>OpenSesame</b>, <b>jsPsych</b>, <b>lab.js</b> - or write your own experiment in JavaScipt/HTML/CSS. Get participants from <b>Prolific</b> or <b>MTurk</b>. 
+        You can use <b>OpenSesame</b>, <b>jsPsych</b>, <b>lab.js</b> - or write your own experiment in JavaScipt/HTML/CSS. Get participants from <b>Prolific</b> or <b>MTurk</b> (or from wherever). 
       </>
     ),
   },
@@ -15,7 +15,7 @@ const FeatureList = [
     title: 'Be in charge of your data',
     description: (
       <>
-        You can install JATOS on your <b>own server</b> (at your university) - or in the cloud - wherever you want.
+        JATOS is <b>free</b> and <b>open source</b>. You can install JATOS on your <b>own server</b> (at your university) - or in the cloud - wherever you want.
       </>
     ),
   },
