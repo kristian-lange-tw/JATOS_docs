@@ -1,10 +1,10 @@
 ---
-title: Adapt Pre written Code to run it in JATOS (Jatosify)
-slug: /Adapt-Pre-written-Code-to-run-it-in-JATOS.html
+title: Adapt pre written code to run it in JATOS
+slug: /Adapt-pre-written-code-to-run-it-in-JATOS.html
 sidebar_position: 3
 ---
 
-**Make Your Existing Code Run in JATOS - or How To Jatosify a Study** 
+**Make Your Existing Code Run in JATOS - or How To Jatosify a Study ** 
 
 You might have a  task, experiment, survey, or study running in a browser. You might have all its files like HTML, JavaScripts, images, etc. Maybe you wrote it with [jsPsych](http://www.jspsych.org) or got it from [The Experiment Factory](http://expfactory.github.io). And now you want to run it with JATOS? Then follow this page.
 

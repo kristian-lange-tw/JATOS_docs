@@ -17,7 +17,7 @@ A good idea is always to try it yourself first in **MTurk Sandbox** before you l
 
 ### On JATOS page
 
-In JATOS, go to the Study Toolbar ⟶ Worker & Batch Manager
+In JATOS, go to the Study Toolbar ⟶ Study Links
 
 ![JATOS GUI screenshot](/img/worker-batch-manager-mturk.png)
 

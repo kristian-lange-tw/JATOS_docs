@@ -8,8 +8,6 @@ JATOS is under active development, so please do get in touch to ask questions, s
 
 We also conduct workshops: If you want us to give a lecture or workshop about JATOS and/or online studies in general contact us via email.
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/jatos)
-
 
 **If you have a question about JATOS or need help with your experiments, write to either:**
 

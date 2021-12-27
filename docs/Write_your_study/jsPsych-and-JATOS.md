@@ -14,7 +14,7 @@ JATOS basically cares for the server side: it stores result data, does worker ma
 
 In [our example studies](Example-Studies.html) are a couple of jsPsych ones.
 
-Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and sends the result data to) JATOS. Additionally you can have a look at [Adapt Pre written Code to run it in JATOS (Jatosify)](Adapt-Pre-written-Code-to-run-it-in-JATOS.html).
+Here are the necessary changes if you want to adapt your jsPsych experiment so that it runs within (and sends the result data to) JATOS. Additionally you can have a look at [Adapt Pre written Code to run it in JATOS (Jatosify)](Adapt-pre-written-code-to-run-it-in-JATOS.html).
 
 ### How to turn your jsPsych experiment into a JATOS study
 
@@ -76,7 +76,7 @@ jsPsych has the habit of cleaning the HTML's body and fill it with its own code.
 
 Luckily jsPsych offers a [callback function on_load](https://www.jspsych.org/overview/callbacks/#on_load). Whatever we write in there is called after jsPsych did its body clean-up. So you could add your extra HTML elements in there.
 
-**Hint**: To add a cancel button: use [`jatos.addAbortButton`](http://www.jatos.org/jatos.js-Reference.html#jatosaddabortbutton).
+**Hint**: To add a cancel button: use [`jatos.addAbortButton`](jatos.js-Reference.html#jatosaddabortbutton).
 
 Here's an example (you need jQuery for this one to work):
 ~~~ javascript

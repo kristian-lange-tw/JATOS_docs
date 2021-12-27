@@ -5,7 +5,7 @@ slug: /jatos.js-Reference.html
 
 ## Introduction
 
-_jatos.js_ is a JavaScript library that helps you to communicate from your component's JavaScript with your JATOS server. Below we list and describe the variables and functions of the _jatos.js_ library.
+_jatos.js_ is a JavaScript library that helps you to communicate from your component's JavaScript with your JATOS server. Below we list and describe its variables and functions.
 
 Always load _jatos.js_ in the `<head>` section with the following line:
 
@@ -15,7 +15,7 @@ Always load _jatos.js_ in the `<head>` section with the following line:
 
 All _jatos.js_ variables or functions start with `jatos.`. For example, if you want to get the study's ID you use `jatos.studyId`. 
 
-Most _jatos.js_ variables or functions only work after _jatos.js_ is initialized (`jatos.onLoad()` will be called).
+Most _jatos.js_ variables or functions only work after _jatos.js_ is initialized (`jatos.onLoad()` is used).
 
 And, please, if you find a mistake or have a question don't hesitate to [contact us](Contact-us.html).
 
@@ -41,6 +41,10 @@ ID of the batch this study run belongs to. All batch properties are associated w
 ### `jatos.workerId`
 
 Each worker who is running a study has an ID.
+
+### `jatos.studyCode`
+
+The study code that was used to start this study run.
 
 ### `jatos.studyResultId`
 
@@ -410,7 +414,7 @@ jatos.catchAndLogErrors();
 
 ### `jatos.addJatosIds`
 
-Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study ID, study title, batch ID, batch title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
+Convenience function that adds some [IDs](jatos.js-Reference.html#ids) (study code, study ID, study title, batch ID, batch title, component ID, component position, component title, worker ID, study result ID, component result ID, group result ID, group member ID) to the given object.
 
 * _@param {object} obj_ - Object to which the IDs will be added
 
@@ -458,17 +462,17 @@ jatos.setStudySessionData(studySessionData);
 
 ### `jatos.startComponent`
 
-Finishes the currently running component and starts the component with the given ID. Though often it's better to use `jatos.startComponentByPos` instead because it keeps working even after an export/import of the study into another JATOS. One can additionally send result data back to the JATOS server.
+Finishes the currently running component and starts the component with the given ID or UUID. Though often it's better to use `jatos.startComponentByPos` instead because it keeps working even after an export/import of the study into another JATOS. One can additionally send result data back to the JATOS server.
 
 There are two versions: with or without message
 
 1. Without message:
-	 * _@param {number} componentId_ - ID of the component to start
+	* _@param {number} componentIdOrUuid_ - ID or UUID of the component to start
    * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
    * _@param {optional function} onError_ - Callback function if fail
 
 1. With message:
-	 * _@param {number} componentId_ - ID of the component to start
+	 * _@param {number} componentIdOrUuid_ - ID or UUID of the component to start
 	 * _@param {optional object} resultData_ - String or object that will be sent as result data. An object will be serialized to JSON (stringify). 
 	 * _@param {optional string} message_ - Message that should be logged (max 255 chars)
 	 * _@param {optional function} onError_ - Callback function if fail
@@ -479,6 +483,12 @@ There are two versions: with or without message
 
    ```javascript
    jatos.startComponent(23);
+   ```
+
+1. Jump to component by using its UUID
+
+   ```javascript
+   jatos.startComponent("3d277289-754b-4fd6-aa76-c8404deda02e");
    ```
 
 1. Send result data and jump to another component
