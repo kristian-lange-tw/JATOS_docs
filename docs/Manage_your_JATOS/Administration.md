@@ -4,7 +4,7 @@ slug: /Administration.html
 sidebar_position: 1
 ---
 
-Since JATOS v3.6.1 JATOS includes an _Administration_ page. Here [users with admin rights](/User-Manager.html) can get an overview of the studies and users of a JATOS installation. You can see the **logs**, **system info**, or go to the **test page** to check if JATOS runs correctly. It is also the place where **update notifications** appear when a new JATOS version is available and where [admins can trigger an update](/Update-JATOS.html#automatic-updates).
+On the Administration page [users with admin rights](/User-Manager.html) can get an overview of the studies and users of a JATOS installation. You can see the **logs**, **system info**, or go to the **test page** to check if JATOS runs correctly. It is also the place where **update notifications** appear when a new JATOS version is available and where [admins can trigger an update](/Update-JATOS.html#automatic-updates).
 
 ![Administration screenshot](/img/Screenshot_Administration1.png)
 

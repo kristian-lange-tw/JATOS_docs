@@ -104,7 +104,7 @@ There are three ways to set up JATOS to work with a MySQL database. If you are i
    export JATOS_DB_DRIVER=com.mysql.cj.jdbc.Driver
    ~~~
 
-You can confirm that JATOS is accessing the correct database by opening JATOS' _Administration_ page in a browser and then click on _System Info_: The field _DB URL_ should resemble the one from your config. In older JATOS versions you can find this _DB URL_ field under '/jatos/test'. Another way is by looking in the logs: you should see a line after JATOS started similar to this (with your database URI):
+You can confirm that JATOS is accessing the correct database by opening JATOS' _Administration_ page in a browser and then click on _System Info_: The field _DB URL_ should resemble the one from your config. Another way is by looking in the logs: you should see a line after JATOS started similar to this (with your database URI):
 
 ~~~ bash
 14:06:01.760 [info] - p.a.d.DefaultDBApi - Database [default] initialized at jdbc:mysql://localhost/jatos?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC

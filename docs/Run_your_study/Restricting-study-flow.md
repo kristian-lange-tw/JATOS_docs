@@ -32,7 +32,7 @@ If you want to prevent this behaviour uncheck the box. If a participant reloads 
 **Another hint**: The (unchecked) _Allow reload_ and the (checked) _Linear study flow_ properties can be combined to achieve a strictly increasing study flow.
 
 
-## Ensure a linear study flow (since version 3.5.1)
+## Ensure a linear study flow
 
 A worker can press their browsers back button and by default JATOS will response with the previous component, the one that was done before by the worker. This might allow a worker to divert from the intended study flow. To prevent this each study properties has a checkbox _Linear study flow_.
 

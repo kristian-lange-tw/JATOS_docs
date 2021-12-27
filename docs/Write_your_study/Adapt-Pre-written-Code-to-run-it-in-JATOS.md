@@ -15,9 +15,9 @@ You might have a  task, experiment, survey, or study running in a browser. You m
 1. Create a new study with the '**New Study**' button in JATOS' header. Choose a study title and a folder name. Leave the other fields empty for now and click 'Create'. JATOS will have created a new folder within your assets root folder (default is `/path_to_your_JATOS/study_assets_root/`).
 1. Copy all your files (HTML, JavaScripts, images, audio, ...) into your new study folder. 
 1. Back in the JATOS GUI, and within the newly created study, create a **new component** by clicking 'Components' and then 'New'. Choose a component title and set the HTML file name, to the name of the HTML file you just copied into the study folder.
-1. In your HTML, CSS and JavaScripts, for your paths you can choose between 1) relative paths or 2) absolute paths. Relative paths are usually shorter and easier to handle but are only available since JATOS version 3.2.3.
+1. In your HTML, CSS and JavaScripts, for your paths you can choose between 1) relative paths or 2) absolute paths. Relative paths are recommended since they are shorter and easier to handle.
 
-   1. **Relative paths (since v3.2.3 and recommended way))** Just use the relative path within your study's folder.
+   1. **Relative paths** Just use the relative path within your study's folder.
       
       E.g. if a file named 'survey.js' is in the root of the study's assets folder
       

@@ -56,13 +56,13 @@ Once you selected the results you're interested in, click *Export Results* and *
 
 ![Results View screenshot](/img/ResultsView-Screenshot6.png)
 
-### Export Result Files (JATOS version >= 3.5.1)
+### Export Result Files
 
 Here you can download the result files that were uploaded during study runs. You can download single files by just clicking on them. Or similar to exporting result data select the lines you are interested in and download them with *Export Files* and *Selected*. Alternatively you can also select *All* to get all files.
 
 ![Results View screenshot](/img/ResultsView-Screenshot5.png)
 
-### Export Metadata (JATOS version >= 3.3.1)
+### Export Metadata 
 
 Sometimes one is also interested in the metadata, that is what's in the actual table fields ("Result ID", "Start Time" , "Last Seen", ...). For this click on *Export Metadata* and the metadata of the selected results will be downloaded in CSV format.
 

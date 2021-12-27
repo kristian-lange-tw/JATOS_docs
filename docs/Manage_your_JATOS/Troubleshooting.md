@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ### JATOS test page
 
-JATOS comes with build in tests (e.g. WebSockets connections and database connection), but they are only accessible for users with admin rights: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK' (in older version the test page is under '/jatos/test', e.g. for a local installation: [localhost:9000/jatos/test](http://localhost:9000/jatos/test)).
+JATOS comes with build in tests (e.g. WebSockets connections and database connection), but they are only accessible for users with admin rights: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK'.
 
 
 ### Downloading a study / exporting a study fails (e.g. in Safari browsers)
@@ -39,16 +39,12 @@ The standard way to read the log file is directly on the server. You'll find you
 
 For security reasons, you must be logged in as a user with admin rights.
 
-From version 3.6.1 on you can see and download all log files in the _Administration_ page.
-
-In older versions you can only see today's log file: open the URL `http://your-jatos-server/jatos/log`. For example, if you're running JATOS locally with the standard settings:
-
-[http://localhost:9000/jatos/log](http://localhost:9000/jatos/log)
+You can see and download all log files in the _Administration_ page.
 
 
 ### A file (library, image, ...) included in the HTML fails to load?
 
-There is a common mistake Windows users make that might prevent files in the HTML from loading: Any URL or file path in a HTML file should only use '/' as a file path separator - even on Windows systems. So it should always be e.g. `<script src="/study_assets/mystudy/jsPsych-5.0.3/myscript.js"></script>` and **not** `<script src="\study_assets\mystudy\jsPsych-5.0.3\myscript.js"></script>`. And since version 3.2.3 you can leave out the path's first part and just write `<script src="myscript.js"></script>`. 
+There is a common mistake Windows users make that might prevent files in the HTML from loading: Any URL or file path in a HTML file should only use '/' as a file path separator - even on Windows systems. So it should always be e.g. `<script src="subfolder/myscript.js"></script>` and **not** `<script src="subfolder\myscript.js"></script>`.
 
 
 ### Database is corrupted?
