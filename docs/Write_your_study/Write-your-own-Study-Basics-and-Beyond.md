@@ -32,15 +32,6 @@ Here is the absolute minimum that any component HTML file must have to run with 
 
 1. A link to the jatos.js library in the head section
 
-   ~~~ html
-   <html>
-     <head>
-       <script src="/assets/javascripts/jatos.js"></script>
-     </head>
-   </html>   
-   ~~~
-
-   Since JATOS v3.3.1 it can be simply:
 
    ~~~ html
    <html>

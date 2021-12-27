@@ -20,7 +20,7 @@ The actual JATOS instance on a server isn't too different from a local one. It b
 
 ### 1. Install Java
 
-We've produced multiple versions of JATOS. The simplest version is JATOS alone, but other versions are bundled with Java JRE. On a server, it's best (though not necessary) to install JATOS without a bundled Java. This will make it easier to upgrade to new Java releases. Prior to JATOS v3.4.1 Java 8 is necessary - from v3.4.1 on both Java 8 and 11 are fine. 
+We've produced multiple versions of JATOS. The simplest version is JATOS alone, but other versions are bundled with Java JRE. On a server, it's best (though not necessary) to install JATOS without a bundled Java. This will make it easier to upgrade to new Java releases. Both Java 8 and 11 are fine. 
 
 
 ### 2. [Optional] Install MySQL
@@ -32,9 +32,9 @@ See [JATOS with MySQL](JATOS-with-MySQL.html)
 
 1. [Download JATOS](https://github.com/JATOS/JATOS/releases)
 
-   E.g. with _wget_ for the version 3.5.4:
+   E.g. with _wget_ for the version 3.7.1:
    
-   `wget https://github.com/JATOS/JATOS/releases/download/v3.5.4/jatos.zip`
+   `wget https://github.com/JATOS/JATOS/releases/download/v3.7.1/jatos.zip`
 
 1. JATOS comes zipped. Unpack this file at a location in your server's file system where JATOS should be installed.
 
@@ -60,7 +60,7 @@ Every JATOS installation comes with an Admin user that has the default password 
 
 ### 6. Check JATOS' test page
 
-JATOS comes with a handy test page: in the browser go to `http://my-jatos-domain/jatos/admin`, then click _Tests_ and check that all tests are 'OK' (in older version the test page is under `http://my-jatos-domain/jatos/test`).
+JATOS comes with a handy test page: in the browser go to `http://my-jatos-domain/jatos/admin`, then click _Tests_ and check that all tests are 'OK'.
 
 
 ### 7. [Optional] Proxy and encryption
@@ -78,10 +78,10 @@ Most admins tend to use an additional reverse proxy in front of JATOS, mostly fo
 
 ### 9. [Optional] Auto-start JATOS
 
-It's nice to have JATOS starts automatically after a start or a reboot of your machine. Choose between one of the two possibilities: 1) via a systemd service (JATOS version >= 3.1.6, recommended), or 2) via a init.d script.
+It's nice to have JATOS starts automatically after a start or a reboot of your machine. Choose between one of the two possibilities: 1) via a systemd service, or 2) via a init.d script.
 
 
-#### 1) Via systemd service (JATOS version >= 3.1.6, recommended)
+#### 1) Via systemd service 
 
 Create a systemd service file for JATOS 
 ```shell

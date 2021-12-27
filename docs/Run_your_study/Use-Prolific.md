@@ -31,7 +31,7 @@ The second red box contains a link that will (re)direct the participant to a Pro
 
 **Choose one of the three ways** (differ in JATOS version and your preferences)
 
-1. Include [`jatos.endStudyAjax`](jatos.js-Reference.html#jatosendstudyajax) in the JavaScript of your **last** component (works with **all JATOS versions**)
+1. Include [`jatos.endStudyAjax`](jatos.js-Reference.html#jatosendstudyajax) in the JavaScript of your **last** component
 
    All you need to do is call `jatos.endStudyAjax`, and add a callback that will replace `window.location.href` with the Prolific end page once the ajax call is `done`:
    
@@ -55,13 +55,13 @@ The second red box contains a link that will (re)direct the participant to a Pro
 
    We provide a [Prolific example study](https://github.com/JATOS/JATOS_examples/raw/master/examples/prolific_example.zip) that you can use as a template.
 
-1. Setup **End Redirect URL** in the Study Properties (easiest - but only **since JATOS v3.5.1**)
+1. Setup **End Redirect URL** in the Study Properties (easiest)
 
    In JATOS GUI you can put the in Prolific link in the **End Redirect URL** field of your Study Properties
 
    ![screenshot](/img/Screenshot_end-redirect-url.png)
 
-1. Include [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) in the JavaScript of your **last** component (**since JATOS v3.5.1**)
+1. Include [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) in the JavaScript of your **last** component
 
    E.g. but change this URL to the one you see in Prolific
 

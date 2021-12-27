@@ -76,7 +76,7 @@ jsPsych has the habit of cleaning the HTML's body and fill it with its own code.
 
 Luckily jsPsych offers a [callback function on_load](https://www.jspsych.org/overview/callbacks/#on_load). Whatever we write in there is called after jsPsych did its body clean-up. So you could add your extra HTML elements in there.
 
-**Hint**: Since JATOS version 3.5.1 it's much easier to add a cancel button: use [`jatos.addAbortButton`](http://www.jatos.org/jatos.js-Reference.html#jatosaddabortbutton).
+**Hint**: To add a cancel button: use [`jatos.addAbortButton`](http://www.jatos.org/jatos.js-Reference.html#jatosaddabortbutton).
 
 Here's an example (you need jQuery for this one to work):
 ~~~ javascript

@@ -12,12 +12,12 @@ The easiest way to backup is to do a snapshot of the whole server. If you use an
 
 As with [updating of a local JATOS installation](Update-JATOS.html) you can do it automatically or manually.
 
-After updating you can check the new JATOS installation with the test page: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK' (in older version the test page is under '/jatos/test', e.g. for a local installation: [localhost:9000/jatos/test](http://localhost:9000/jatos/test)).
+After updating you can check the new JATOS installation with the test page: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK'.
 
 
 ## Automatic Update (recommended)
 
-This is the easiest way but is only available since JATOS 3.3.5. Then it's [the same as in a local installation](Update-JATOS.html#automatic-updates).
+This is the easiest way. Then it's [the same as in a local installation](Update-JATOS.html#automatic-updates).
 
 If you did a manual backup before you don't need to do the backup offered during the update process.
 
@@ -38,7 +38,7 @@ This means that we have to configure the MySQL database or copy the embedded H2 
 1. Unzip the new JATOS (`unzip jatos-x.x.x-beta.zip`)
 1. From the old JATOS installation copy some folders to the new one
    1. Your assets root folder to the new JATOS installation (Note: By default your assets root folder is called `study_assets_root` and lays in the JATOS folder but you might have [changed this](Configure-JATOS-on-a-Server.html).
-   1. If exists, your folder for uploaded result files (Note: By default this folder is called `result_uploads` and lays in the JATOS folder but you might have [changed this](Configure-JATOS-on-a-Server.html). This folder exists since version 3.5.1.
+   1. If exists, your folder for uploaded result files (Note: By default this folder is called `result_uploads` and lays in the JATOS folder but you might have [changed this](Configure-JATOS-on-a-Server.html). 
    1. If exists, `study_logs`
 1. Database
    * H2 - If you are using the default H2 database: From your the folder of your old JATOS installation copy the folder `database` to the new JATOS installation. [Remember to stop JATOS before copying the folder](Troubleshooting.html#database-is-corrupted).

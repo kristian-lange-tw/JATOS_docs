@@ -11,13 +11,13 @@ We'll periodically update JATOS with new features and bug fixes. We recommend yo
 
 ## Automatic Update (recommended)
 
-Since version 3.3.5 you can update your JATOS automatically (if you have **admin rights** and running on **Mac OS** or **Linux** (including **Docker**), that is). **Windows is not yet supported**.
+You can update your JATOS automatically (if you have **admin rights** and running on **Mac OS** or **Linux** (including **Docker**), that is). **Windows is not yet supported**.
 
 ### Normal process
 
 The process is pretty self-explanatory, but anyway, we'll explain it here in detail:
 
-1. If your JATOS version is not the latest one available, you will get a notification on your JATOS' _Administration_ page (or in your JATOS' home page in older versions).
+1. You will get a notification on your JATOS' _Administration_ page.
 
    ![Update notification Schreenshot](/img/autoupdate-notification.png)
 
@@ -44,7 +44,7 @@ The parameter _version_ can be added to your JATOS home page URL (e.g. _localhos
 Auto-updating might not always be possible. JATOS versions will be flagged so that they are not available for auto-update. You'll have to do a [manual update](#Manual-Updates).
 
 #### Versions with newer Java required
-Since version 3.4.1 JATOS uses Java 11 - older versions use Java 8. Future versions will likely require newer Java versions. If you're updating from a JATOS version using Java 8 to (say) another version using Java 11, the auto-update process will automatically download JATOS bundled with the new Java, regardless of wich variant you are currently using. If you do not like the bundled Java and use your own version you can always remove the folder _jre_ later on after the update.
+JATOS uses Java 11 - older versions use Java 8. Future versions will likely require newer Java versions. If you're updating from a JATOS version using Java 8 to (say) another version using Java 11, the auto-update process will automatically download JATOS bundled with the new Java, regardless of wich variant you are currently using. If you do not like the bundled Java and use your own version you can always remove the folder _jre_ later on after the update.
 
 
 ## Manual Update

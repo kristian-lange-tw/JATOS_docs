@@ -11,7 +11,7 @@ sidebar_position: 6
 
 By default JATOS binds to all locally available IP addresses including 127.0.0.1 on port 9000. If you don't want to use a proxy in front of JATOS, you have several ways to configure the host name or IP address and the port:
 
-1. **Since JATOS 3.3.5** it is possible to set up IP and port via `conf/production.conf`: Edit `play.server.http.address` and `play.server.http.port` and restart JATOS. E.g. to run on IP 192.168.0.100 and port 80:
+1. It is possible to set up IP and port via `conf/production.conf`: Edit `play.server.http.address` and `play.server.http.port` and restart JATOS. E.g. to run on IP 192.168.0.100 and port 80:
 
    ~~~ bash
    play.server.http.address = "192.168.0.100"
@@ -120,7 +120,7 @@ jatos.resultData.maxSize = 1MB
    * `jatos.resultUploads.maxFileSize` - Max file size for one single uploaded result file (default is 30 MB)
    * `jatos.resultUploads.limitPerStudyRun` - Limit of all uploaded result files of one single study run (default is 50MB)
 
-1. Via environment variables (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE only since 3.5.6)
+1. Via environment variables (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE)
 
    ~~~bash
    export JATOS_RESULT_UPLOADS_PATH="/path/to/my/result/upload/folder"
@@ -128,19 +128,19 @@ jatos.resultData.maxSize = 1MB
    export JATOS_RESULT_UPLOADS_MAX_FILE_SIZE=50MB
    ~~~
 
-1. Via command-line arguments (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE only since 3.5.6)
+1. Via command-line arguments (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE)
 
    ~~~bash
    loader.sh start -DJATOS_RESULT_UPLOADS_PATH="/path/to/my/result/upload/folder" -DJATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN=100MB -DJATOS_RESULT_UPLOADS_MAX_FILE_SIZE=50MB
    ~~~
 
 
-### Study logs (since JATOS >= 3.2.1)
+### Study logs
 
 1. Via `conf/production.conf`
 
-   * `jatos.studyLogs.enabled` - (since JATOS >= 3.5.1) - Enables [Study Logs](Study-Log.html) (default is true)
-   * `jatos.studyLogs.path` - (since JATOS >= 3.2.1) - Path in the file system where the [Study Logs](Study-Log.html) will be stored (default is './study_logs')
+   * `jatos.studyLogs.enabled` - Enables [Study Logs](Study-Log.html) (default is true)
+   * `jatos.studyLogs.path` - Path in the file system where the [Study Logs](Study-Log.html) will be stored (default is './study_logs')
 
 1. The path can be configured via environment variables
 
@@ -155,7 +155,7 @@ jatos.resultData.maxSize = 1MB
    ~~~
 
 
-### LDAP authentication (since JATOS >= 3.5.4)
+### LDAP authentication
 
 By default JATOS uses only locally stored users and no LDAP. LDAP configuration is only possible in `conf/production.conf`. At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on).- only authentication is done via LDAP.
 
@@ -179,7 +179,7 @@ The first line adds your certificate ('type' can be PKCS12, JKS or PEM). The sec
 
 The user session is part of JATOS secuity measurments ([more about security](http://blog.jatos.org/Hardening-JATOS-Security/)) and can be configured in `conf/production.conf`. 
 
-* `jatos.userSession.validation` - (since JATOS >= 3.1.10) - toggles user session validation. If turned on (true) only the IP which was used at login time is allowed to be used for subsequent requests by this user. This helps preventing session hijacking and adds an addional layer of security. But on the downside it also prevents using the same user in JATOS from different browsers at the same time. By default it is set to false to allow an easy use of a local JATOS. On a server installation it should be set to true, although sometimes this not possible, e.g. if your users have an often changing, dynamic IP address. WARNING: Turning off the user session validation reduces JATOS security!
+* `jatos.userSession.validation` - toggles user session validation. If turned on (true) only the IP which was used at login time is allowed to be used for subsequent requests by this user. This helps preventing session hijacking and adds an addional layer of security. But on the downside it also prevents using the same user in JATOS from different browsers at the same time. By default it is set to false to allow an easy use of a local JATOS. On a server installation it should be set to true, although sometimes this not possible, e.g. if your users have an often changing, dynamic IP address. WARNING: Turning off the user session validation reduces JATOS security!
 
 Other configs are:
 

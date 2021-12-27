@@ -4,14 +4,14 @@ slug: /Customize-JATOS-Home-Page.html
 sidebar_position: 11
 ---
 
-## Link to Terms of Use (since JATOS v3.5.9)
+## Link to Terms of Use
 
 You can configure JATOS to show a link to your 'Terms of Use' that will be shown in a info box on the home page. 
 
 In your JATOS installation folder edit `conf/production.conf` and add the URL under `jatos.termsOfUseUrl`. If left empty the info box is not shown.
 
 
-## Welcome Block (since JATOS v3.5.9)
+## Welcome Block
 
 You can customize JATOS' home page to e.g.
 * show your university's logo,

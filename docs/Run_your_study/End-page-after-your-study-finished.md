@@ -9,7 +9,7 @@ sidebar_position: 10
 By default JATOS just shows the text "**This study is finished. Thank you for your participation.**" in English language, with no special formatting, after a study finshed. Maybe you want a different language or add a logo and different text or styling, then read on.
 
 
-### 2. endPage.html (since JATOS v3.5.1)
+### 2. endPage.html
 
 If you include a file named '_endPage.html_' in your study assets folder along with your other study's files, JATOS will automatically redirect to this page after the study finished.
 
@@ -20,7 +20,7 @@ If you include a file named '_endPage.html_' in your study assets folder along w
 **Hint 3:** If you run your study with the **JATOS GUI** it won't show you the _endPage.html_ but redirect you back to JATOS' GUI instead.
 
 
-### 3. Study Properties' End Redirect URL (since JATOS v3.5.1)
+### 3. Study Properties' End Redirect URL
 
 Maybe you want to redirect to a different page, e.g. a Prolific's end page or your department's webpage. This you can do by putting the URL of that page into the study properties in JATOS' GUI. 
 
@@ -28,7 +28,7 @@ Maybe you want to redirect to a different page, e.g. a Prolific's end page or yo
 
 **Hint:** If you run the study with an **MTurk Worker** then you probably want to show the confirmation code to your worker. This is passed on as an URL query parameter *confirmationCode*.
 
-Since version 3.6.1 you can pass on arguments from the original study link URL to redirect URL. Squared brackets in the _End Redirect URL_ indicate that the string between those brackets is a parameter from the original study run link URL and let JATOS replace the the whole _[string]_ by the value of the parameter.
+You can pass on arguments from the original study link URL to redirect URL. Squared brackets in the _End Redirect URL_ indicate that the string between those brackets is a parameter from the original study run link URL and let JATOS replace the the whole _[string]_ by the value of the parameter.
 
 E.g.
 
@@ -51,6 +51,6 @@ E.g.
    ```
 
 
-### 4. `jatos.endStudyAndRedirect` (since JATOS v3.5.1) or `jatos.endStudyAjax` (all JATOS versions)
+### 4. `jatos.endStudyAndRedirect` or `jatos.endStudyAjax` 
 
 If you want to determine dynamically (i.e. in the JavaScript) the address of the webpage that your participants see after finishing a study, you can use one of the two _jatos.js_ functions [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) or [`jatos.endStudyAjax`](jatos.js-Reference.html#jatosendstudyajax) in the JavaScript of your study's **last component**. This is the most versatile way.
