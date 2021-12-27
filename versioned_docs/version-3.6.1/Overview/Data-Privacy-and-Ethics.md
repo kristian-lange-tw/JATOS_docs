@@ -58,7 +58,7 @@ This cookie contains these parameters:
 * _componentId_: identifier of the component
 * _componentPos_: position of the component within the study
 * _workerId_: identifier of the worker used internally to identify the worker anonymously
-* _workerType_: there are [5 worker types with different use cases in JATOS](http://www.jatos.org/Worker-Types.html)
+* _workerType_: there are [5 worker types with different use cases in JATOS](Worker-Types.html)
 * _componentResultId_: identifier of the component result (a component result is used to store data of the component run)
 * _studyResultId_: identifier of the study result (a study result is used to store data of this study run)
 * _groupResultId_: identifier of the group this worker belongs to (null if it isn't a group study)
@@ -70,7 +70,7 @@ E.g. `JATOS_IDS_0:"batchId=108&componentId=306&componentPos=2&componentResultId=
 
 ### 2. Cookie JATOS_GENERALSINGLE_UUIDS
 
-This cookie is used by JATOS to store which study runs with a [General Single worker](http://www.jatos.org/Worker-Types.html#general-single-worker) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
+This cookie is used by JATOS to store which study runs with a [General Single worker](Worker-Types.html#general-single-worker) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
 
 ### 3. Play Framework session cookie named PLAY_SESSION
 
