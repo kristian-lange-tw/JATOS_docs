@@ -35,7 +35,7 @@ This means that we have to configure the MySQL database or copy the embedded H2 
 
 1. Stop the old JATOS using `./loader.sh stop` 
 1. Copy the new JATOS version to your server, e.g. copy it into the same folder where your old JATOS is located. Don't yet remove the old JATOS instance. 
-1. Unzip the new JATOS (`unzip jatos-x.x.x-beta.zip`)
+1. Unzip the new JATOS (`unzip jatos.zip`)
 1. From the old JATOS installation copy some folders to the new one
    1. Your assets root folder to the new JATOS installation (Note: By default your assets root folder is called `study_assets_root` and lays in the JATOS folder but you might have [changed this](Configure-JATOS-on-a-Server.html).
    1. If exists, your folder for uploaded result files (Note: By default this folder is called `result_uploads` and lays in the JATOS folder but you might have [changed this](Configure-JATOS-on-a-Server.html). 
