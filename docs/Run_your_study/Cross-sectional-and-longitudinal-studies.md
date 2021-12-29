@@ -16,7 +16,7 @@ Whenever a participant clicks on a study link, JATOS internally starts a study r
 
 The basic idea here is simple. Every time a new participant clicks on a worker link, you assign them randomly to one of the possible conditions. And you keep track of how many participants did each condition in the Batch Session data. 
 
-Have a look at the ["Randomize tasks between workers"](Example-Studies.html) study in our examples for a full example that you can easily add as a first component in your study. 
+Have a look at the ["Randomize tasks between workers"](/Example-Studies) study in our examples for a full example that you can easily add as a first component in your study. 
 
 ## 2. Run cross-sectional designs
 

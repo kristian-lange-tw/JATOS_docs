@@ -4,7 +4,7 @@ slug: /Example-Group-Studies.html
 sidebar_position: 1
 ---
 
-In group studies, the workers that are part of a group can communicate with each other. JATOS supports different kinds of groups. A group can e.g. have a fixed set of workers like this [Prisoner's Dilemma](Example-Studies.html#prisoners-dilemma) where exactly two workers play with each other. On the other side of the spectrum is this [Snake game](Example-Studies.html#snake) with an on open, multi-worker approach.
+In group studies, the workers that are part of a group can communicate with each other. JATOS supports different kinds of groups. A group can e.g. have a fixed set of workers like this [Prisoner's Dilemma](/Example-Studies) where exactly two workers play with each other. On the other side of the spectrum is this [Snake game](/Example-Studies) with an on open, multi-worker approach.
 
 **How can you try-out a group-study if you're alone but want to simulate multiple workers?**
 
@@ -12,7 +12,7 @@ JATOS allows [up to 10 study runs](Tips-and-Tricks.html#run-up-to-10-studies-in-
 
 As an example of this, let's go through the Snake Game group study in detail:
 
-1. Download and import the [Snake game](Example-Studies.html#snake)
+1. Download and import the [Snake game](/Example-Studies)
 1. Open the [Study Links page](Run-your-Study-with-Study-Links.html)
 1. Expand the "Default Batch" ("<span class="glyphicon glyphicon-chevron-right"></span>" button in the left) to see the worker setup
 1. Now get your first worker: Expand (again with "<span class="glyphicon glyphicon-chevron-right"></span>") the Jatos Worker and click the **Run** button - and the study will start in a new browser tab

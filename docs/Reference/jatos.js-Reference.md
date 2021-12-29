@@ -974,7 +974,7 @@ Uploads a file to the JATOS server where they are stored in the server's file sy
    });
    ```
 
-1. For more real-world examples have a look at the ['Drawing' and the 'Video Recording' examples](Example-Studies.html)
+1. For more real-world examples have a look at the ['Drawing' and the 'Video Recording' examples](/Example-Studies)
 
 
 ### `jatos.downloadResultFile`
@@ -1028,7 +1028,7 @@ Additionally you can specify the component position from where the file was uplo
       .catch(() => console.log("File download failed"));
    ```
 
-1. For more real-world examples have a look at the ['Drawing' and the 'Video Recording' examples](Example-Studies.html)
+1. For more real-world examples have a look at the ['Drawing' and the 'Video Recording' examples](/Example-Studies)
 
 
 

@@ -19,8 +19,8 @@ Sending data to a server can take some time, depending on the internet connectio
 
 ### Upload and download result files
 
-If you want to upload audio, video, images or any other data that is not in text format, then uploading a result file is what you need: [`jatos.uploadResultFile`](jatos.js-Reference.html#jatossubmitresultdata). 
+If you want to upload audio, video, images or any other data that is not in text format, then uploading a result file is what you need: [`jatos.uploadResultFile`](jatos.js-Reference.html#jatosuploadresultfile). 
 
 And if you want to, in a later component, access the uploaded files again you can download them with [`jatos.downloadResultFile`](jatos.js-Reference.html#jatosdownloadresultfile).
 
-For more real-world examples have a look at the ['Drawing' and the 'Video Recording' examples](Example-Studies.html).
+For more real-world examples have a look at the ['Drawing' and the 'Video Recording' examples](/Example-Studies).

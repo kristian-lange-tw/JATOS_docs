@@ -44,4 +44,4 @@ Your local JATOS installation will run in the background. If you want to stop it
 
 ### How to go on from here
 
-The easiest way to start with JATOS is to download and import one of the [example studies](Example-Studies.html) and [play around with it](Get-started.html).
+The easiest way to start with JATOS is to download and import one of the [example studies](/Example-Studies) and [play around with it](Get-started.html).
