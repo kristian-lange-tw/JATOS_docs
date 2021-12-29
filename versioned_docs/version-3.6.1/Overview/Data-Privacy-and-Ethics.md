@@ -4,7 +4,7 @@ slug: /Data-Privacy-and-Ethics.html
 sidebar_position: 7
 ---
 
-### What does JATOS store?
+## What does JATOS store?
 
 Data privacy is a critical issue in online studies. You should be careful when collecting, storing and handling data, regardless of which platform you use to run your studies. 
 
@@ -25,7 +25,7 @@ Here are a few advantages and limitations of JATOS with regards to data privacy.
 
 * JATOS will **not** store information like IP address or browser type (or any other HTTP header field).
 
-### Things you should consider in your studies 
+## Things you should consider in your studies 
 
 * You should consider to add some button in your study pages to abort the study. Some ethics demand that any participant should have the **right to withdraw** at any time, without explanation. In this case all data of the participant gathered during the study should be deleted. Conveniently jatos.js offers the functions [jatos.abortStudy](jatos.js-Reference.html#jatosabortstudy) and [jatos.addAbortButton](jatos.js-Reference.html#jatosaddabortbutton) that do exactly that.
 
@@ -41,7 +41,7 @@ Here are a few advantages and limitations of JATOS with regards to data privacy.
 
 Sometimes it is neccessary to specify which cookies are stored in a participants browser. JATOS knows three types of cookies and only two of them are stored in a participants browser.
 
-#### 1. Up to ten JATOS ID cookies with cookie name JATOS_IDS_* (* can be a number from 0 to 9)
+### 1. Up to ten JATOS ID cookies with cookie name JATOS_IDS_* (* can be a number from 0 to 9)
 
 These cookies store values about each study run. JATOS allows up to 10 study runs in parallel per browser - therefore there are up to 10 JATOS ID cookies.
 
@@ -58,7 +58,7 @@ This cookie contains these parameters:
 * _componentId_: identifier of the component
 * _componentPos_: position of the component within the study
 * _workerId_: identifier of the worker used internally to identify the worker anonymously
-* _workerType_: there are [5 worker types with different use cases in JATOS](http://www.jatos.org/Worker-Types.html)
+* _workerType_: there are [5 worker types with different use cases in JATOS](Worker-Types.html)
 * _componentResultId_: identifier of the component result (a component result is used to store data of the component run)
 * _studyResultId_: identifier of the study result (a study result is used to store data of this study run)
 * _groupResultId_: identifier of the group this worker belongs to (null if it isn't a group study)
@@ -68,11 +68,11 @@ This cookie contains these parameters:
 
 E.g. `JATOS_IDS_0:"batchId=108&componentId=306&componentPos=2&componentResultId=3867&creationTime=1524941205992&studyAssets=batch_chat_cambridge_workshop&jatosRun=RUN_COMPONENT_FINISHED&groupResultId=null&studyId=101&studyResultId=1346&workerId=1&workerType=Jatos"`
 
-#### 2. Cookie JATOS_GENERALSINGLE_UUIDS
+### 2. Cookie JATOS_GENERALSINGLE_UUIDS
 
-This cookie is used by JATOS to store which study runs with a [General Single worker](http://www.jatos.org/Worker-Types.html#general-single-worker) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
+This cookie is used by JATOS to store which study runs with a [General Single worker](Worker-Types.html#general-single-worker) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
 
-#### 3. Play Framework session cookie named PLAY_SESSION
+### 3. Play Framework session cookie named PLAY_SESSION
 
 This cookie is used only by JATOS' GUI and provides session and user info. It is **not** set during a study run and therefore does **not** store any worker related information.
 

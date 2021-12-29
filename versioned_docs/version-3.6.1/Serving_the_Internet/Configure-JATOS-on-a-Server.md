@@ -7,7 +7,7 @@ sidebar_position: 6
 **Restart JATOS after making any changes to the configuration (`loader.sh restart`)**
 
 
-### IP / domain and port
+## IP / domain and port
 
 By default JATOS binds to all locally available IP addresses including 127.0.0.1 on port 9000. If you don't want to use a proxy in front of JATOS, you have several ways to configure the host name or IP address and the port:
 
@@ -32,7 +32,7 @@ By default JATOS binds to all locally available IP addresses including 127.0.0.1
    ~~~   
 
 
-### URL base path (JATOS >= v3.3.1)
+## URL base path (JATOS >= v3.3.1)
 
 JATOS can be configured to use an base path. E.g we have the host "www.example.org" and let JATOS run under "mybasepath" so that JATOS' URL all start with "www.example.org/mybasepath/". This can be achieved in two ways:
 
@@ -48,10 +48,10 @@ JATOS can be configured to use an base path. E.g we have the host "www.example.o
    play.http.context = "/mybasepath/"
    ~~~
 
-**The path always has to start and end with a "/".** And keep in mind that if you add a base path to JATOS' URL you have to adjust all absolute paths to the study assets (in HTML and JavaScript files) too - [or use relative paths](Adapt-Pre-written-Code-to-run-it-in-JATOS.html#create-the-study-in-jatos).
+**The path always has to start and end with a "/".** And keep in mind that if you add a base path to JATOS' URL you have to adjust all absolute paths to the study assets (in HTML and JavaScript files) too - [or use relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos).
 
 
-### Study assets root path
+## Study assets root path
 
 By default the study assets root folder (where all your study's HTML, JavaScript files etc. are stored) is located within JATOS installation's folder in `study_assets_root`. There are three ways to change this path:
 
@@ -74,12 +74,12 @@ By default the study assets root folder (where all your study's HTML, JavaScript
    ~~~
 
 
-### MySQL Database
+## MySQL Database
 
 See [JATOS with MySQL](JATOS-with-MySQL.html)
 
 
-### JVM arguments
+## JVM arguments
 
 All JVM arguments can be used with `loader.sh` but all arguments starting with `-X` need an extra suffix `-J`. E.g. `-Xmx` (to change JVM's max heap memory) has to be written as `-J-Xmx`.
 
@@ -88,7 +88,7 @@ loader.sh start -J-Xmx4G   # Allow max 4 GB (heap) memory
 ```
 
 
-### Password restrictions
+## Password restrictions
 
 By default JATOS' keeps it simple and relies on the users to choose save passwords: it just enforces a length of at least 7 characters. But this can be changed in the `conf/production.conf` with the following two properties.
 
@@ -100,7 +100,7 @@ By default JATOS' keeps it simple and relies on the users to choose save passwor
   * `3`: At least one uppercase Latin letter, one lowercase Latin letter, one number and one special character (`#?!@$%^&*-`)
 
 
-### Study result data (JATOS >= v3.5.9)
+## Study result data (JATOS >= v3.5.9)
 
 You can change the allowed size of a component's result data. This can be used to reduce the load on the server, especially network and database. Sometimes its necessary to increase the value if certain studies have larger result data needs. The property for this in `conf/production.conf` is `jatos.resultData.maxSize`. By default it's set to 5 MB per component run.
 
@@ -111,7 +111,7 @@ jatos.resultData.maxSize = 1MB
 ~~~
 
 
-### Uploading of study result files (JATOS >= v3.5.1)
+## Uploading of study result files (JATOS >= v3.5.1)
 
 1. Via `conf/production.conf`
 
@@ -135,7 +135,7 @@ jatos.resultData.maxSize = 1MB
    ~~~
 
 
-### Study logs (since JATOS >= 3.2.1)
+## Study logs (since JATOS >= 3.2.1)
 
 1. Via `conf/production.conf`
 
@@ -155,7 +155,7 @@ jatos.resultData.maxSize = 1MB
    ~~~
 
 
-### LDAP authentication (since JATOS >= 3.5.4)
+## LDAP authentication (since JATOS >= 3.5.4)
 
 By default JATOS uses only locally stored users and no LDAP. LDAP configuration is only possible in `conf/production.conf`. At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on).- only authentication is done via LDAP.
 
@@ -175,7 +175,7 @@ play.ws.ssl.trustManager.stores = [
 The first line adds your certificate ('type' can be PKCS12, JKS or PEM). The second line adds Java's default key store.
 
 
-### User session configuration
+## User session configuration
 
 The user session is part of JATOS secuity measurments ([more about security](http://blog.jatos.org/Hardening-JATOS-Security/)) and can be configured in `conf/production.conf`. 
 
@@ -187,12 +187,12 @@ Other configs are:
 * `jatos.userSession.inactivity` - defines the time in minutes a user is automatically logged out after inactivity (default is 60)
 
 
-### Customize JATOS' home page
+## Customize JATOS' home page
 
 [More here](Customize-JATOS-Home-Page.html).
 
 
-### Other configuration in _production.conf_
+## Other configuration in _production.conf_
 
 Some other properties can be configured in the `conf/production.conf`.
 

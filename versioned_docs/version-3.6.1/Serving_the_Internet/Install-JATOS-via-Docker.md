@@ -9,7 +9,7 @@ JATOS has a Docker image: [hub.docker.com/r/jatos/jatos/](https://hub.docker.com
 Docker is a great technology, but if you never heard of it you can safely ignore this page (it's not necessary to use it if you want to install JATOS, either locally or on a server). 
 
 
-### Install JATOS locally with a Docker container
+## Install JATOS locally with a Docker container
 
 1. Install Docker locally on your computer (not covered here)
 
@@ -48,7 +48,7 @@ docker exec -it running-jatos-container-id /bin/bash
 ```
 
 
-### Change port
+## Change port
 
 With Docker you can easily change JATOS' port (actually we change the port mapping of JATOS' docker container). Just use Docker `-p` argument and specify your port. E.g. to run JATOS on standard HTTP port 80 use:
 
@@ -57,7 +57,7 @@ docker run -d -p 80:9000 jatos/jatos:latest
 ```
 
 
-### Configure with environment variables
+## Configure with environment variables
 
 All environment variables that can be used to [configure a normal JATOS server installation](Configure-JATOS-on-a-Server.html) can be used in a docker installation. Just use Docker's `-e` argument to set them.
 

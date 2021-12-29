@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'JATOS',
   tagline: 'Just Another Tool for Online Studies',
-  url: 'https://v2.jatos.org',
+  url: 'https://www.jatos.org',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -36,7 +36,7 @@ const config = {
               banner: 'unreleased',
             },
             '3.7.1': {
-              label: '3.7.1',
+              label: '3.7.1-alpha',
               path: '',
               banner: 'none',
             },
@@ -87,6 +87,11 @@ const config = {
             label: 'Contact'
           },
           {
+            to: 'https://ko-fi.com/jatos',
+            label: 'Support us',
+            position: 'right'
+          },
+          {
             type: 'docsVersionDropdown',
             position: "right",
           },
@@ -95,15 +100,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Documentation',
-                to: '/docs/Overview/Whats-JATOS',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -135,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `JATOS is <a href="https://github.com/JATOS/JATOS">open source</a> and published under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, version 2.0</a>`,
+        copyright: `JATOS is free and <a href="https://github.com/JATOS/JATOS" class="footer__link-item">open source</a> and published under <a href="https://www.apache.org/licenses/LICENSE-2.0" class="footer__link-item">Apache License, version 2.0</a>`,
       },
       prism: {
         theme: lightCodeTheme,

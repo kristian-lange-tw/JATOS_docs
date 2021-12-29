@@ -51,7 +51,16 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .main-wrapper .center {
   display: flex;
   justify-content: center;
-  position: relative;
+}
+
+@media screen and (max-width: 400px) {
+  .container .button {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container .button {
+  margin: 5px;
 }
 
 @font-face {

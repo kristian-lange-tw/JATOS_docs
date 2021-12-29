@@ -8,13 +8,13 @@ sidebar_position: 5
 
 1. **Download JATOS and [install a local instance](Installation.html)**
 
-1. **Open JATOS' GUI by going to [http://localhost:9000/jatos/login](http://localhost:9000/jatos/login) in your browser window**
+1. **Open JATOS' GUI by going to [localhost:9000](http://localhost:9000) in your browser window**
 
 1. **Download and import an example study**
 
-   1. Download one of the [Example Studies](http://www.jatos.org/Example-Studies.html), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
+   1. Download one of the [Example Studies](/Example-Studies), e.g. the 'Go- / No-Go Task' with jsPsych. Do not unzip the downloaded file. 
 
-   1. Import the study into JATOS: Go to JATOS' GUI in your browser and click on **Import Study** in the header. Choose the .zip file you just downloaded. The imported study should appear in the sidebar on the left.
+   1. Import the study into JATOS: Go to JATOS' GUI in your browser and click on **Import Study** in the header. Choose the .jzip (or .zip) file you just downloaded. The imported study should appear in the sidebar on the left.
 
 1. **Explore the GUI**
 
@@ -41,4 +41,4 @@ Now it's time to explore a little bit more.
 * Where are the actual HTML, JavaScript, and CSS files? They are the files that actually run your study, so make sure you can locate them. All these files, together with any images, sound files, etc. you might have, are called "Study assets". They will be in `/path_to_my_JATOS/study_assets_root/name_of_my_study/`.
 
 _Here's a screenshot of a component's properties view:_
-![GUI screenshot](/img/Component properties screenshot.png)
+![GUI screenshot](/img/Component_properties_screenshot_2.png)

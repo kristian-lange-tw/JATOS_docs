@@ -1,6 +1,6 @@
 ---
-title: Run your Study with Worker & Batch Manager
-slug: /Run-your-Study-with-Worker-and-Batch-Manager.html
+title: Run your Study with Study Links
+slug: /Run-your-Study-with-Study-Links.html
 sidebar_position: 2
 ---
 
@@ -10,7 +10,7 @@ The Worker & Batch Manager is the place where you generate links for your partic
 
 ![Worker & Batch manager screenshot](/img/worker_and_batch_manager1.png)
 
-_Each row represents a batch which in turn is a collection of workers._
+_This is a screenshot of JATOS v3.3.1. In earlier versions it was called Batch Manager and looked a bit simpler. Each row represents a batch which in turn is a collection of workers._
 
 ## How to let participants run your study: Workers
 
@@ -26,7 +26,7 @@ Click on the "<span class="glyphicon glyphicon-chevron-right"></span>" button in
 
 ![Worker Setup](/img/worker_and_batch_manager2.png)
 
-_Screenshot of a Worker & Batch Mangager with an open Worker Setup for the second batch._
+_Screenshot of a Worker & Batch Mangager with an open Worker Setup for the second batch. In JATOS version < 3.3.1 it is reachable via the "Worker Setup" button._
 
 The Worker Setup is the place where you generate or view (for Jatos and MTurk workers) the links for all workers types.
 
@@ -75,7 +75,7 @@ Additionally you can switch on or off worker types in the **Allowed Worker Types
 
 The **Group Properties** relate to [group studies](Write-Group-Studies-I-Setup.html#group-settings-in-each-batchs-properties).
 
-### Groups
+### Groups (since v3.3.1)
 
 A batch is also the place where [JATOS groups](Write-Group-Studies-I-Setup.html) are handled. Here you can an get an overview of the Groups that belong to this batch: see what their member workers are or edit the **Group Session Data**.
 

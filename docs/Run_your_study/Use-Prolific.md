@@ -13,7 +13,7 @@ This is what the _New Study_ page in Prolific looks like:
 
 ### 1. Enter your JATOS study link
 
-In the field under _What is the URL of your study?_ (first red box in the screenshot), enter a link to your JATOS study.You probably want a link to either a _General Single_ or a _General Multiple_ worker type (see [JATOS' worker types](Worker-Types.html) and [Run your Study with Worker & Batch Manager](Run-your-Study-with-Worker-and-Batch-Manager.html)).
+In the field under _What is the URL of your study?_ (first red box in the screenshot), enter a link to your JATOS study.You probably want a link to either a _General Single_ or a _General Multiple_ worker type (see [JATOS' worker types](Worker-Types.html) and [Run your Study with Study Links](Run-your-Study-with-Study-Links.html)).
 
 
 ### 2. (Optional) Consider passing Prolific URL parameters to your study

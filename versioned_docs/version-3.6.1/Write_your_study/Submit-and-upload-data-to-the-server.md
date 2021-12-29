@@ -7,7 +7,7 @@ sidebar_position: 7
 If you wrote your study with HTML/JavaScript/CSS, you'll need to know how to send to the JATOS server for safe storage and easy later retrieval. Here we describe how to submit data. See [Manage Results](Manage-Results.html) to know how to retrieve it.
 
 
-### Submit result data
+## Submit result data
 
 There are a couple of _jatos.js_ functions that allow you to send data to the JATOS server. The result data can be anything that can be put into text, which includes formats like JSON or CSV. Images, audio or video data can only be sent via Upload (explained below).
 
@@ -17,7 +17,7 @@ Then there are a couple of functions that do something else (primarily) but allo
 
 Sending data to a server can take some time, depending on the internet connection and the size of the result data. The convenience functions have the advantage that they will execute their primary function (e.g. start next component) only *after* the result data have been submitted. Therefore these are generally safer ways to submit your result data. 
 
-### Upload and download result files (Since JATOS version 3.5.1)
+## Upload and download result files (Since JATOS version 3.5.1)
 
 If you want to upload audio, video, images or any other data that is not in text format, then uploading a result file is what you need: [`jatos.uploadResultFile`](jatos.js-Reference.html#jatossubmitresultdata). 
 

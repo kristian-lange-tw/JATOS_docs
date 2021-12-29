@@ -4,16 +4,16 @@ slug: /Tips-and-Tricks.html
 sidebar_position: 12
 ---
 
-### Batch and Group Session do not work on Windows without HTTPS
+## Batch and Group Session do not work on Windows without HTTPS
 
 The Batch and Group Session rely on WebSockets. Sometimes (rarely) a virus scanner prohibits unencryped WebSockets. This is only a problem on Windows,but not on Mac OS or Linux and only with certain virus scanner programs. If this happens you will see an error message in your brower's console: _Batch channel closed unexpectedly_. To solve this you can either turn on HTTPS on your JATOS server (recommended) or turn off the virus scranner on (all) your participants computers.
 
-### Run up to 10 studies in the same browser at the same time
+## Run up to 10 studies in the same browser at the same time
 
 When a participant runs a study they usually run only one at any given time. For them it's not necessary to run more than one study in parallel in the same browser. But during development of a study it can be an immensely useful feature especially if you are using the Batch Session or develop a group study. You can run the study in up to 10 tabs in the same browser with any worker that pleases you and all these 10 "different" workers can interact with each other. If more than 10 studies run in the same browser in parallel the oldest study is finished automatically. If you want to even more worker in parallel you can always use a different browsers: each other browser adds 10 new possible parallel-running workers.
 
 
-### Imitate a run from Mechanical Turk
+## Imitate a run from Mechanical Turk
 
 You should always test your study before posting it anywhere. Testing that your study runs via a simple link is easy: just generate the link, start the study and run once through it. 
 Testing studies posted in MTurk is especially cumbersome, because you should make sure that the confirmation codes are correctly displayed when the study is over. The standard way to test this is to create a study in MTurk's [Sandbox](https://requester.mturk.com/developer/sandbox). JATOS offers a way to emulate MTurk, without having to set up anything in the sandbox. Here's how.
@@ -37,18 +37,18 @@ http://localhost:9000/publix/4/start?batchId=2&workerId=123456&assignmentId=abcd
 ```
 
 
-### Lock your studies before running them
+## Lock your studies before running them
 
 Each Study bar has a button that toggles between the  'Unlocked' and 'Locked' states. Locking a study prevents changes to its (or any of its components') properties, change the order of components, etc. 
 
-![](/img/Screen Shot 2015-04-27 at 16.25.55.png)
+![](/img/Screen_Shot_2015-04-27_at_16.25.55.png)
 
-### Do a General Single Run more than once in the same browser 
+## Do a General Single Run more than once in the same browser 
 
 The problem here is that a General Single Run is intended to work only once in the same browser. Although this is a feature to limit participants doing the same study twice, it can be a hassle for you as a study developer who just want to try out the General Single Run a second time. Luckily there is an easy way around: Since for a General Single Run all studies that the worker already participated in are stored in a browser cookie, it can be easily removed. Just **remove the cookie with the name JATOS_GENERALSINGLE_UUIDS** in your browser. You can find this cookie in every webpage hosted by a JATOS server. If it doesn't exist you probably never did a General Single run yet.
 
 
-### Continue an abandoned study
+## Continue an abandoned study
 
 Sometimes workers leave in the middle of a study. Maybe their internet connection was down, maybe they just left for the next pub and closed the browser tab. Suppose they now want to continue from where they left it. Using the initial run link will not do what they want: it will either start a new study run, or give an error message, depending on the worker type. 
 
@@ -74,22 +74,22 @@ But there is a catch! This works only under three conditions:
 Condition 3 is very unlikely a problem and for 1 you can just check the 'reloadable' checkbox in the component's settings. Condition 2 is more difficult, it demands the worker to return to the computer and browser they run the study before.
 
 
-### Abort study and keep a message
+## Abort study and keep a message
 
 If the `jatos.abortStudy` function is called (usually after the worker clicks a "Cancel" button) all result data that had been sent to JATOS during this study run will be deleted. This includes result data from prior components of the study run. But sometimes you'll want to save a bit of information that should not be deleted: you might need the worker's email address to pay them -even if they cancelled the study-. So you need a way to delete the result data but keep their email. 
 
 To do this, you can send a message together with `jatos.abortStudy` as a parameter. This message won't be deleted together with the other result data. E.g. `jatos.abortStudy("participants ID is 12345678");`. This message can then be seen in every Study Result page in the 'Message' column.
 
 
-### How to let a Personal Single Worker redo his study?
+## How to let a Personal Single Worker redo his study?
 
 A Personal Single Worker is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the 'Cancel' button). One way would be to just create another Personal Single Link and hand it to the worker. But there is another way without creating a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
 
-### Simulate slow network
+## Simulate slow network
 
 Usually one develops a study on a local JATOS or a remote JATOS with a good internet - but your participants might live at a place where internet connections are slower or run your study via mobile network. All studies should take this into account, but especially those with big files like images, audio or video. There is a way to artifically throttle the network speed in [Firefox's](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) and [Chrome's](https://developers.google.com/web/tools/chrome-devtools/network#throttle) Developer Tools. Choose a slower connection, e.g. '3G', and try out your study again. This works on every JATOS, local or a remote.
 
-### Personal/General Single links seem not to work when distributed via social networks
+## Personal/General Single links seem not to work when distributed via social networks
 
 Problem: The study runs fine, but as soon as one distributes links for Personal Single or General Single runs via social networks like Twitter, Facebook and Reddit or chat tools like Slack and Google Hangout it stops working. The participants only get the message 'A problem occurred: Study can be done only once.' and in the results the study run appears as started but never finished (State DATA_RETRIEVED).
 

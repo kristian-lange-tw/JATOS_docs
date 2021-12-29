@@ -8,14 +8,14 @@ Use your JATOS study with Mturk is easy, although a fair amount of clicking is r
 
 A good idea is always to try it yourself first in **MTurk Sandbox** before you let real workers do it.
 
-### You will need
+## You will need
 
 * A requester Mturk account
 * Your study running on a [JATOS server](Bring-your-JATOS-online.html)
 * A description of the study (this can be the same as the one you included in the study description within JATOS)
 
 
-### On JATOS page
+## On JATOS page
 
 In JATOS, go to the Study Toolbar ⟶ Worker & Batch Manager
 
@@ -30,7 +30,7 @@ In JATOS, go to the Study Toolbar ⟶ Worker & Batch Manager
    ![JATOS GUI screenshot](/img/worker-batch-manager-mturk-source-code.png)
 
 
-### On MTurk's page
+## On MTurk's page
 
 You first have to create a project in the MTurk interface:
 
@@ -51,7 +51,7 @@ You first have to create a project in the MTurk interface:
    ![MTurk Schreenshot](/img/MTurk-source-editor-done.png)
 
 
-### What should happen
+## What should happen
 
 When an MTurk worker finishes a study they'll see a confirmation code. To assign payment to individual workers, just compare the confirmation codes stored in JATOS' results view to those stored in MTurk.
 

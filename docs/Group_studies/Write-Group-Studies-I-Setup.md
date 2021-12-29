@@ -39,7 +39,7 @@ If in a batch you set the _Max total worker_ to 2 and leave the other two Max pa
 
 Say you want to have 3 groups with 2 workers each. You want to leave it to JATOS which workers are paired together. Then, set _Max total workers_ to 6 and both _Max active members_ and _Max total members_ to 2 (remember that these numbers apply to each group separately). Create your 6 workers in the Worker Setup (or use a General Single link) and distribute your link(s) to your workers.
 
-![Prisoners example](/img/prisoners example.png)
+![Prisoners example](/img/prisoners_example.png)
 
 The first two scenarios may apply to the [Prisoner's Dilemma Example Study](Example-Studies.html#prisoners-dilemma).
 
@@ -51,6 +51,6 @@ This scenario is basically the opposite of the first one. By limiting neither th
 
 Say you want to have groups with up to 3 members, interacting _at the same time_. But you don't want to actually limit the total number of members per group: you want to allow new workers to join a group if one of its members left. This way each group can have a flow of workers joining and leaving - the only constraint is the maximum members per group at any given time. You also want to let JATOS set the number of groups depending on the available workers. To set up this just use one batch, set the _Max active members_ to 3, and leave _Max total worker_ and _Max total members_ unlimited.  
 
-![Snake example](/img/snake example.png)
+![Snake example](/img/snake_example.png)
 
 (Continue with [Write Group Studies II - JavaScript and Messaging](Write-Group-Studies-II-JavaScript-and-Messaging.html))

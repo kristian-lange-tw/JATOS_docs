@@ -27,7 +27,6 @@ function HomepageHeader() {
               to="https://github.com/JATOS/JATOS/releases/latest">
               Download
             </Link>
-            <div className="divider"/>
             <Link
               className="button button--secondary button--lg"
               to="https://cortex.jatos.org/jatos/login">

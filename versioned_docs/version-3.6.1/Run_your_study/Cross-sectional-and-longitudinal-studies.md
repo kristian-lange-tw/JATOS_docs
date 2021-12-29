@@ -81,7 +81,6 @@ Which will append the information from `ID` and `percentageCorrect` to the alrea
 }
 ```
 
-
 **Note that the information stored in the Batch Session is visible to the client side, so it should contain only the strictly necessary, pseudonymized data.** In other words, store only summary data like the condition assigned, number of trials completed or correct, etc. But nothing else.
 
 

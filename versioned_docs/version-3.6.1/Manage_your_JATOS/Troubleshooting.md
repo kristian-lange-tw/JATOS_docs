@@ -4,17 +4,17 @@ slug: /Troubleshooting.html
 sidebar_position: 4
 ---
 
-### JATOS test page
+## JATOS test page
 
 JATOS comes with build in tests (e.g. WebSockets connections and database connection), but they are only accessible for users with admin rights: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK' (in older version the test page is under '/jatos/test', e.g. for a local installation: [localhost:9000/jatos/test](http://localhost:9000/jatos/test)).
 
 
-### Downloading a study / exporting a study fails (e.g. in Safari browsers)
+## Downloading a study / exporting a study fails (e.g. in Safari browsers)
 
 As a default, Safari (and some other browsers) automatically unzips every archive file after downloading it. When you export a study, JATOS zips your study together (study properties, all components, and all files like HTML, JavaScripts, images) and delivers it to your browser, who should save it in your local computer. Safari's default unzipping interferes with this. Follow [these instructions](https://discussions.apple.com/thread/1958374?start=0&tstart=0) to prevent Safari's automatic unzip.
 
 
-### JATOS fails to start?
+## JATOS fails to start?
 
 **(Or, if you are running Windows, do you get the message 'JATOS is already running. Press any key to continue'...)**
 
@@ -31,9 +31,9 @@ Here is how it should look if JATOS started successfully:
 ![jatos doesn't start](/img/shell_start2.png)
  
 
-### Read log file in the browser
+## Read log file in the browser
 
-In a perfect world, JATOS always works smoothly and, when it doesn't, it describes the problem in an error message. Unfortunately we aren't in a perfect world: every now and then something will go wrong and you might not get any clear error messages, or no message at all. In these (rare) cases, you can look into JATOS' log file (not to be confused with the [study log](http://www.jatos.org/Study-Log.html)) to try to find what the problem might be.  
+In a perfect world, JATOS always works smoothly and, when it doesn't, it describes the problem in an error message. Unfortunately we aren't in a perfect world: every now and then something will go wrong and you might not get any clear error messages, or no message at all. In these (rare) cases, you can look into JATOS' log file (not to be confused with the [study log](Study-Log.html)) to try to find what the problem might be.  
 
 The standard way to read the log file is directly on the server. You'll find your complete log files in `jatos_directory/logs/application.log`. Because JATOS is designed to avoid the command line interface, we offer a way to view your log file directly in your browser.
 
@@ -46,12 +46,12 @@ In older versions you can only see today's log file: open the URL `http://your-j
 [http://localhost:9000/jatos/log](http://localhost:9000/jatos/log)
 
 
-### A file (library, image, ...) included in the HTML fails to load?
+## A file (library, image, ...) included in the HTML fails to load?
 
 There is a common mistake Windows users make that might prevent files in the HTML from loading: Any URL or file path in a HTML file should only use '/' as a file path separator - even on Windows systems. So it should always be e.g. `<script src="/study_assets/mystudy/jsPsych-5.0.3/myscript.js"></script>` and **not** `<script src="\study_assets\mystudy\jsPsych-5.0.3\myscript.js"></script>`. And since version 3.2.3 you can leave out the path's first part and just write `<script src="myscript.js"></script>`. 
 
 
-### Database is corrupted?
+## Database is corrupted?
 
 If you get an error that reads something like: `Error in custom provider, Configuration error: Configuration error[Cannot connect to database [default]]`, your database might be corrupted. By default JATOS comes with an H2 database and the H2 database doesn't handle [copying its files while running](http://stackoverflow.com/questions/2036117/how-to-back-up-the-embedded-h2-database-engine-while-it-is-running) too well. 
 

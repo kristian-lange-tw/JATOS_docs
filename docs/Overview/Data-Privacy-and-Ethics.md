@@ -16,14 +16,14 @@ We developed JATOS with data privacy in mind, preventing any breaches of the sta
 
 Here are a few advantages and limitations of JATOS with regards to data privacy. Please read them carefully before you run any study, and please [contact us](Contact-us.html) if you find that these are not sufficient, or have suggestions for improvement.  
 
-* JATOS' main advantage is that you can store your participants' data in your own server, and not in a commercial server like Amazon or Qualtrics. This means that you have full control over the data stored in your database, and no commercial company has access to it. JATOS does not share any data (except of course during a study run with the participant's browsers). Each JATOS installation is completely independent of any other JATOS installation.
+* JATOS' main advantage is that you can store your participants' data in your own server (e.g. at your university). This means that you have full control over the data stored in your database, and no commercial company has access to it. JATOS does not share any data (except of course during a study run with the participant's browsers). Each JATOS installation is completely independent of any other JATOS installation.
 
 * By default, JATOS stores the following data: 
   * time (of the server running JATOS) at which the study -and each of its components- was started and finished
   * the [worker type](Worker-Types.html) (MTurk, General single, Personal multiple, etc) 
   * in cases of MTurk workers, the confirmation code AND the MTurk worker ID. In these cases, if an MTurk worker participated in two of your studies, running in the same JATOS instance, **you will be able to associate the data across these two studies**. This is an important issue: MTurk workers might not be aware that you are the same researcher, and will not know that you have the chance to associate data from different studies. The best way to avoid this is to export all your study's data and delete it from the JATOS database once you are done with it. In this way, JATOS won't know that a worker already participated in another study and will create a new worker ID for them.   
 
-* JATOS will **not** store information like IP address or browser type (or any other HTTP header field).
+* JATOS will **not** store information like IP address or browser type (User-Agent or any other HTTP header field).
 
 ### Things you should consider in your studies 
 
@@ -58,19 +58,21 @@ This cookie contains these parameters:
 * _componentId_: identifier of the component
 * _componentPos_: position of the component within the study
 * _workerId_: identifier of the worker used internally to identify the worker anonymously
-* _workerType_: there are [5 worker types with different use cases in JATOS](http://www.jatos.org/Worker-Types.html)
+* _workerType_: there are [5 worker types with different use cases in JATOS](Worker-Types.html)
 * _componentResultId_: identifier of the component result (a component result is used to store data of the component run)
 * _studyResultId_: identifier of the study result (a study result is used to store data of this study run)
+* _studyResultUuid_: universial identifier of the study result (a study result is used to store data of this study run)
 * _groupResultId_: identifier of the group this worker belongs to (null if it isn't a group study)
 * _creationTime_: timestamp (epoch time) of this cookie's creation
 * _studyAssets_: name of the directory where the study's assets are stored on the JATOS server
 * _jatosRun_: State of a study run with a JatosWorker. If this run doesn't belong to a JatosWorker this field is null. It's mainly used to distinguish between a full study run and just a component run.
+* _urlBasePath_: [Base path under which JATOS resides](Configure-JATOS-on-a-Server.html#url-base-path-jatos--v331)
 
-E.g. `JATOS_IDS_0:"batchId=108&componentId=306&componentPos=2&componentResultId=3867&creationTime=1524941205992&studyAssets=batch_chat_cambridge_workshop&jatosRun=RUN_COMPONENT_FINISHED&groupResultId=null&studyId=101&studyResultId=1346&workerId=1&workerType=Jatos"`
+E.g. `batchId=1&componentId=1&componentPos=1&componentResultId=35&creationTime=1639502424728&studyAssets=jatosjs_test_study&urlBasePath=/&jatosRun=RUN_STUDY&groupResultId=null&studyId=1&studyResultId=33&studyResultUuid=7d5b3da2-b0bf-4e22-98bc-f0e5d7752c00&workerId=1&workerType=Jatos`
 
 #### 2. Cookie JATOS_GENERALSINGLE_UUIDS
 
-This cookie is used by JATOS to store which study runs with a [General Single worker](http://www.jatos.org/Worker-Types.html#general-single-worker) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
+This cookie is used by JATOS to store which study runs with a [General Single worker](Worker-Types.html#general-single-worker) already happened in this browser. It only stores a list of IDs that universally identifies a study (UUID).
 
 #### 3. Play Framework session cookie named PLAY_SESSION
 
