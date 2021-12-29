@@ -1,6 +1,7 @@
 ---
 title: lab.js and JATOS
 slug: /labjs-and-JATOS.html
+hide_table_of_contents: true
 sidebar_position: 5
 ---
 

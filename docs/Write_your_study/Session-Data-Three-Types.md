@@ -35,7 +35,7 @@ The data stored in the sessions are not exported or imported together with a stu
 
 ### Example Study
 
-We have an [example study](Example-Studies.html#study-group-and-batch-session-example-study), where we show the three different session types in action. Try it yourself:
+We have an [example study](/Example-Studies), where we show the three different session types in action. Try it yourself:
 
 1. Download and import the study. You'll find that the study contains two components: "First" and "Second". 
 

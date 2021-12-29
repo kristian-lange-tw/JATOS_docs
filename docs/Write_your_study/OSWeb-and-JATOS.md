@@ -1,6 +1,7 @@
 ---
 title: OSWeb/OpenSesame and JATOS
 slug: /OSWeb-and-JATOS.html
+hide_table_of_contents: true
 sidebar_position: 6
 ---
 
@@ -12,7 +13,7 @@ sidebar_position: 6
 
 OSWeb lets you run an [OpenSesame](https://osdoc.cogsci.nl) experiment on a browser. OpenSesame is a pretty neat program to create experiments for psychology, neuroscience, and experimental economics. You can get very far with drag-and-drop, and there's the chance to add code snippets if you need more flexibility. 
 
-[OSWeb's documentation](https://osdoc.cogsci.nl/manual/osweb/) is far better than ours could ever be. So, here, we just point out that combining OSWeb with JATOS is pretty easy and straightforward: just export the experiment in OSWeb and import it in JATOS.
+[OSWeb's documentation](https://osdoc.cogsci.nl/manual/osweb/workflow/) is far better than ours could ever be. So, here, we just point out that combining OSWeb with JATOS is pretty easy and straightforward: just export the experiment in OSWeb and import it in JATOS.
 
 If you want to use [Prolific](https://www.prolific.co/) to recruit participants for your OSWeb experiment running in JATOS then you can put the return link in the 'End Redirect URL' field of your Study Properties (in JATOS GUI).
 

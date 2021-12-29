@@ -4,9 +4,9 @@ slug: /Adapt-pre-written-code-to-run-it-in-JATOS.html
 sidebar_position: 3
 ---
 
-**Make Your Existing Code Run in JATOS - or How To Jatosify a Study ** 
+**Make Your Existing Code Run in JATOS - or How To Jatosify a Study** 
 
-You might have a  task, experiment, survey, or study running in a browser. You might have all its files like HTML, JavaScripts, images, etc. Maybe you wrote it with [jsPsych](http://www.jspsych.org) or got it from [The Experiment Factory](http://expfactory.github.io). And now you want to run it with JATOS? Then follow this page.
+You might have a task, experiment, survey, or study running in a browser. You might have all its files like HTML, JavaScripts, images, etc. And now you want to run it with JATOS? Then follow this page.
 
 **Developement of a JATOS study usually happens on your local JATOS: [Run an experiment with JATOS - Workflow](Run-an-experiment-with-JATOS-Workflow.html)**
 
@@ -15,9 +15,9 @@ You might have a  task, experiment, survey, or study running in a browser. You m
 1. Create a new study with the '**New Study**' button in JATOS' header. Choose a study title and a folder name. Leave the other fields empty for now and click 'Create'. JATOS will have created a new folder within your assets root folder (default is `/path_to_your_JATOS/study_assets_root/`).
 1. Copy all your files (HTML, JavaScripts, images, audio, ...) into your new study folder. 
 1. Back in the JATOS GUI, and within the newly created study, create a **new component** by clicking 'Components' and then 'New'. Choose a component title and set the HTML file name, to the name of the HTML file you just copied into the study folder.
-1. In your HTML, CSS and JavaScripts, for your paths you can choose between 1) relative paths or 2) absolute paths. Relative paths are recommended since they are shorter and easier to handle.
+1. In your HTML, CSS and JavaScripts, for your paths you can choose between 1) relative paths or 2) absolute paths. **Relative paths are recommended** since they are shorter and do not change after an export-import of a study.
 
-   1. **Relative paths** Just use the relative path within your study's folder.
+   1. **Relative paths)** Just use the relative path within your study's folder.
       
       E.g. if a file named 'survey.js' is in the root of the study's assets folder
       
@@ -31,7 +31,7 @@ You might have a  task, experiment, survey, or study running in a browser. You m
       <script src="lib/survey.js"></script>
       ```
 
-   1. **Absolute paths)** Always use the prefix `/study_assets/` and then the study assets name you specified in your study's properties when you created it.
+   1. **Absolute paths (deprecated))** Always use the prefix `/study_assets/` and then the study assets name you specified in your study's properties when you created it.
       
       E.g. if you want to load the file 'survey.js' and the study's assets folder is 'my-exp'
 
@@ -48,14 +48,8 @@ You might have a  task, experiment, survey, or study running in a browser. You m
 
 Up to this point JATOS served as a mere provider of your files. Now we want to use a feature of JATOS: We want to store your result data in JATOS' safe database. 
 
-1. Include the **jatos.js** library in your HTML `<head>`
+1. Include the **jatos.js** library in your HTML. In your `<head>` add the line 
 
-   * JATOS < v3.3.1) Add the line 
-   ```html
-   <script src="/assets/javascripts/jatos.js"></script>
-   ```
-
-   * JATOS >= v3.3.1) Add the line 
    ```html
    <script src="jatos.js"></script>`
    ```
@@ -66,42 +60,46 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
    
    ~~~javascript
    jatos.onLoad(function() {
-     // initialize and start your JavaScript here 
+     // start your code here 
    });
    ~~~
    
-   E.g. if you want to initialize a jsPsych experiment:
-   
-   ~~~javascript
-   jatos.onLoad(function() {
-     jsPsych.init( {
-       ...
-     });
-   });
-   ~~~
-   
-1. Now to actually send our result data to JATOS we use jatos.js' function **`jatos.submitResultData`**. We can pass this function any data in text format including JSON, CSV or XML.
+1. Now to actually **send your result data** to JATOS we use jatos.js' function `jatos.submitResultData`. We can pass this function any data in text format including JSON, CSV or XML. If you pass a JavaScript object it will be turned into JSON (stringified).
 
    E.g. if we want to send a JavaScript object as JSON
    
    ~~~javascript
-   var resultJson = JSON.stringify(myObject);
-   jatos.submitResultData(resultJson, jatos.startNextComponent);
+   jatos.submitResultData(myResultDataObject);
    ~~~
-    
-   Conveniently but optionally `jatos.submitResultData` takes a second parameter which specifies what should be done after the result data got sent. Usually one want to jump to the next component (`jatos.startNextComponent`) or finish the study (`jatos.endStudy`).
 
-   Another example where we use jsPsych: We have to put `jatos.submitResultData` into jsPsych's `on_finish`:
-   
+   `jatos.submitResultData` puts the data into JATOS database - old data that were submitted before will be overwritten. If you don't want to overwrite data you should rather use `jatos.appendResultData`.
+
+1. Instead of submitting text you can also upload files with [jatos.uploadResultFile](jatos.js-Reference.html#jatosuploadresultfile).
+
+1. At the end of your component you will want to jump to another component or end the study.
+
+   To jump to the next component:
+
    ~~~javascript
-   jsPsych.init( {
-     ...
-     on_finish: function(data) {
-       // Submit results to JATOS
-       var resultJson = JSON.stringify(jsPsych.data.getData());
-       jatos.submitResultData(resultJson, jatos.startNextComponent);
-     }
-   });
+   jatos.startNextComponent();
+   ~~~
+
+   Or to just finish the study:
+
+   ~~~javascript
+   jatos.endStudy();
+   ~~~
+
+   You can combine this with sending result data:
+
+   ~~~javascript
+   jatos.startNextComponent(myResultDataObject);
+   ~~~
+
+   or
+
+   ~~~javascript
+   jatos.endStudy(myResultDataObject);
    ~~~
 
 That's about it. Infos about other jatos.js functions and variables you can find in the [reference](jatos.js-Reference.html). 

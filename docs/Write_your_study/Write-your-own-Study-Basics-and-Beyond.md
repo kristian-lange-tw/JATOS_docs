@@ -15,9 +15,9 @@ If you have an empty study you want to add a component. A component corresponds 
 
 To add a component go to your study and click on Components -> New.
 
-![New Component](/img/Screenshot_new-component.png)
+![New Component](/img/Screenshot_new-component_371.png)
 
-Then In the following form you define the component's properties: enter the component's title and most importantly its 'HTML file path'. This is the path to the HTML file that starts this component.
+Then in the following form you define the component's properties: enter the component's title and most importantly its 'HTML file path'. This is the path to the HTML file that starts this component.
 
 ![New Component](/img/Screenshot_new-component-properites.png)
 
@@ -32,7 +32,6 @@ Here is the absolute minimum that any component HTML file must have to run with 
 
 1. A link to the jatos.js library in the head section
 
-
    ~~~ html
    <html>
      <head>
@@ -41,7 +40,7 @@ Here is the absolute minimum that any component HTML file must have to run with 
    </html>   
    ~~~
 
-1. The second bit is not really necessary but without defining the `jatos.onLoad` callback function you won't be able to use most jatos.js' features. Of course you could start right away with any JavaScript but if you want to use jatos.js' variables and functions you have to wait untill jatos.js is finished initializing.
+1. The second bit is not really necessary but without defining the `jatos.onLoad` callback function you won't be able to use most of jatos.js' features. Of course you could start right away with any JavaScript but if you want to use jatos.js' variables and functions you have to wait untill jatos.js is finished initializing.
 
    ~~~ html
    <script>
@@ -73,7 +72,7 @@ E.g. you want to be able to quickly change
 
 This you can achieve with the Study JSON Input or Component JSON Input because both can be easily edited in the Study Properties or Component Properties.
 
-![Study Properties / JSON input](/img/Screenshot_studyJsonInput.png)
+![Study Properties / JSON input](/img/Screenshot_studyJsonInput_371.png)
 
 Both input fields take [JSON](https://www.w3schools.com/whatis/whatis_json.asp) and the data you put in there is then available in your study's JavaScript via `jatos.studyJsonInput` and `jatos.componentJsonInput`.
 
