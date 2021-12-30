@@ -29,7 +29,7 @@ The process is pretty self-explanatory, but anyway, we'll explain it here in det
 
 1. After clicking the _Go on_ button, JATOS will stop itself, replace its program files and re-start itself again. This might take up to a minute.
 1. Refresh your JATOS home page every now and then until you see your updated JATOS' login screen again.
-1. Check the new JATOS with the build-in tests: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK' (in older version the test page is under '/jatos/test', e.g. for a local installation: [localhost:9000/jatos/test](http://localhost:9000/jatos/test)).
+1. Check the new JATOS with the build-in tests: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK'.
 
 
 ### Special cases
@@ -49,16 +49,12 @@ JATOS uses Java 11 - older versions use Java 8. Future versions will likely requ
 
 ## Manual Update
 
-### Updating a local installation of JATOS 
-(The procedure is different if you want to [update JATOS on a server installation](Updating-a-JATOS-server-installation.html))
-
 To be absolutely safe you can install the new JATOS version and keep the old one untouched. This way you can switch back if something fails. Just remember that only one JATOS can run at the same time. Always stop your old JATOS instance before starting another one.
 
-After updating you can Check the new JATOS with the build-in tests: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK' (in older version the test page is under '/jatos/test', e.g. for a local installation: [localhost:9000/jatos/test](http://localhost:9000/jatos/test)).
-
-You can update your local JATOS instance in two main ways:
+You can update your local JATOS instance in two main ways (The procedure is a little different if you want to [update JATOS on a server installation](Updating-a-JATOS-server-installation.html)):
  
-#### First, easy way: discarding your result data
+
+### First, easy way: discarding your result data
 
 If you don't care about result data stored in JATOS:
 
@@ -73,14 +69,15 @@ If you don't care about result data stored in JATOS:
 1. All your studies' and components' properties
 1. The **properties** of the first (Default) batch
  
-**What will be lost:** 
+**What will be lost:**
 
 1. **All result data will be lost**
 1. All workers in all batches (including Default batch)
 1. All batches other than the Default batch
 1. All study logs
 
-#### Second way: keeping everything (including your result data)
+
+### Second way: keeping everything (including your result data)
 
 If you do want to keep your studies, batches, and your result data you'll have to move them to the new JATOS. 
 
@@ -90,7 +87,7 @@ If you do want to keep your studies, batches, and your result data you'll have t
 1. From the folder of your old JATOS installation copy the folders `database` and `study_logs` to the folder of the new JATOS installation.
 1. If you had changed the `conf/production.conf` file in your old JATOS instance (for example to set a custom location for your `study_assets_root` folder) you'll have to do this again in the new JATOS version. We recommend re-editing the new version of the file, rather than just overwriting the new with the old version, in case anything in the `production.conf` file has changed.
 1. Start the new JATOS (on Unix systems, type `$ ./loader.sh start` on the terminal. On Windows double click the `loader.bat`)
-1. Open JATOS' test page in a browser `/jatos/test` and test that everything is **OK**
+1. Check the build-in tests: go to _Administration_ ⇒ _Tests_ and check that all tests are 'OK'.
 
 **What will be transferred:**
 
