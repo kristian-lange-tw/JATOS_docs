@@ -1,7 +1,7 @@
 ---
 title: Session Data - Three Types
 slug: /Session-Data-Three-Types.html
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 ### When to use the sessions?

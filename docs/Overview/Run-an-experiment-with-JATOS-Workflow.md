@@ -30,6 +30,8 @@ Done.
 
 There are a few important details in [deploying your study to a server](Deploy-to-a-server-installation.html)
 
+Also have a look at [Bring your JATOS online](Bring-your-JATOS-online.html).
+
 ## Step 3: Collect data
 Read about [Study Links](Run-your-Study-with-Study-Links.html) to create links that you can distribute to your participants. You can do this in many different ways, decide which kind of [worker types](Worker-Types.html) you need. You can (but don't have to) use [MTurk](Connect-to-Mechanical-Turk.html) or [Prolific](Use-Prolific.html) to get participants.
 

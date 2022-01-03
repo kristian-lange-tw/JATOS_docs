@@ -1,7 +1,7 @@
 ---
 title: Change study's members
 slug: /Change-studys-members.html
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 Each experimenter with access to the JATOS server (though the GUI) is a JATOS User. Users can create, modify and delete the studies they are members of. They can also export and delete results.

@@ -4,7 +4,7 @@ slug: /Deploy-to-a-server-installation.html
 sidebar_position: 1
 ---
 
-Usually you conveniently develop your study on your local computer where you have a [local installation of JATOS](Installation.html). Then just use the export and import buttons in your installations to transfer the study to your [JATOS server](JATOS-on-a-server.html).
+Usually you conveniently develop your study on your local computer where you have a [local installation of JATOS](Installation.html). Then just use the export and import buttons in your installations to transfer the study to your [JATOS server](Bring-your-JATOS-online.html).
 
 If you have a server already, you will need to take your ready-to-run study from your local installation and deploy it to the server. In order to do this:
 1. On your *local* JATOS installation, where your study is, click on the study you want to export on the left sidebar. 
@@ -13,8 +13,6 @@ If you have a server already, you will need to take your ready-to-run study from
 
 Here's a little sketch of the same three steps above
 ![jzip workflow](/img/jzipWorkflow.png)
-
-If you have trouble with the export and you are using a Safari browser have a look into [this issue in our Troubleshooting section](Troubleshooting.html#downloading-a-study--exporting-a-study-fails-eg-in-safari-browsers).
 
 
 **Please note that:**

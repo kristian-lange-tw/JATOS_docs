@@ -1,7 +1,7 @@
 ---
 title: Submit and upload data to the server 
 slug: /Submit-and-upload-data-to-the-server.html
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 If you wrote your study with HTML/JavaScript/CSS, you'll need to know how to send to the JATOS server for safe storage and easy later retrieval. Here we describe how to submit data. See [Manage Results](Manage-Results.html) to know how to retrieve it.
