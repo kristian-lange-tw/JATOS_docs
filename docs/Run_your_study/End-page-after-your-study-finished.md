@@ -4,12 +4,10 @@ slug: /End-page-after-your-study-finished.html
 sidebar_position: 10
 ---
 
-### 1. Default
-
 By default JATOS just shows the text "**This study is finished. Thank you for your participation.**" in English language, with no special formatting, after a study finshed. Maybe you want a different language or add a logo and different text or styling, then read on.
 
 
-### 2. endPage.html
+### 1. endPage.html
 
 If you include a file named '_endPage.html_' in your study assets folder along with your other study's files, JATOS will automatically redirect to this page after the study finished.
 
@@ -17,10 +15,10 @@ If you include a file named '_endPage.html_' in your study assets folder along w
 
 **Hint 2:** If you run the study with an **MTurk Worker** then you probably want to show the confirmation code to your worker. This is passed on to the _endPage.html_ in a cookie with the name *JATOS_CONFIRMATION_CODE*.
 
-**Hint 3:** If you run your study with the **JATOS GUI** it won't show you the _endPage.html_ but redirect you back to JATOS' GUI instead.
+**Hint 3:** If you run your study with the **JATOS GUI (Run button)** it won't show you the _endPage.html_ but redirect you back to JATOS' GUI instead.
 
 
-### 3. Study Properties' End Redirect URL
+### 2. Study Properties' End Redirect URL
 
 Maybe you want to redirect to a different page, e.g. a Prolific's end page or your department's webpage. This you can do by putting the URL of that page into the study properties in JATOS' GUI. 
 
@@ -32,13 +30,13 @@ You can pass on arguments from the original study link URL to redirect URL. Squa
 
 E.g.
 
-* Study run link URL:
+* If your study link is:
 
    ```
-   http://myjatosdomain/publix/1/start?batchId=1&personalSingleWorkerId=1234&SONA_ID=123abc
+   http://myjatosdomain/publix/v6UkpHR8Sfu?SONA_ID=123abc
    ```
 
-* _End Redirect URL_ put in JATOS, in study properties:
+* And your _End Redirect URL_ (in study properties):
 
    ```
    https://rug.sona-systems.com/webstudy_credit.aspx?experiment_id=123&credit_token=1234567&survey_code=[SONA_ID]
@@ -51,6 +49,6 @@ E.g.
    ```
 
 
-### 4. `jatos.endStudyAndRedirect` or `jatos.endStudyAjax` 
+### 3. In JavaScript with `jatos.endStudyAndRedirect` or `jatos.endStudyAjax` 
 
-If you want to determine dynamically (i.e. in the JavaScript) the address of the webpage that your participants see after finishing a study, you can use one of the two _jatos.js_ functions [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) or [`jatos.endStudyAjax`](jatos.js-Reference.html#jatosendstudyajax) in the JavaScript of your study's **last component**. This is the most versatile way.
+If you want to determine dynamically (i.e. in JavaScript) the address of the webpage that your participants see after finishing a study, you can use one of the two _jatos.js_ functions [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) or [`jatos.endStudyAjax`](jatos.js-Reference.html#jatosendstudyajax) in the JavaScript of your study's **last component**. This is the most versatile way.

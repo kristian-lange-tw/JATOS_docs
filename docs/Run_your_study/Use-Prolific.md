@@ -22,7 +22,7 @@ Prolific allows you to pass the parameters PROLIFIC PID, STUDY ID, and SESSION I
 
 ![Prolific screenshot](/img/Screenshot_Prolific_query_parameter.png)
 
-Then you can access those URL parameters in your study's JavaScript via [jatos.urlQueryParameters](jatos.js-Reference.html#original-url-query-parameters).
+Then you can access those URL parameters in your study's JavaScript via [jatos.urlQueryParameters](jatos.js-Reference.html#jatosurlqueryparameters).
 
 
 ### 3. Redirect to Prolific's end page after the study is done
