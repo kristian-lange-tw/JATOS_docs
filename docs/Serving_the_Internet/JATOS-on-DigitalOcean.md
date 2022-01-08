@@ -8,24 +8,24 @@ On this page we want to explain how to install JATOS on a server running on Digi
 
 [DigitalOcean](https://www.digitalocean.com/) is a cloud provider (like _AWS_, _Google Cloud_, _Azure_ etc.) that is comparatively easy to use and has good documentation. They offer something called _Droplets_ and _One-Click Apps_ which is just a fancy name for a pre-installed server in the cloud. And btw. we have no connections to DigitalOcean whatsoever.
 
-**Keep in mind: A server in the cloud will cost money (circa $5 to $10 / month) and you will need a credit card.**
+**Keep in mind: A server in the cloud will cost money (depending on the size $5 to $50 / month) and you will need a credit card.**
 
 
 ## Setup a simple JATOS server on DigitalOcean
 
 First we want to set up a simple JATOS server without encryption (HTTPS) or a domain name. 
 
-1. Set up an account with [DigitalOcean](https://www.digitalocean.com/) -you'll have to provide billing information.
+1. Set up an account with [DigitalOcean](https://www.digitalocean.com/) - you'll have to provide billing information.
 
-1. Use this [link](https://cloud.digitalocean.com/droplets/new?image=docker-18-04) to create a Droplet with _Docker_ on _Ubuntu_ pre-installed. Do not press _Create_ yet - we need to set up things first.
+1. Use this [link](https://cloud.digitalocean.com/droplets/new?appId=87786318&image=docker-20-04&type=applications) to create a Droplet with _Docker_ on _Ubuntu_ pre-installed. Do not press _Create_ yet - we need to set up things first.
 
-   ![Selected Marketplace with Docker on Ubuntu](/img/Screenshot-DigitalOcean-createDroplet-oneClickApp.png)
+   ![Selected Marketplace with Docker on Ubuntu](/img/Screenshot-DigitalOcean-createDroplet-marketplace_371.png)
    
-   Your sreen should look similar to this one: Selected _Marketplace_ (was One-Click App in past) with _Docker_ on _Ubuntu_ (currently it's called _Docker 18.06.1-ce-3 on 18.04_)
+   Your sreen should look similar to this one: Selected _Marketplace_ with _Docker x.x.x_ on _Ubuntu x.x_
    
-1. Scroll down to _Choose a size_: Droplet size depends on your experiments. Common numbers are 1GB, 2GB, 4GB for a single researcher or group - or 8GB for an institutional server.
+1. Scroll down to _Choose a plan_: Droplet size depends on your experiments. Shared CPU that come with the _Basic_ plan are usually enough (and cheaper). For the _CPU options_: Memory is often the scarce resource: Common numbers are 1GB, 2GB, 4GB for a single researcher or group - or 8GB for an institutional server. If you are not sure get the smaller one - you can always scale up later. If you just want to try it out: Regular Intel with 1GB for (currently) $5/month will do it.
 
-1. Scroll down to _Choose region_: You can actually use any you want, but best is to choose one that is near to your participants to reduce loading time.
+1. Scroll down to _Choose a datacenter region_: You can actually use any you want, but best is to choose one that is near to your participants to reduce loading time.
 
 1. _Select additional options_: Here activate **User Data** and _copy+paste_ the following script in the text field:
 
@@ -40,11 +40,13 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
    
    The _User Data_ should look similar to this screenshot here
 
-1. You could also add an SSH key under _Add your SSH keys_. If you don't know what this is, just ignore it - you will still be able to access the server.
+1. You could also add an SSH key under _Authentication_ / _SSH keys_. If you don't know what this is, set a _Password_. Keep the password somewhere safe. You will need it if you ever want to log into your server's terminal.
+
+1. [Optional] Add backups
 
 1. Finally click the _Create_ button
 
-1. Try out your JATOS: Now the server is being created which can take a couple seconds. You should get an **email** from DigitalOcean with your _server's (aka Droplet) name_, _IP address_, _username_ and _password_. Copy the IP into your browser's address bar and if everything went well, you will see a JATOS login screen.
+1. Try out your JATOS: Now the server is being created which can take a couple seconds (or minutes). Copy the server's (aka Droplet) IP address into your browser's address bar and if everything went well, you will see a JATOS login screen.
 
 1. Log into JATOS with ‘admin’ and password ‘admin’
 
@@ -54,12 +56,14 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
 
 **Voila, you have your own JATOS server.**
 
-Although usually not necessary, you can also access your server via _SSH_: `ssh root@xx.xx.xx.xx` (exchange _xx.xx.xx.xx_ with your IP from the email). Use the password from the email. The first time you will be asked to change your password.
+DigitalOcean charges you by second. So if you want to create a new JATOS server because something went wrong, just _Destroy_ the old one and start over. 
+
+Although usually not necessary, you can also access your server via _SSH_: `ssh root@xx.xx.xx.xx` (exchange _xx.xx.xx.xx_ with your IP). Use the password you entered during creation of the Droplet. The first time you will be asked to change your password.
 
 
 ## Deleting your server
 
-[Deleting the server is straightforward](https://www.digitalocean.com/docs/droplets/how-to/delete/). In DigitalOcean, in the left menu of your Droplet choose _Destroy_. DigitalOcean charges you by second. So if you want to create a new JATOS server because something went wrong, just _Destroy_ the old one and start over. 
+Deleting the server is straightforward. In DigitalOcean, go to your Droplet -> in the left menu of your Droplet choose _Destroy_.
 
 Now, you might want to use a nicer address than an IP and add some encryption-safety with HTTPS to your server - then read on.
 

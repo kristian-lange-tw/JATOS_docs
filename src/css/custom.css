@@ -130,3 +130,19 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   content:"\e080";
   color: #000000;
 }
+.glyphicon-plus:before {
+  content:"\2b";
+  color: #000000;
+}
+.glyphicon-link:before {
+  content:"\e144";
+  color: #000000;
+}
+.glyphicon-duplicate:before {
+  content:"\e224";
+  color: #000000;
+}
+.glyphicon-qrcode:before {
+  content:"\e039";
+  color: #000000;
+}

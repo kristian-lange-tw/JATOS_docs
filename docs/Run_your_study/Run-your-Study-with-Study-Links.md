@@ -43,9 +43,9 @@ After clicking the Study Links button you can create and manage the study links 
 
 ![Study Links page screenshot](/img/study_links_11.png)
 
-1. This button creates one study link without a comment. This button is a shortcut to button '2'.
+1. This button creates one study link without a comment. This button is a shortcut to the 'New Study Links' button.
 1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to destinguish your study links. You can create Personal type study links in bulk by changing the **Amount** value.
-1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) The 'Open Directly' link starts the study right away. 2) The 'Confirm First' lets your worker confirm first with a button press.
+1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) The 'Open Directly' link starts the study right away. 2) The 'Confirm First' lets your worker confirm first with a button press. Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code.
 1. Use this checkbox to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue).
 
 
@@ -53,7 +53,7 @@ After clicking the Study Links button you can create and manage the study links 
 
 ![Study Links page screenshot](/img/study_links_5.png)
 
-General type links can be of type General Single or General Multiple ([more about the differences](Worker-Types.html)). Due to the nature of these types there is only one study link per type. Click on the button Study Link to get it. There are two links that can be toggled by a button: 1) The 'Open Directly' link starts the study right away. 2) The 'Confirm First' lets your worker confirm first with a button press.
+General type links can be of type General Single or General Multiple ([more about the differences](Worker-Types.html)). Due to the nature of these types there is only one study link per type. Click on the button Study Link to get it. There are two links that can be toggled by a button: 1) The 'Open Directly' link starts the study right away. 2) The 'Confirm First' lets your worker confirm first with a button press. Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code.
 
 
 ### MTurk type links
@@ -97,6 +97,7 @@ A batch is also the place where [JATOS groups](Write-Group-Studies-I-Setup.html)
 
 ![Groups table](/img/groups_view.png)
 
+* **Fixed** this button allows you to _fix_ a group. A fixed group doesn't allow new members to join. It keeps the group as it currently is. It has the same effect as the _jatos.js_' function [`jatos.setGroupFixed`](jatos.js-Reference.html#jatossetgroupfixed) ([more info](Write-Group-Studies-II-JavaScript-and-Messaging.html#fixing-a-group)).
 * **Active Workers** are the workers that are currently members in the group
 * **Past Workers** the ones that were members at one point in the past
 * **Results** shows only the study results that belong to this group

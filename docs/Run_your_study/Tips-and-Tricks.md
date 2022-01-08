@@ -85,6 +85,6 @@ Problem: The study runs fine, but as soon as one distributes links for Personal 
 
 The reason for this behaviour is that some of those tools open links that are posted in them before your participant can click on them. They do this to provide more information about the link, like a title and an image. Usually this is fine but Personal/General Single links work exactly once (if preview is not allowed) and a second request with the same link just responses with the forementioned error message.
 
-1. Use [study links with confirmation](Run-your-Study-with-Study-Links.html#study-links---how-to-let-participants-run-your-study) - Choose the study link version with the button 'Confirm First'. This link shows a 'Worker Landing' page before the actual study starts. This page can be opened many times.
+1. Use [study links with confirmation](Run-your-Study-with-Study-Links.html#study-links---how-to-let-participants-run-your-study) - Choose the study link version with the button 'Confirm First'. This link shows a 'study entry' page before the actual study starts. This page can be opened many times.
 
 1. [Allow preview](Restricting-study-flow.html#allow-preview) - You can keep using Personal/General Single links and use a [preview link](Restricting-study-flow.html#preview-links) to allow opening the first component of your study as many times as one wishes. All following components can be opened only once again.

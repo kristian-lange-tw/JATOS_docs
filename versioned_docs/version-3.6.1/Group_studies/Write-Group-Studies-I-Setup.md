@@ -19,7 +19,7 @@ If the Group property is checked, JATOS will assign workers into groups. We'll d
 
 You can have multiple batches in JATOS, each one with different group settings. There are three important bits of information for a group study:
 
-1. **Max total workers**: This isn't just a properties of group studies but can be used in single-worker studies too. It simply limits the total amount of workers who are allowed to run in this batch
+1. **Max total workers**: This isn't just a properties of group studies. It simply limits the total amount of workers who are allowed to run in this batch.
 1. **Max total members**:  This limits the number of members a single group can have. While there can be multiple groups in a batch, the _Max total members_ field applies to each separate group. 
 1. **Max active members**: This limits the number of active members a single group can have. An active member is in the group at this time - in opposite to a past member who already left the group. This number applies to each group separately. Example: In the Prisoner's Dilemma study, you would limit the active members to 2.
 
