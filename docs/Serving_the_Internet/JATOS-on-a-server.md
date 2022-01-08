@@ -4,14 +4,9 @@ slug: /JATOS-on-a-server.html
 sidebar_position: 5
 ---
 
-There are several ways to bring JATOS to the internet. You can install it
+There are [several ways to bring JATOS to the internet](Bring-your-JATOS-online.html). If you don't know much about server administration the [DigitalOcean](JATOS-on-DigitalOcean.html) page might be best for you.
 
-* On your own **dedicated server** (discussed here on this page)
-* In the **cloud** - This point is covered by two pages, [one for DigitalOcean](JATOS-on-DigitalOcean.html) and [one for AWS](JATOS-in-Amazons-Cloud-without-Docker.html) (also there are other cloud provider, like Microsoft Azure, Google Cloud ...).
-* With a **Docker** container: [Install JATOS via Docker](Install-JATOS-via-Docker.html)
-
-If you don't know much about server administration the DigitalOcean page might be best for you.
-
+You can also [install JATOS via Docker](Install-JATOS-via-Docker.html).
 
 ## Installation on a server
 
@@ -32,15 +27,41 @@ See [JATOS with MySQL](JATOS-with-MySQL.html)
 
 1. [Download JATOS](https://github.com/JATOS/JATOS/releases)
 
-   E.g. with _wget_ for the version 3.7.1:
+   E.g. the latest release:
+
+   ```shell
+   wget https://github.com/JATOS/JATOS/releases/latest/download/jatos.zip
+   ```
+
+   E.g. or a certain version (exchange x.x.x with the version you want):
    
-   `wget https://github.com/JATOS/JATOS/releases/download/v3.7.1/jatos.zip`
+   ```shell
+   wget https://github.com/JATOS/JATOS/releases/download/vx.x.x/jatos.zip
+   ```
 
-1. JATOS comes zipped. Unpack this file at a location in your server's file system where JATOS should be installed.
+1. JATOS comes zipped. Unpack this file at a location in your server's file system where JATOS should be installed:
 
-1. Check that the file `loader.sh` in the JATOS folder is executable.
+   ```shell
+   unzip jatos.zip
+   ```
 
-1. Check that JATOS starts with `loader.sh start|restart|stop`
+1. Check that the file `loader.sh` in the JATOS folder is executable. If not:
+
+   ```shell
+   chmod u+x loader.sh
+   ```
+
+1. Check that JATOS starts with:
+
+   ```shell
+   ./loader.sh start`
+   ```
+
+   And to stop it:
+
+   ```shell
+   ./loader.sh stop`
+   ```
 
 
 ### 4. Configuration
@@ -50,11 +71,11 @@ If JATOS runs locally it's usually not necessary to change the defaults but on a
 
 ### 5. Change Admin's password
 
-Every JATOS installation comes with an Admin user that has the default password 'admin'. You must change it before the server goes live. This can be done in JATOS' GUI:
+Every JATOS installation comes with an Admin user that has the default password 'admin'. It is highly recommended to change it before the server goes live. This can be done in JATOS' GUI:
 
 1. Start JATOS and in a browser go to JATOS login page `http://my-jatos-domain/jatos` 
 1. Login as 'admin' with password 'admin'
-1. Click on 'Admin (admin) in top-right header
+1. Click on 'Admin (admin)' in top-right header
 1. Click 'Change Password'
 
 
@@ -76,18 +97,18 @@ Most admins tend to use an additional reverse proxy in front of JATOS, mostly fo
 [More here](Configure-JATOS-on-a-Server.html#user-session-configuration).
 
 
-### 9. [Optional] Auto-start JATOS
+### 9. [Optional] Auto-start JATOS via systemd
 
-It's nice to have JATOS starts automatically after a start or a reboot of your machine. Choose between one of the two possibilities: 1) via a systemd service, or 2) via a init.d script.
+It's nice to have JATOS start automatically after a start or a reboot of your machine.
 
+Create a systemd service file for JATOS. E.g. with vim:
 
-#### 1) Via systemd service 
-
-Create a systemd service file for JATOS 
 ```shell
 vim /etc/systemd/system/jatos.service
 ```
-and put the following text inside. 
+
+and put the following text inside (but change the JATOS path and the user under which you want to start JATOS):
+
 ```shell
 [Unit]
 Description=JATOS
@@ -107,16 +128,19 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 ```
-Change the paths and the user according to your JATOS path and the user you want to start JATOS with.
 
 Secondly, notify systemd of the new service file:
+
 ```shell
 systemctl daemon-reload
 ```
+
 and enable it, so it runs on boot:
+
 ```shell
 systemctl enable jatos.service
 ```
+
 That's it.
 
 Additionally you can manually start/stop JATOS now with:
@@ -125,60 +149,32 @@ Additionally you can manually start/stop JATOS now with:
 * `systemctl restart jatos.service`
 * `systemctl status jatos.service`
 
-You can disable the service with `systemctl disable jatos.service`. If you change the service file you need `systemctl daemon-reload jatos.service` to let the system know.
-
-
-#### 2) Via /etc/init.d script
-It's easy to turn the `loader.sh` script into an init script for a daemon.
-
-1. Copy the `loader.sh` script to `/etc/init.d/`
-1. Rename it to `jatos`
-1. Change access permission with `chmod og+x jatos`
-1. Edit `/etc/init.d/jatos`
-   1. Comment out the line that defines the JATOS location `dir="$( cd "$( dirname "$0" )" && pwd )"`
-   1. Add a new locatoin `dir=` with the path to your JATOS installation
-
-      The beginning of your `/etc/init.d/jatos` should look like:
-  
-      ~~~ shell
-      #!/bin/bash
-      # JATOS loader for Linux and MacOS X
-      
-      # Change IP address and port here
-      # Alternatively you can use command-line arguments -Dhttp.address and -Dhttp.port
-      address="127.0.0.1"
-      port="9000"
-      
-      # Don't change after here unless you know what you're doing
-      ###########################################################
-
-      # Get JATOS directory
-      #dir="$( cd "$( dirname "$0" )" && pwd )"
-      dir="/path/to/my/JATOS/installation"
-      ...
-      ~~~
-  
-1. Make it auto-start with the command `sudo update-rc.d jatos defaults`
-
-Now JATOS starts automatically when you start your server and stops when you shut it down. You can also use the init script yourself like any other init script with `sudo /etc/init.d/jatos start|stop|restart`.
+You can disable the service with `systemctl disable jatos.service`. If you change the service file you need to do `systemctl daemon-reload jatos.service` again to let the system know.
 
 
 ### 10. [Optional] Backup
 
 The easiest way to backup is to let JATOS users care themselves for their own data. JATOS has an easy to use [export function for result data](Manage-results.html). So you could just tell everyone to export their data regularily.
 
-But if you want to set up a regular backup of the data stored in JATOS here are the necessary steps. Those data consists of two parts (1.) the data stored in the database and (2.) your study assets folder that contains all the web files (e.g. HTML, JavaScript, images). Both have to be backed up to be able to restore them later on.
+But if you want to set up a regular backup of the data stored in JATOS here are the necessary steps. Those data consists of several parts and all have to be backed up to be able to fully restore JATOS later.
+
+#### Simple
+
+If you want to keep it simple and you didn't change any of the folder paths then you can just back up the whole JATOS folder. But remember, if you use the embedded H2 database, to turn off JATOS before doing the backup. And if you use MySQL you have to care for the MySQL backup extra.
+
+#### Detailed
+
+What has to be backed up in detail:
 
 1. **Database**
     * **MySQL** - If you use a MySQL database you might want to look into the `mysqldump` shell command. E.g., with `mysqldump -u myusername -p mydbname > mysql_bkp.out` you can backup the whole data into a single file. Restore the database with `mysql -u myusername -p mydbname < mysql_bkp.out`.
     * **H2** - There are at least two ways: one easy (but unofficial) and one official:
-      1. Copy & paste the db file - It's important to **stop JATOS** before doing a backup or restoring a H2 database this way. If you do not stop JATOS your [data might be corrupted](Troubleshooting.html#database-is-corrupted). You can just backup the folder `my-jatos-path/database`. In case you want to restore an older version from the backup just replace the current version of the folder with the backed-up version.
+      1. Copy & paste the db file - **It's important to stop JATOS before doing a backup or restoring a H2 database** this way. If you do not stop JATOS your [data might be corrupted](Troubleshooting.html#database-is-corrupted). You can just backup the folder `my-jatos-path/database`.
       1. Via [H2's upgrade, backup, and restore tool](http://www.h2database.com/html/tutorial.html#upgrade_backup_restore)
 
-1. **study_assets_root folder** - This is the folder where all your study's assets (e.g. HTML, JS, CSS, images) are stored. You can just make a backup of your study assets folder. If you want to return to a prior version replace the current folder with the backed-up version.
+1. **study_assets_root folder** - This is the folder where all the study's assets (e.g. HTML, JS, CSS, images) are stored.
 
-1. **result_uploads folder** - This folder contains the files, that were uploaded during a study run. You can just make a backup of your results upload folder. If you want to return to a prior version replace the current folder with the backed-up version.
+1. **result_uploads folder** - This folder contains the files, that were uploaded during study runs.
 
-1. **study_logs folder** - Contains the [study logs](Study-Log.html)
+1. **study_logs folder** - Contains the [study logs](Study-Log.html).
 
-Remember, a backup has to be done of all **four** the folders, _database_ **and** the _study_assets_root_ **and** _result_uploads_ **and** _study_logs_.

@@ -4,7 +4,7 @@ slug: /Configure-JATOS-on-a-Server.html
 sidebar_position: 6
 ---
 
-**Restart JATOS after making any changes to the configuration (`loader.sh restart`)**
+**Remember to always restart JATOS after making any changes to the configuration (`./loader.sh restart`)**
 
 
 ### IP / domain and port
@@ -13,42 +13,42 @@ By default JATOS binds to all locally available IP addresses including 127.0.0.1
 
 1. It is possible to set up IP and port via `conf/production.conf`: Edit `play.server.http.address` and `play.server.http.port` and restart JATOS. E.g. to run on IP 192.168.0.100 and port 80:
 
-   ~~~ bash
+   ~~~shell
    play.server.http.address = "192.168.0.100"
    play.server.http.port = 80
    ~~~
   
 1. Via command-line arguments `-Dhttp.address` and `-Dhttp.port`, e.g. with the following command you'd start JATOS with IP 10.0.0.1 and port 80
 
-   ~~~ bash
-   loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
+   ~~~shell
+   ./loader.sh start -Dhttp.address=10.0.0.1 -Dhttp.port=80
    ~~~
    
 1. (DEPRECATED) In `loader.sh` change the values of 'address' and 'port' according to your IP address or domain name and port. Restart JATOS after editing.
 
-   ~~~ bash
+   ~~~shell
    address="172.16.0.1"
    port="8080"
    ~~~   
 
 
-### URL base path (JATOS >= v3.3.1)
+### URL base path
 
 JATOS can be configured to use an base path. E.g we have the host "www.example.org" and let JATOS run under "mybasepath" so that JATOS' URL all start with "www.example.org/mybasepath/". This can be achieved in two ways:
 
 1. Via the command-line argument `-DJATOS_URL_BASE_PATH`, e.g.
 
-   ~~~ bash
-   loader.sh start -DJATOS_URL_BASE_PATH="/mybasepath/"
+   ~~~shell
+   ./loader.sh start -DJATOS_URL_BASE_PATH="/mybasepath/"
    ~~~
 
 1. Via `conf/production.conf`: change `play.http.context`
 
-   ~~~ bash
+   ~~~shell
    play.http.context = "/mybasepath/"
    ~~~
 
-**The path always has to start and end with a "/".** And keep in mind that if you add a base path to JATOS' URL you have to adjust all absolute paths to the study assets (in HTML and JavaScript files) too - [or use relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos).
+**The path always has to start and end with a "/".** And keep in mind that if you add a base path to JATOS' URL you have to adjust all absolute paths to the study assets (in HTML and JavaScript files) too - [or use relative paths](Adapt-pre-written-code-to-run-it-in-JATOS.html#create-the-study-in-jatos) (which is recommended anyway).
 
 
 ### Study assets root path
@@ -57,19 +57,19 @@ By default the study assets root folder (where all your study's HTML, JavaScript
 
 1. Via the command-line argument `-DJATOS_STUDY_ASSETS_ROOT_PATH`, e.g.
 
-   ~~~ bash
-   loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
+   ~~~shell
+   ./loader.sh start -DJATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
    
 1. Via `conf/production.conf`: change `jatos.studyAssetsRootPath`
 
-   ~~~ bash
+   ~~~shell
    jatos.studyAssetsRootPath="/path/to/my/jatos_study_assets_root"
    ~~~
    
 1. Via the environment variable `JATOS_STUDY_ASSETS_ROOT_PATH`, e.g. the following export adds it to the env variables:
 
-   ~~~ bash
+   ~~~shell
    export JATOS_STUDY_ASSETS_ROOT_PATH="/path/to/my/assets/root/folder"
    ~~~
 
@@ -81,10 +81,10 @@ See [JATOS with MySQL](JATOS-with-MySQL.html)
 
 ### JVM arguments
 
-All JVM arguments can be used with `loader.sh` but all arguments starting with `-X` need an extra suffix `-J`. E.g. `-Xmx` (to change JVM's max heap memory) has to be written as `-J-Xmx`.
+All JVM arguments can be used with `loader.sh` but all arguments starting with `-X` need an extra suffix `-J`. The most important one is `-Xmx`, the one to limit JATOS memory usage (to change JVM's max heap memory to be precise). It has to be written as `-J-Xmx`:
 
-``` bash
-loader.sh start -J-Xmx4G   # Allow max 4 GB (heap) memory
+```shell
+./loader.sh start -J-Xmx4G   # Allow max 4 GB (heap) memory
 ```
 
 
@@ -100,7 +100,7 @@ By default JATOS' keeps it simple and relies on the users to choose save passwor
   * `3`: At least one uppercase Latin letter, one lowercase Latin letter, one number and one special character (`#?!@$%^&*-`)
 
 
-### Study result data (JATOS >= v3.5.9)
+### Study result data
 
 You can change the allowed size of a component's result data. This can be used to reduce the load on the server, especially network and database. Sometimes its necessary to increase the value if certain studies have larger result data needs. The property for this in `conf/production.conf` is `jatos.resultData.maxSize`. By default it's set to 5 MB per component run.
 
@@ -111,7 +111,9 @@ jatos.resultData.maxSize = 1MB
 ~~~
 
 
-### Uploading of study result files (JATOS >= v3.5.1)
+### Uploading of study result files
+
+There are three ways to configure the uploads:
 
 1. Via `conf/production.conf`
 
@@ -122,6 +124,8 @@ jatos.resultData.maxSize = 1MB
 
 1. Via environment variables (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE)
 
+   E.g.
+
    ~~~bash
    export JATOS_RESULT_UPLOADS_PATH="/path/to/my/result/upload/folder"
    export JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN=100MB
@@ -130,12 +134,16 @@ jatos.resultData.maxSize = 1MB
 
 1. Via command-line arguments (JATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN and JATOS_RESULT_UPLOADS_MAX_FILE_SIZE)
 
+   E.g.
+
    ~~~bash
-   loader.sh start -DJATOS_RESULT_UPLOADS_PATH="/path/to/my/result/upload/folder" -DJATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN=100MB -DJATOS_RESULT_UPLOADS_MAX_FILE_SIZE=50MB
+   ./loader.sh start -DJATOS_RESULT_UPLOADS_PATH="/path/to/my/result/upload/folder" -DJATOS_RESULT_UPLOADS_LIMIT_PER_STUDY_RUN=100MB -DJATOS_RESULT_UPLOADS_MAX_FILE_SIZE=50MB
    ~~~
 
 
 ### Study logs
+
+There are three ways to change the configuration of the study logs:
 
 1. Via `conf/production.conf`
 
@@ -144,14 +152,18 @@ jatos.resultData.maxSize = 1MB
 
 1. The path can be configured via environment variables
 
+   E.g.
+
    ~~~bash
    export JATOS_STUDY_LOGS_PATH="/path/to/my/study/logs/folder"
    ~~~
 
 1. The path can be configured via command-line arguments
 
+   E.g.
+
    ~~~bash
-   loader.sh start -DJATOS_STUDY_LOGS_PATH="/path/to/my/study/logs/folder"
+   ./loader.sh start -DJATOS_STUDY_LOGS_PATH="/path/to/my/study/logs/folder"
    ~~~
 
 
@@ -199,7 +211,7 @@ Some other properties can be configured in the `conf/production.conf`.
 * `play.http.session.secure` - secure session cookie: set true to restrict user access to HTTPS (default is false)
 * `jatos.idCookies.secure` - secure ID cookies: set true to restrict worker access to HTTPS (default is false)
 * `jatos.idCookies.sameSite` - defines the ID cookies' 'SameSite' attribute: allowed values are `None`, `Lax`, or `Strict`. Default is `None`.
-* `jatos.studyMembers.allowAddAllUsers` - Allow to add all users that exist on a JATOS to be added at once as members of a study. Default is true. 
+* `jatos.studyMembers.allowAddAllUsers` - Allow to add all users that exist on a JATOS to be added at once as members of a study. Default is false. 
 * `jatos.resultData.export.useTmpFile` - If true, result data that are fetched from the database are first stored in a temporary file and only when they are all gathered the file is sent to the browser. If false the result data are streamed directly from the database to the browser. Default is false.
 * `jatos.maxResultsDbQuerySize` - Maximal number of results to be fetched from the DB at once (default is 10)
 

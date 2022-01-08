@@ -36,7 +36,7 @@ If you get an error that reads something like: `Error in custom provider, Config
 
 There are two reasons why this might be the case: you moved your JATOS folder while it was running or you installed JATOS in a synced folder. To prevent this, be sure to always be careful with the following:
 
-1. **Don't copy or move while JATOS is running** - Always **stop JATOS** (type `/loader.sh stop` in your Linux / Mac OS X terminal or close the window on Windows) before moving it.  
+1. **Don't copy or move while JATOS is running** - Always **stop JATOS** (type `./loader.sh stop` in your Linux / Mac OS terminal or close the window on Windows) before moving it.  
 1. **Don't sync while JATOS is running** - As we mentioned in the [Installation page](Installation.html), you can run JATOS from pretty much anywhere **except** from a folder that syncs across devices, like Dropbox or Google Drive. Doing so might lead to database corruption, because while the files might be synced between computers, the running processes aren't. This will lead to havoc and destruction and, in extreme cases, to the implosion of the known Universe. You can find in our [blog post](http://blog.jatos.org/Database_Recovery/) a description of an attempt to recover a corrupted database. Didn't work.
 
 **Of course, this brings us to an important point: back up your result data (i.e., simply download and save your text files) regularly if you're running a study!**
