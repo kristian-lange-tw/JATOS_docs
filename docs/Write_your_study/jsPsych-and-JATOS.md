@@ -21,7 +21,7 @@ Every jsPsych version works slightly different. Here we explain the steps for js
 
 ### How to turn your jsPsych 7 experiment into a JATOS study
 
-1. Include the `jatos.js` library in the `<head>` of your HTML
+1. Include the _jatos.js_ library in the `<head>` of your HTML
 
    ~~~ html
    <script src="jatos.js"></script>

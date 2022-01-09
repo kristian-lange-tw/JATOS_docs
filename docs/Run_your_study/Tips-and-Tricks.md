@@ -52,7 +52,7 @@ The problem here is that a General Single Run is intended to work only once in t
 
 If the `jatos.abortStudy` function is called (usually after the worker clicks a "Cancel" button) all result data that had been sent to JATOS during this study run will be deleted. This includes result data from prior components of the study run. But sometimes you'll want to save a bit of information that should not be deleted: you might need the worker's email address to pay them. 
 
-1. By using the build-in abort button with [jatos.addAbortButton](jatos.js-Reference.html#jatosaddabortbutton) and set the `msg` parameter. This message won't be deleted together with the other result data. This message can then be seen in every Study Result page in the 'Message' column.
+1. By using the build-in abort button with [`jatos.addAbortButton`](jatos.js-Reference.html#jatosaddabortbutton) and set the `msg` parameter. This message won't be deleted together with the other result data. This message can then be seen in every Study Result page in the 'Message' column.
 
    E.g.
 

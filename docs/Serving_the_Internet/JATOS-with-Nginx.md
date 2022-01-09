@@ -1,7 +1,7 @@
 ---
 title: JATOS with Nginx
 slug: /JATOS-with-Nginx.html
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 These are examples for configurations of [Nginx](https://www.nginx.com/) as a proxy in front of JATOS. It is not necessary to run JATOS with a proxy but it's common. They support WebSockets for JATOS' group studies. 

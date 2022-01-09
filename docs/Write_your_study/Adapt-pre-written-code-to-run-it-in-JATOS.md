@@ -48,13 +48,13 @@ You might have a task, experiment, survey, or study running in a browser. You mi
 
 Up to this point JATOS served as a mere provider of your files. Now we want to use a feature of JATOS: We want to store your result data in JATOS' safe database. 
 
-1. Include the **jatos.js** library in your HTML. In your `<head>` add the line 
+1. Include the **_jatos.js_** library in your HTML. In your `<head>` add the line 
 
    ```html
    <script src="jatos.js"></script>`
    ```
 
-1. Add **jatos.onLoad**
+1. Add **`jatos.onLoad`**
 
    Most studies with JATOS start with this call. So whatever you want to do in your study it should start there.
    
@@ -64,7 +64,7 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
    });
    ~~~
    
-1. Now to actually **send your result data** to JATOS we use jatos.js' function `jatos.submitResultData`. We can pass this function any data in text format including JSON, CSV or XML. If you pass a JavaScript object it will be turned into JSON (stringified).
+1. Now to actually **send your result data** to JATOS we use _jatos.js_' function `jatos.submitResultData`. We can pass this function any data in text format including JSON, CSV or XML. If you pass a JavaScript object it will be turned into JSON (stringified).
 
    E.g. if we want to send a JavaScript object as JSON
    
@@ -102,7 +102,7 @@ Up to this point JATOS served as a mere provider of your files. Now we want to u
    jatos.endStudy(myResultDataObject);
    ~~~
 
-That's about it. Infos about other jatos.js functions and variables you can find in the [reference](jatos.js-Reference.html). 
+That's about it. Infos about other _jatos.js_ functions and variables you can find in the [reference](jatos.js-Reference.html). 
 
 ### Beyond the basics
 

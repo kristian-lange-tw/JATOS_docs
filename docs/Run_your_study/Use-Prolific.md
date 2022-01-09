@@ -13,7 +13,7 @@ This is what the _New Study_ page in Prolific looks like:
 
 ### 1. Enter your JATOS study link
 
-In the field under _What is the URL of your study?_ (first red box in the screenshot), enter a link to your JATOS study.You probably want a link to either a _General Single_ or a _General Multiple_ worker type (see [JATOS' worker types](Worker-Types.html) and [Run your Study with Study Links](Run-your-Study-with-Study-Links.html)).
+In the field under _What is the URL of your study?_ (first red box in the screenshot), enter a link to your JATOS study.You probably want a study link of either _General Single_ or a _General Multiple_ type (see [Run your Study with Study Links](Run-your-Study-with-Study-Links.html)).
 
 
 ### 2. (Optional) Consider passing Prolific URL parameters to your study
@@ -22,7 +22,7 @@ Prolific allows you to pass the parameters PROLIFIC PID, STUDY ID, and SESSION I
 
 ![Prolific screenshot](/img/Screenshot_Prolific_query_parameter.png)
 
-Then you can access those URL parameters in your study's JavaScript via [jatos.urlQueryParameters](jatos.js-Reference.html#jatosurlqueryparameters).
+Then you can access those URL parameters in your study's JavaScript via [`jatos.urlQueryParameters`](jatos.js-Reference.html#jatosurlqueryparameters).
 
 
 ### 3. Redirect to Prolific's end page after the study is done

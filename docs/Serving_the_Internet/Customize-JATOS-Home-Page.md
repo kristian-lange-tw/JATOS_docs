@@ -1,7 +1,7 @@
 ---
 title: Customize JATOS' Home Page
 slug: /Customize-JATOS-Home-Page.html
-sidebar_position: 11
+sidebar_position: 12
 ---
 
 ## Link to Terms of Use
@@ -36,7 +36,7 @@ This welcome block can be fetched from **any HTTP server** that is able to serve
 1. Add necessary files (e.g. logo images) to your repository
 1. Configure JATOS: In your JATOS installation folder edit `conf/production.conf` - add `jatos.brandingUrl`:
 
-   1. Easy but with rate limit
+   1. Easy but with rate limit (from GitHub)
 
       ```
       jatos.brandingUrl = "https://raw.githubusercontent.com/my-user/my-repo/main/foobar-university-welcome.html"

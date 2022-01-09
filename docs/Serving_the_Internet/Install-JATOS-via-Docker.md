@@ -1,7 +1,7 @@
 ---
 title: Install JATOS via Docker
 slug: /Install-JATOS-via-Docker.html
-sidebar_position: 12
+sidebar_position: 8
 ---
 
 JATOS has a Docker image: [hub.docker.com/r/jatos/jatos/](https://hub.docker.com/r/jatos/jatos/)

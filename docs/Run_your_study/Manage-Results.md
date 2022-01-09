@@ -87,7 +87,7 @@ You can show and hide the columns displayed in the table with the drop-down menu
 * **Study Code** - The study code that was used to start this study run
 * **Start Time** - Time (set at the server's time zone) at which the first component of the study was started. 
 * **End Time** - Time (set at the server's time zone) at which the last component of the study was finished. 
-* **Last Seen** - Each component running in a worker's browser sends a "heartbeat" regularly back to JATOS. Last Seen is the time of the last heartbeat received. The heartbeat stops either when the study is finished or when the browser tab is closed. The default period of the heartbeat is 2 minutes but you can change it through a [jatos.js function](jatos.js-Reference.html#jatossetheartbeatperiod).
+* **Last Seen** - Each component running in a worker's browser sends a "heartbeat" regularly back to JATOS. Last Seen is the time of the last heartbeat received. The heartbeat stops either when the study is finished or when the browser tab is closed. The default period of the heartbeat is 2 minutes but you can change it through a [_jatos.js_ function](jatos.js-Reference.html#jatossetheartbeatperiod).
 * **Duration** - Simply the time difference between the start and end time.
 * **Batch** - Name of the batch the worker belongs to.
 * **Worker ID** - Assigned by JATOS. Each worker has its own Worker ID. JATOS' admin user will always have Worker ID 1. You can click on a Worker ID to see all the worker's results. 
@@ -116,4 +116,4 @@ You can show and hide the columns displayed in the table with the drop-down menu
   * ABORTED - This component's study was aborted by worker and all result data and files were deleted.
   * FAIL - Something went wrong, the study stopped and cannot continue
 
-* **Messages** - A message that can be set together with [jatos.endStudy](jatos.js-Reference.html#jatosendstudy) or [jatos.abortStudy](jatos.js-Reference.html#jatosabortstudy).
+* **Messages** - A message that can be set together with [`jatos.endStudy`](jatos.js-Reference.html#jatosendstudy) or [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy).

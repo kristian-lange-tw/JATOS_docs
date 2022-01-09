@@ -30,7 +30,7 @@ A study can have one or multiple components and each component has an HTML file 
 
 Here is the absolute minimum that any component HTML file must have to run with JATOS:
 
-1. A link to the jatos.js library in the head section
+1. A link to the _jatos.js_ library in the head section
 
    ~~~ html
    <html>
@@ -40,7 +40,7 @@ Here is the absolute minimum that any component HTML file must have to run with 
    </html>   
    ~~~
 
-1. The second bit is not really necessary but without defining the `jatos.onLoad` callback function you won't be able to use most of jatos.js' features. Of course you could start right away with any JavaScript but if you want to use jatos.js' variables and functions you have to wait untill jatos.js is finished initializing.
+1. The second bit is not really necessary but without defining the `jatos.onLoad` callback function you won't be able to use most of _jatos.js_' features. Of course you could start right away with any JavaScript but if you want to use _jatos.js_' variables and functions you have to wait untill _jatos.js_ is finished initializing.
 
    ~~~ html
    <script>
@@ -56,9 +56,9 @@ Here is the absolute minimum that any component HTML file must have to run with 
 You probably want to save the data that is collected during your experiments. There are generally two ways to do this: 1) result data or 2) result files - and there is a [documentation page about it](Submit-and-upload-data-to-the-server.html).
 
 
-## jatos.js Reference
+## _jatos.js_ Reference
 
-In your JavaScript you will use jatos.js to handle everything JATOS related and in its [reference](jatos.js-Reference.html) every function and field is described in detail.
+In your JavaScript you will use _jatos.js_ to handle everything JATOS related and in its [reference](jatos.js-Reference.html) every function and field is described in detail.
 
 
 ## Study JSON Input and Component JSON Input

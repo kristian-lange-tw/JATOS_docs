@@ -12,7 +12,7 @@ sidebar_position: 9
 
 </div>
 
-Often you want to store information during a study run and share it with other components of the same study, or between workers of a group or batch. The three different session types let you transfer data in this way (shown by the curved arrows in the picture on the right). Workers can write into the sessions through jatos.js.
+Often you want to store information during a study run and share it with other components of the same study, or between workers of a group or batch. The three different session types let you transfer data in this way (shown by the curved arrows in the picture on the right). Workers can write into the sessions through _jatos.js_.
 
 The data stored in the sessions are **volatile** - do not use the sessions to store data permanently. Instead, store any information that might be useful for data analysis in the **Result Data**. Unlike the data stored in the sessions, the Result Data are stored permanently in the JATOS server, and will never be deleted automatically.
 
@@ -22,13 +22,13 @@ The data stored in the sessions are not exported or imported together with a stu
 
 ### Comparative Overview
 
-| | Batch Session     | Group Session     | Study Session     |
+| | Batch Session | Group Session | Study Session |
 |-|-------------------|-------------------|-------------------|
 | **Scope (accesible by)** | All workers in a batch | All workers in a group | All components in a study |
 | **Usage** | Exchange and store data relevant for all members of a batch | Exchange and temporarily store data relevant for all members of a group | Exchange and temporarily store data between components of a single study run |
 | **Example use** | (Pseudo-)randomly assign conditions to different workers; Combine results from different groups working in the same batch | Store choices of the two members of a Prisoner's Dilemma game | Pass on correct answers between components; Keep track of the number of iterations of a given component that is repeated |
 | **Lifetime** | Survives after all workers finished their studies | Automatically deleted once the group is finished | Deleted once the worker finished the study - Hence temporary|
-| **Updated when and via** | Any time you call one of the [jatos.batchSession functions](jatos.js-Reference.html#functions-to-access-the-batch-session) | Any time you call one of the [jatos.groupSession functions](jatos.js-Reference.html#functions-to-access-the-group-session) | At the end of each component or if you call [jatos.setStudySessionData](jatos.js-Reference.html#jatossetstudysessiondata) |
+| **Updated when and via** | Any time you call one of the [`jatos.batchSession` functions](jatos.js-Reference.html#functions-to-access-the-batch-session) | Any time you call one of the [`jatos.groupSession` functions](jatos.js-Reference.html#functions-to-access-the-group-session) | At the end of each component or if you call [`jatos.setStudySessionData`](jatos.js-Reference.html#jatossetstudysessiondata) |
 | **Visible and editable from JATOS' GUI** | ![yes](/img/ok-24.ico) | ![no](/img/x-24.ico) | ![no](/img/x-24.ico) |
 | **Requires WebSockets** | ![yes](/img/ok-24.ico) | ![yes](/img/ok-24.ico) | ![no](/img/x-24.ico) |
 | **Included in exported studies** | ![no](/img/x-24.ico) | ![no](/img/x-24.ico) | ![no](/img/x-24.ico) |
@@ -45,7 +45,7 @@ We have an [example study](/Example-Studies), where we show the three different 
 
    ![First component screenshot](/img/ChatExample_1.png)
 
-1. When you click on 'Next', the second component will load. Here you will see two chat windows: The left one is called the group chat because it uses the Group Session; the right one is called batch chat because it uses the Batch Session. For now you're alone in these chat rooms. So, without closing this run and from new browser tabs, **run the study 2 more times (at least)**. You can choose any worker type you want. Additional runs with the JATOS worker will work but you can also [use other worker types](Run-your-Study-with-Batch-Manager-and-Worker-Setup.html#worker-setup).
+1. When you click on 'Next', the second component will load. Here you will see two chat windows: The left one is called the group chat because it uses the Group Session; the right one is called batch chat because it uses the Batch Session. For now you're alone in these chat rooms. So, without closing this run and from new browser tabs, **run the study 2 more times (at least)**. You can choose any study link type you want.
 
    ![Second component screenshot](/img/ChatExample_2.png)
 
