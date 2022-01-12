@@ -36,7 +36,7 @@ You can de-/activate a study link type by clicking in the checkboxes in the left
 
 ![Study Links page screenshot](/img/study_links_4.png)
 
-Personal type links can be of type Personal Single or Personal Multiple. More about the differences can be found in the [Worker Types](Worker-Types.html) page, but the gist is that the links are meant to be handed to individual workers (hence personal). The Personal Single can be used once (hence single) and the Personal Multiple can be used many times (hence multiple).
+Personal type links can be either Single or Multiple. You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that the links are meant to be handed to individual workers (hence _Personal_). Personal Single links can be used once, whereas Personal Multiple can be used many times.
 
 After clicking the Study Links button you get a new window where you can create and manage the study links of this type.
 
@@ -57,7 +57,7 @@ Use QR codes to make your study easier accessible with mobile phones. E.g. copy+
 
 ![Study Links page screenshot](/img/study_links_5.png)
 
-General type links can be of type General Single or General Multiple. More about the differences can be found in the [Worker Types](Worker-Types.html) page, but the gist is that all worker (or at least many) get the same link (hence general). The General Single link can be used once (hence single) and the General Multiple link can be used many times (hence multiple).
+General type links can be either Single or Multiple. You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that all workers (or at least many) get the same link (hence _General_). The General Single link can be used once whereas General Multiple can be used many times.
 
 Due to the nature of these types there is only one study link per type. Click on the button Study Link to get it. 
 
