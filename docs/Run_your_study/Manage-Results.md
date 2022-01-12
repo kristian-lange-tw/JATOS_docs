@@ -1,7 +1,7 @@
 ---
 title: Manage Results
 slug: /Manage-Results.html
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 ## Results Pages

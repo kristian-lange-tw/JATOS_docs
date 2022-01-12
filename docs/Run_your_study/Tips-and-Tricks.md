@@ -1,7 +1,7 @@
 ---
 title: Tips & Tricks
 slug: /Tips-and-Tricks.html
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 ### Batch and Group Session do not work on Windows without HTTPS

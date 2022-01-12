@@ -146,3 +146,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   content:"\e039";
   color: #000000;
 }
+.glyphicon-play:before {
+  content:"\e072";
+  color: #000000;
+}

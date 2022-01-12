@@ -1,7 +1,7 @@
 ---
 title: Restricting study flow - reloading, linear studies, single-use workers and previews
 slug: /Restricting-study-flow.html
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Intro: Restricting study flow

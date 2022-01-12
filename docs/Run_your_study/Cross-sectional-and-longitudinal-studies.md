@@ -1,7 +1,7 @@
 ---
 title: Write cross-sectional and longitudinal studies
 slug: /Cross-sectional-and-longitudinal-studies.html
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 There are several situation in which you might want to store (some parts) of the result data in a way that is accessible from more than just a single study run. This might be the case if you want to:
@@ -9,31 +9,31 @@ There are several situation in which you might want to store (some parts) of the
 1. run a between-participants study.
 1. run a longitudinal study.
 
-Whenever a participant clicks on a study link, JATOS internally starts a study run. Once the data from the last component are sumitted, the study run is finished and the data are no longer avalable to the client side. So, to run a cross-sectional or a longitudinal study, you need store data in a way that outlives the particular study run and is avalable to future runs. The [Batch session data](Session-Data-Three-Types.html) does just this.  
+Whenever a participant clicks on a study link, JATOS internally starts a study run. Once the data from the last component are sumitted, the study run is finished and the data are no longer avalable to the client side. So, to run a cross-sectional or a longitudinal study, you need store data in a way that outlives the particular study run and is avalable to future runs. The [Batch Session data](Session-Data-Three-Types.html) does just this.  
 
 
 ## 1. Counterbalance conditions between participants
 
-The basic idea here is simple. Every time a new participant clicks on a worker link, you assign them randomly to one of the possible conditions. And you keep track of how many participants did each condition in the Batch Session data. 
+The basic idea here is simple. Every time a new participant clicks on a study link, you assign them randomly to one of the possible conditions. And you keep track of how many participants did each condition in the Batch Session data. 
 
 Have a look at the ["Randomize tasks between workers"](/Example-Studies) study in our examples for a full example that you can easily add as a first component in your study. 
 
 ## 2. Run cross-sectional designs
 
-From the coding perspective, the exact same logic applies as for point 1. But please remember: different participants may run a study using different computers with different processing speed, operating systems and browser. All these factors can influence the timing of your response. So be careful when comparing different populations (epecially if they differ in demographics) as they might present systematic differences in the computers they run your study from. See [this paper](https://link.springer.com/article/10.3758/s13428-015-0567-2) for a more thorugh discussion.
+From the coding perspective, the exact same logic applies as for point 1. But please remember: different participants may run a study using different computers with different processing speed, operating systems and browser. All these factors can influence the timing of your response. So be careful when comparing different populations (epecially if they differ in demographics) as they might present systematic differences in the computers they run your study from. See [this paper](https://link.springer.com/article/10.3758/s13428-015-0567-2) for a more thorough discussion.
 
 
 ## 3. Write longitudinal studies
+
 You might want to collect data from the same participant multiple times and, crucially, be able to link the multiple result data from a single participant. The first thing you need to do is make sure that the same *person* is assigned a single, unique ID. There are several options for this, and your exact solution may depend on how you are recruiting participants. 
 
-### Using Personal Multiple Worker links
+### Using Personal Multiple study links
 
-If your sample size is relatively small and it is logistically doable, you could send individualized [Personal Multiple links](Worker-Types.html#-personal-multiple-worker) to each participant. If a participant runs a study with this link, JATOS will assign them a unique number. You can access the worker ID in your JavaScript through `jatos.urlQueryParameters.workerId` from the _jatos.js_ library.
-
+If your sample size is relatively small and it is logistically doable, you could send individualized [Personal Multiple study links](Run-your-Study-with-Study-Links.html) to each participant. If a participant runs a study with this study link, JATOS will assign them a unique number. You can access the worker ID in your JavaScript through [`jatos.workerId`](jatos.js-Reference.html#jatosworkerid) from the _jatos.js_ library.
 
 ### Using MTurk 
 
-If you are recruiting participants through a MTurk, it's straightforward: You can access the worker ID in your JavaScript through `jatos.urlQueryParameters.workerId`.
+If you are recruiting participants through a MTurk, it's straightforward: You can access MTurk's worker ID in your JavaScript through `jatos.urlQueryParameters.workerId`. Alternatively you can also use JATOS' [`jatos.workerId`](jatos.js-Reference.html#jatosworkerid).
 
 ### Using Prolific
 
@@ -41,7 +41,7 @@ If you are usning Prolific to recruit participants, it's a bit more complicated.
 
 ![Prolific Screenshot](/img/Screenshot_ExtendURL_Prolific.png)   
 
-If you select these options in Prolific, you'll be able to collect the Prolific ID from your JavaScript by using the *jatos.js* object 
+If you select these options in Prolific, you'll be able to collect the Prolific ID from your JavaScript by using `jatos.urlQueryParameters`, e.g.
 
 ```javascript
 var prolificPid = jatos.urlQueryParameters.PROLIFIC_PID;

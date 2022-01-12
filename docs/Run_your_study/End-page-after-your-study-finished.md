@@ -1,7 +1,7 @@
 ---
 title: End page - After your study finished
 slug: /End-page-after-your-study-finished.html
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 By default JATOS just shows the text "**This study is finished. Thank you for your participation.**" in English language, with no special formatting, after a study finshed. Maybe you want a different language or add a logo and different text or styling, then read on.

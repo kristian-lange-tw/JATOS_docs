@@ -1,7 +1,7 @@
 ---
 title: Worker Types
 slug: /Worker-Types.html
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 ### Overview

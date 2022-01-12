@@ -1,7 +1,7 @@
 ---
 title: Use Prolific
 slug: /Use-Prolific.html
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 It is very easy to use JATOS together with [Prolific](https://www.prolific.co/) to recruit participants. 

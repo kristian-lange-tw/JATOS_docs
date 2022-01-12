@@ -1,7 +1,7 @@
 ---
 title: Use MTurk
 slug: /Connect-to-Mechanical-Turk.html
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 Use your JATOS study with Mturk is easy, although a fair amount of clicking is required.
