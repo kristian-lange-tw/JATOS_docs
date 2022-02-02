@@ -25,7 +25,7 @@ JATOS has different study link types and each type corresponds to a worker type 
 
 ![Study Links page screenshot](/img/study_links_3.png)
 
-Click on the "<span class="glyphicon glyphicon-chevron-right"></span>" button in the left of the batch row (red box) to expand the study link types (if it's not already expanded).
+Click on the "<span className="glyphicon glyphicon-chevron-right"></span>" button in the left of the batch row (red box) to expand the study link types (if it's not already expanded).
 
 ![Study Links page screenshot](/img/study_links_7.png)
 
@@ -45,7 +45,7 @@ After clicking the Study Links button you get a new window where you can create 
 1. This button creates one study link without a comment. This button is a shortcut to the 'New Study Links' button.
 1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to destinguish your study links. You can create Personal type study links in bulk by changing the Amount value.
 1. This is the study code. [You can hand this to your workers](Run-your-Study-with-Study-Links.html#study-code--study-entry-page).
-1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code.
+1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span className="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span className="glyphicon glyphicon-qrcode"></span> to get the QR code.
 1. Use this checkbox to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue to run).
 
 ![Study Links page screenshot](/img/study_links_14.png)
@@ -63,7 +63,7 @@ Due to the nature of these types there is only one study link per type. Click on
 
 ![Study Links page screenshot](/img/study_links_15.png)
 
-There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span class="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span class="glyphicon glyphicon-qrcode"></span> to get the QR code. Use QR code to make your study easier accessible with mobile phones. E.g. copy+paste the QR code image into an email or print it out and post it on a bulletin board.
+There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span className="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span className="glyphicon glyphicon-qrcode"></span> to get the QR code. Use QR code to make your study easier accessible with mobile phones. E.g. copy+paste the QR code image into an email or print it out and post it on a bulletin board.
 
 
 ### MTurk type links
@@ -90,7 +90,7 @@ If you toogle the Study Link(s) button to 'Open Directly' the generated link wil
 
 ### Study link + Study Entry page for confirmation
 
-If you toggle the Study Link(s) button to 'Confirm First' the generated link will first show the Study Entry page and only when clicked the '<span class="glyphicon glyphicon-play"></span>' button start the actual study run.
+If you toggle the Study Link(s) button to 'Confirm First' the generated link will first show the Study Entry page and only when clicked the '<span className="glyphicon glyphicon-play"></span>' button start the actual study run.
 
 This is how the Study Entry page might look like (you can customize the message):
 
@@ -98,18 +98,18 @@ This is how the Study Entry page might look like (you can customize the message)
 
 The study link has the format `https://my.jatos.server/publix/run?code=study-code`, e.g. `https://cortex.jatos.org/publix/run?code=GwtCkuCY4bM`. As you can see it uses the URL query parameter 'code' to pass on the study code.
 
-The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiousity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span class="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
+The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiousity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span className="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
 
 ####  Customization of the message
 
-By default the message on the Study Entry page is something like 'Press <span class="glyphicon glyphicon-play"></span> to start the experiment'. You might want to change the language or add some more introductory text. You can do this in the study's Study Properties
+By default the message on the Study Entry page is something like 'Press <span className="glyphicon glyphicon-play"></span> to start the experiment'. You might want to change the language or add some more introductory text. You can do this in the study's Study Properties
 
 
 ### Study code + Study Entry page
 
 You can also just hand out the Study Code and let your participants enter it themselves in the Study Entry page. The URL to the Study Run page is `https://my.jatos.server/publix/run`. 
 
-It will show a field where the study code can be entered. And after pressing the '<span class="glyphicon glyphicon-play"></span>' button the study starts:
+It will show a field where the study code can be entered. And after pressing the '<span className="glyphicon glyphicon-play"></span>' button the study starts:
 
 ![Study Entry page screenshot](/img/study_entry_page_3.png)
 
