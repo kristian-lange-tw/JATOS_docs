@@ -3,7 +3,7 @@ title: Example Group Studies
 slug: /Example-Group-Studies.html
 sidebar_position: 1
 ---
-import Highlight from '@site/src/components/Highlight';
+import Hl from '@site/src/components/Highlight';
 
 In group studies, the workers that are part of a group can communicate with each other. JATOS supports different kinds of groups. A group can e.g. have a fixed set of workers like this [Prisoner's Dilemma](/Example-Studies) where exactly two workers play with each other. On the other side of the spectrum is this [Snake game](/Example-Studies) with an on open, multi-worker approach.
 
@@ -15,7 +15,7 @@ As an example of this, let's go through the Snake Game group study in detail:
 
 1. Download and import the [Snake game](/Example-Studies)
 1. Open the [Study Links](Run-your-Study-with-Study-Links.html) page
-1. Now get a study link to start the first Snake game: Click on the <Highlight>Study Links</Highlight> button in line Personal Multiple (other study link types are fine too). In the opened pop-up window click on the top-left button <span className="glyphicon glyphicon-plus"></span><span className="glyphicon glyphicon-link"></span> to get a new link and then on <span className="glyphicon glyphicon-duplicate"></span> in the link's row to copy it to the clipboard.
+1. Now get a study link to start the first Snake game: Click on the <Hl>Study Links</Hl> button in line Personal Multiple (other study link types are fine too). In the opened pop-up window click on the top-left button <span className="glyphicon glyphicon-plus"></span><span className="glyphicon glyphicon-link"></span> to get a new link and then on <span className="glyphicon glyphicon-duplicate"></span> in the link's row to copy it to the clipboard.
 1. Open a new tab in your browser and paste the study link into the address field. Press 'Enter' and the study should start.
 1. Repeat the last step to start a second Snake game.
 1. Now, in both tabs: click through the introduction until you arrive in the waiting room. Click **Join** and then **Ready**.

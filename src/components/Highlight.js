@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Highlight({children}) {
+export default function Hl({children}) {
     return (
       <span
         style={{
