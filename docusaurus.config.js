@@ -36,7 +36,7 @@ const config = {
               banner: 'unreleased',
             },
             '3.7.1': {
-              label: '3.7.1',
+              label: '3.7.x',
               path: '',
               banner: 'none',
             },
