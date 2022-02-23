@@ -3,14 +3,15 @@ title: Manage Results
 slug: /Manage-Results.html
 sidebar_position: 8
 ---
+import Hl from '@site/src/components/Highlight';
 
 ## Results Pages
 
-Once you collected data for a study, you can see and manage the results by clicking on one of the *Results* buttons.
+Once you collected data for a study, you can see and manage the results by clicking on one of the <Hl>Results</Hl> buttons.
 
 ![Results Link](/img/ResultsLink_371.png)
 
-The image below is an example of a study results page, but there are result pages for components, batches or groups as well. There's quite a lot of information here, so we'll go through each piece.
+The image below is an example of a study results page, but there are <Hl>result</Hl> pages for <Hl>components</Hl>, <Hl>batches</Hl> or <Hl>groups</Hl> as well. There's quite a lot of information here, so we'll go through each piece.
 
 ![Results View screenshot](/img/ResultsView-Screenshot1.png)
 
@@ -19,14 +20,14 @@ The image below is an example of a study results page, but there are result page
 
 ### View Result Data
 
-Each study result has an arrow on the left. If you click on it, the result data for this study run will be displayed underneath the row. Since a study can have several components and each component produces its own result data there can be several result data each in its own row (like in the screenshot below). By clicking on _show all_ one can see the whole data if it doesn't fit all in the box.
+Each <Hl>study result</Hl> has an arrow on the left. If you click on it, the <Hl>result data</Hl> for this study run will be displayed underneath the row. Since a study can have several <Hl>components</Hl> and each component produces its own result data there can be several result data each in its own row (like in the screenshot below). By clicking on <Hl>show all</Hl> one can see the whole data if it doesn't fit all in the box.
 
 ![Results View screenshot](/img/ResultsView-Screenshot3.png)
 
 
 ### Selecting Results
 
-There is a checkbox on the left side of each row to select/deselect a specific result. You can also use the buttons on the bar above to select/deselect all results in the table. Additionally you can select only the filtered ones or only the visible ones.
+There is a <Hl>checkbox</Hl> on the left side of each row to <Hl>select/deselect</Hl> a specific result. You can also use the buttons on the bar above to select/deselect all results in the table. Additionally you can select only the filtered ones or only the visible ones.
 
 ![Results View screenshot](/img/ResultsView-Screenshot2.png)
 
@@ -37,13 +38,13 @@ The filter lets you search all all fields in the results table (the metadata).
 
 ![Results View screenshot](/img/ResultsView-Screenshot4.png)
 
-If you type, for example, "Personal Single" in the *Filter* field, only the results ran by a Personal Single worker will appear on the table. You can then click on *Filtered* to select them and export only those results that you're interested in. 
+If you type, for example, <Hl>Personal Single</Hl> in the <Hl>Filter</Hl> field, only the results ran by a Personal Single worker will appear on the table. You can then click on <Hl>Filtered</Hl> to select them and export only those results that you're interested in. 
 
-For more eloborate filtering you can use Regular Expressions. Click on *RegEx* to activate this.
+For more eloborate filtering you can use Regular Expressions. Click on <Hl>RegEx</Hl> to activate this.
 
-By default filtering in case insensitive but you can turn on case sensitive filtering by clicking on *Aa*.
+By default filtering in case insensitive but you can turn on case sensitive filtering by clicking on <Hl>Aa</Hl>.
 
-Sometimes the simple filter is not precise enough or you want to combine multiple filters: For those cases the _Filter Builder_ offers complex criteria with logical conjunctions ('and', 'or'). It's also possible to filter for certain dates.
+Sometimes the simple filter is not precise enough or you want to combine multiple filters: For those cases the <Hl>Filter Builder</Hl> offers complex criteria with logical conjunctions (**'and'**, **'or'**). It's also possible to filter for certain dates.
 
 ![Results View screenshot](/img/ResultsView-Screenshot10.png)
 
@@ -52,7 +53,7 @@ Sometimes the simple filter is not precise enough or you want to combine multipl
 
 ### Export Result Data
 
-Once you selected the results you're interested in, click *Export Results* and *Selected* and you will download a text file that contains your results. Each line in this text file represents result data from one component. Alternatively you can also select *All* to get all result data.
+Once you selected the results you're interested in, click <Hl>Export Results</Hl> and *Selected* and you will download a text file that contains your results. Each line in this text file represents result data from one component. Alternatively you can also select *All* to get all result data.
 
 ![Results View screenshot](/img/ResultsView-Screenshot6.png)
 

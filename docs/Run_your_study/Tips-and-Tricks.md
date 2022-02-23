@@ -3,6 +3,7 @@ title: Tips & Tricks
 slug: /Tips-and-Tricks.html
 sidebar_position: 11
 ---
+import Hl from '@site/src/components/Highlight';
 
 ### Batch and Group Session do not work on Windows without HTTPS
 
@@ -73,7 +74,7 @@ If the `jatos.abortStudy` function is called (usually after the worker clicks a 
 
 ### How to let a Personal Single Worker redo his study?
 
-A Personal Single Worker is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the 'Cancel' button). One way would be to just create another Personal Single Link and hand it to the worker. But there is another way without creating a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
+A Personal Single Worker is only allowed to run their study once. But sometimes you want to allow them to do it a second time (maybe they accidentally clicked the <Hl>Cancel</Hl> button). One way would be to just create another Personal Single Link and hand it to the worker. But there is another way without creating a second Link: you can simply delete the worker's result from one of the result pages. This will allow this Personal Single worker to redo this study.
 
 ### Simulate slow network
 
@@ -85,6 +86,6 @@ Problem: The study runs fine, but as soon as one distributes links for Personal 
 
 The reason for this behaviour is that some of those tools open links that are posted in them before your participant can click on them. They do this to provide more information about the link, like a title and an image. Usually this is fine but Personal/General Single links work exactly once (if preview is not allowed) and a second request with the same link just responses with the forementioned error message.
 
-1. Use [study links with confirmation](Run-your-Study-with-Study-Links.html#study-links---how-to-let-participants-run-your-study) - Choose the study link version with the button 'Confirm First'. This link shows a 'study entry' page before the actual study starts. This page can be opened many times.
+1. Use [study links with confirmation](Run-your-Study-with-Study-Links.html#study-links---how-to-let-participants-run-your-study) - Choose the study link version with the button <Hl>Confirm First</Hl>. This link shows a 'study entry' page before the actual study starts. This page can be opened many times.
 
 1. [Allow preview](Restricting-study-flow.html#allow-preview) - You can keep using Personal/General Single links and use a [preview link](Restricting-study-flow.html#preview-links) to allow opening the first component of your study as many times as one wishes. All following components can be opened only once again.

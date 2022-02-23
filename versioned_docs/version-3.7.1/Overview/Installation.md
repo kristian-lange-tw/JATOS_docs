@@ -3,6 +3,7 @@ title: Installation
 slug: /Installation.html
 sidebar_position: 3
 ---
+import Hl from '@site/src/components/Highlight';
 
 ### Easy installation on your local computer
 
@@ -12,12 +13,12 @@ A local installation is straightforward.
 
 Usually you first develop your study with JATOS on a local computer. Then in a second step you bring it to a server installation of JATOS.
 
-With a local installation only you have access to JATOS - with a [server installation](Bring-your-JATOS-online.html) others can run your study via the internet too. This is especially true if you want to publish your study on Mechanical Turk.
+With a local installation only you have access to JATOS - with a [server installation](Bring-your-JATOS-online.html) others can run your study via the internet too. This is especially true if you want to publish your study on <Hl>Mechanical Turk</Hl>.
 
 **For convenience JATOS is available as a bundle with Java.**
 
 To run JATOS, you need Java 11 installed on your computer (to be precise, you need a Java Runtime Environment, aka JRE). Chances are, you already have Java installed. To check whether Java is installed on your system, type `java -version` in your terminal (MacOS / Linux) or command window (Windows). 
-If you don't have Java installed, you can either download and install it (e.g. from [adoptium.net](https://adoptium.net/)) or download and install JATOS bundled with Java for your operating system. 
+If you don't have Java installed, you can either download and install it (e.g. from [adoptium.net](https://adoptium.net/)) or download and install <Hl>JATOS bundled with Java</Hl> for your operating system. 
 
 
 ### Installation Windows 

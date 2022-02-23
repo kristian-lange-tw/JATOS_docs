@@ -3,6 +3,7 @@ title: Worker Types
 slug: /Worker-Types.html
 sidebar_position: 3
 ---
+import Hl from '@site/src/components/Highlight';
 
 ### Overview
 Following Amazon Mechanical Turk’s terminology, a worker in JATOS is a person who runs a study. Different worker types access a study in different ways. For example, some workers can run the same study multiple times, whereas others can do it only once.
@@ -23,7 +24,7 @@ Following Amazon Mechanical Turk’s terminology, a worker in JATOS is a person 
 
 **Jatos workers can run any study as many times as they want.**
 
-Jatos workers run a study (or any of its components individually) by clicking on the _Run_ buttons in the GUI. Jatos workers are usually the **researchers trying out their own studies**. Each JATOS user (i.e., anybody with a JATOS login) has their own Jatos worker. They are not meant to be used by participants.
+Jatos workers run a study (or any of its components individually) by clicking on the <Hl>Run</Hl> buttons in the GUI. Jatos workers are usually the **researchers trying out their own studies**. Each JATOS user (i.e., anybody with a JATOS login) has their own Jatos worker. They are not meant to be used by participants.
 
 
 ### <span className="glyphicon glyphicon-personal-single"></span> Personal Single Worker 

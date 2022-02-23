@@ -3,6 +3,7 @@ title: Write your own Study - Basics and Beyond
 slug: /Write-your-own-Study-Basics-and-Beyond.html
 sidebar_position: 2
 ---
+import Hl from '@site/src/components/Highlight';
 
 After you [created a new study](Create-a-new-study.html) ... what comes next?
 
@@ -21,7 +22,7 @@ Then in the following form you define the component's properties: enter the comp
 
 ![New Component](/img/Screenshot_new-component-properites.png)
 
-Click on 'Create' and you are done. If you add more than one component you can change the order in which they run by drag-and-drop on the position button.
+Click on <Hl>Create</Hl> and you are done. If you add more than one component you can change the order in which they run by drag-and-drop on the position button.
 
 
 ## Mandatory lines in your components' HTML

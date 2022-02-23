@@ -3,6 +3,7 @@ title: Run your Study with Study Links
 slug: /Run-your-Study-with-Study-Links.html
 sidebar_position: 2
 ---
+import Hl from '@site/src/components/Highlight';
 
 Study Links in JATOS is the name of a page where one can generate study links for your particpants to run your study. You can also organize your participants into batches and handle their results there. In earlier versions of JATOS it was called Worker and Batch Manager.
 
@@ -10,14 +11,14 @@ To get to the Study Links page press on the button with the same name in your st
 
 ![Study Links Button screenshot](/img/study_links_1.png)
 
-This Study Links page has only one batch, the 'Default' one. A batch can have study links of different type, e.g. Personal Single, Personal Multiple etc:
+This Study Links page has only one batch, the <Hl>Default</Hl> one. A batch can have study links of different type, e.g. Personal Single, Personal Multiple etc:
 
 ![Study Links page screenshot](/img/study_links_2.png)
 
 
 ## Study Links - How to let participants run your study
 
-During development of your study you would usually run it with the "Run" button in the study page. But then, when you are done developing you want to let others run your study - you want participants (or workers as they are called in JATOS) do it. For this JATOS lets you create study links that you can hand out to your workers (e.g. via email or social media).
+During development of your study you would usually run it with the <Hl>Run</Hl> button in the study page. But then, when you are done developing you want to let others run your study - you want participants (or workers as they are called in JATOS) do it. For this JATOS lets you create study links that you can hand out to your workers (e.g. via email or social media).
 
 **Generate study links and hand them to your workers**
 
@@ -25,7 +26,7 @@ JATOS has different study link types and each type corresponds to a worker type 
 
 ![Study Links page screenshot](/img/study_links_3.png)
 
-Click on the "<span className="glyphicon glyphicon-chevron-right"></span>" button in the left of the batch row (red box) to expand the study link types (if it's not already expanded).
+Click on the <Hl><span className="glyphicon glyphicon-chevron-right"></span></Hl> button in the left of the batch row (red box) to expand the study link types (if it's not already expanded).
 
 ![Study Links page screenshot](/img/study_links_7.png)
 
@@ -38,14 +39,14 @@ You can de-/activate a study link type by clicking in the checkboxes in the left
 
 Personal type links can be either Single or Multiple. You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that the links are meant to be handed to individual workers (hence _Personal_). Personal Single links can be used once, whereas Personal Multiple can be used many times.
 
-After clicking the Study Links button you get a new window where you can create and manage the study links of this type.
+After clicking the <Hl>Study Links</Hl> button you get a new window where you can create and manage the study links of this type.
 
 ![Study Links page screenshot](/img/study_links_11.png)
 
-1. This button creates one study link without a comment. This button is a shortcut to the 'New Study Links' button.
+1. This button creates one study link without a comment. This button is a shortcut to the <Hl>New Study Links</Hl> button.
 1. Lets you create several study links and lets you add a comment to them. The comment is only a hint for you that you can use to destinguish your study links. You can create Personal type study links in bulk by changing the Amount value.
 1. This is the study code. [You can hand this to your workers](Run-your-Study-with-Study-Links.html#study-code--study-entry-page).
-1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span className="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span className="glyphicon glyphicon-qrcode"></span> to get the QR code.
+1. This is your actual study link. Hand this to your workers. There are two links that can be toggled by a button: 1) [The <Hl>Open Directly</Hl> link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The <Hl>Confirm First</Hl> lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <Hl><span className="glyphicon glyphicon-duplicate"></span></Hl> button to copy the link to the clipboard or <span className="glyphicon glyphicon-qrcode"></span> to get the QR code.
 1. Use this checkbox to de-/activate a single study link. A deactivated study link can not be used to start a study run (but an already started study run can continue to run).
 
 ![Study Links page screenshot](/img/study_links_14.png)
@@ -59,11 +60,11 @@ Use QR codes to make your study easier accessible with mobile phones. E.g. copy+
 
 General type links can be either Single or Multiple. You can find more details about them in the [Worker Types](Worker-Types.html) page, but the gist is that all workers (or at least many) get the same link (hence _General_). The General Single link can be used once whereas General Multiple can be used many times.
 
-Due to the nature of these types there is only one study link per type. Click on the button Study Link to get it. 
+Due to the nature of these types there is only one study link per type. Click on the button <Hl>Study Link</Hl> to get it. 
 
 ![Study Links page screenshot](/img/study_links_15.png)
 
-There are two links that can be toggled by a button: 1) [The 'Open Directly' link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The 'Confirm First' lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <span className="glyphicon glyphicon-duplicate"></span> button to copy the link to the clipboard or <span className="glyphicon glyphicon-qrcode"></span> to get the QR code. Use QR code to make your study easier accessible with mobile phones. E.g. copy+paste the QR code image into an email or print it out and post it on a bulletin board.
+There are two links that can be toggled by a button: 1) [The <Hl>Open Directly</Hl> link starts the study right away](Run-your-Study-with-Study-Links.html#start-directly-with-a-study-link). 2) [The <Hl>Confirm First</Hl> lets your worker confirm first with a button press](Run-your-Study-with-Study-Links.html#study-link--study-entry-page-for-confirmation). Use the <Hl><span className="glyphicon glyphicon-duplicate"></span></Hl> button to copy the link to the clipboard or <Hl><span className="glyphicon glyphicon-qrcode"></span></Hl> to get the QR code. Use QR code to make your study easier accessible with mobile phones. E.g. copy+paste the QR code image into an email or print it out and post it on a bulletin board.
 
 
 ### MTurk type links
@@ -85,12 +86,12 @@ A study run can be started in JATOS in slightly different ways:
 
 ### Start directly with a study link
 
-If you toogle the Study Link(s) button to 'Open Directly' the generated link will start the study run directly without any intermediate steps like the Study Entry page. The study link has the format `https://my.jatos.server/publix/study-code`, e.g. `https://cortex.jatos.org/publix/GwtCkuCY4bM`. This is fast for the participant but has the disadvantage that if they click the study link accidentally, at least if it is a single-use link (Personal Single or General Single), it will be invalidated and the participant is not allowed to run the study again (not without handing them a new study link).
+If you toogle the <Hl>Study Link(s)</Hl> button to 'Open Directly' the generated link will start the study run directly without any intermediate steps like the Study Entry page. The study link has the format `https://my.jatos.server/publix/study-code`, e.g. `https://cortex.jatos.org/publix/GwtCkuCY4bM`. This is fast for the participant but has the disadvantage that if they click the study link accidentally, at least if it is a single-use link (Personal Single or General Single), it will be invalidated and the participant is not allowed to run the study again (not without handing them a new study link).
 
 
 ### Study link + Study Entry page for confirmation
 
-If you toggle the Study Link(s) button to 'Confirm First' the generated link will first show the Study Entry page and only when clicked the '<span className="glyphicon glyphicon-play"></span>' button start the actual study run.
+If you toggle the <Hl>Study Link(s)</Hl> button to 'Confirm First' the generated link will first show the Study Entry page and only when clicked the <Hl><span className="glyphicon glyphicon-play"></span></Hl> button start the actual study run.
 
 This is how the Study Entry page might look like (you can customize the message):
 
@@ -98,7 +99,7 @@ This is how the Study Entry page might look like (you can customize the message)
 
 The study link has the format `https://my.jatos.server/publix/run?code=study-code`, e.g. `https://cortex.jatos.org/publix/run?code=GwtCkuCY4bM`. As you can see it uses the URL query parameter 'code' to pass on the study code.
 
-The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiousity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the '<span className="glyphicon glyphicon-play"></span>' button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
+The advantage of using the Study Entry page is, that participants accidentally clicking on a study link (e.g. in in an email or on Twitter) without the intention of actually running the study (just out of curiousity) will now **not** automatically start the study run but be shown the Study Entry page where they have to press the <Hl><span className="glyphicon glyphicon-play"></span></Hl> button for confirmation. At least single-use links (Personal Single or General Single) can be used only once. Here the study entry page acts as a kind of barrier preventing the invalidation of the link.
 
 ####  Customization of the message
 
@@ -109,7 +110,7 @@ By default the message on the Study Entry page is something like 'Press <span cl
 
 You can also just hand out the Study Code and let your participants enter it themselves in the Study Entry page. The URL to the Study Run page is `https://my.jatos.server/publix/run`. 
 
-It will show a field where the study code can be entered. And after pressing the '<span className="glyphicon glyphicon-play"></span>' button the study starts:
+It will show a field where the study code can be entered. And after pressing the <Hl><span className="glyphicon glyphicon-play"></span></Hl> button the study starts:
 
 ![Study Entry page screenshot](/img/study_entry_page_3.png)
 
@@ -126,12 +127,12 @@ Each study comes with a "Default" batch (although it can be renamed in its batch
 
 ![Study Links page screenshot](/img/study_links_12.png)
 
-You can **deactivate** or **activate** a batch by clicking on the checkbox button in each batch row. A deactivated batch doesn't allow any study runs.
+You can **deactivate** or **activate** a batch by clicking on the <Hl>checkbox</Hl> button in each batch row. A deactivated batch doesn't allow any study runs.
 
 
 ### Batch Properties
 
-Each batch has properties that can be changed: click on the Batch Properties button in each batch's row.
+Each batch has properties that can be changed: click on the <Hl>Batch Properties</Hl> button in each batch's row.
 
 ![Study Links page screenshot](/img/study_links_13.png)
 

@@ -4,6 +4,7 @@ slug: /jsPsych-and-JATOS.html
 hide_table_of_contents: true
 sidebar_position: 4
 ---
+import Hl from '@site/src/components/Highlight';
 
 <div style={{'float':'right', 'width':'300px'}}>
 
@@ -35,7 +36,7 @@ Every jsPsych version works slightly different. Here we explain the steps for js
    });
    ~~~
 
-1. Wrap jsPsych's run in `jatos.onLoad` and if you want add a 'Cancel' button with `jatos.addAbortButton`.
+1. Wrap jsPsych's run in `jatos.onLoad` and if you want add a <Hl>Cancel</Hl> button with `jatos.addAbortButton`.
 
    ~~~ javascript
    jatos.onLoad(() => {
@@ -44,4 +45,4 @@ Every jsPsych version works slightly different. Here we explain the steps for js
    });
    ~~~
 
-That's all. Have a look at the 'Simple Reaction Time Task' in our [example studies](/Example-Studies) to see a full example with jsPsych 7.
+That's all. Have a look at the <Hl>Simple Reaction Time Task</Hl> in our [example studies](/Example-Studies) to see a full example with jsPsych 7.

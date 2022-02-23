@@ -3,6 +3,7 @@ title: JATOS on DigitalOcean
 slug: /JATOS-on-DigitalOcean.html
 sidebar_position: 3
 ---
+import Hl from '@site/src/components/Highlight';
 
 On this page we want to explain how to install JATOS on a server running on DigitalOcean. We tried to keep this tutorial as easy as possible: if everything runs smoothly you don't have to use the terminal at all.
 
@@ -44,7 +45,7 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
 
 1. [Optional] Add backups
 
-1. Finally click the _Create_ button
+1. Finally click the <Hl>Create</Hl> button
 
 1. Try out your JATOS: Now the server is being created which can take a couple seconds (or minutes). Copy the server's (aka Droplet) IP address into your browser's address bar and if everything went well, you will see a JATOS login screen.
 

@@ -4,6 +4,8 @@ keywords: example studies, jspsych, lab.js, labjs, osweb, opensesame, javascript
 slug: /Example-Studies.html
 hide_table_of_contents: true
 ---
+import Hl from '@site/src/components/Highlight';
+
 # Example Studies
 **summary:** These study examples will (hopefully) be a helpful starting point for you to write your own studies. They also show how different client-side frameworks integrate with JATOS, and illustrate (e.g.) how to easily import/export studies, how to store and show results, and how to do messaging in group studies.
 
@@ -32,7 +34,7 @@ If you wrote an example study that you'd like to share, please feel free to [con
 | [p5.js 2D Graphics Showcase](https://github.com/JATOS/JATOS_examples/raw/master/examples/p5.js_examples.jzip) &lowast; | [p5.js](https://p5js.org/) is a graphics library to easily create 2D and 3D graphics without deeper knowledge of how those graphics are rendered. Additionally one can add user interaction, video, sound, or capture from the webcam or the mic. Have a look at their [example section](https://p5js.org/examples/). | [p5.js](https://p5js.org/) | - | <div style={{'width':'100%'}}>![](/img/example-studies/p5-js-screenshot5.gif)</div> |
 | [Video](https://github.com/JATOS/JATOS_examples/raw/master/examples/video_example_study.jzip) | Shows how to embed a video with HTML 5 by using the browsers video player, YouTube, or the [video.js](http://www.videojs.com/) JavaScript library. | - | - |  <div style={{'width':'100%'}}>![](/img/example-studies/Screenshot_videoExample2.png)</div> |
 | [Results in CSV](https://github.com/JATOS/JATOS_examples/raw/master/examples/results_as_csv_example.jzip) | Simple example of how to store results in CSV format. | - | - |  <div style={{'width':'100%'}}>![](/img/example-studies/Screenshot_csv_example.png)</div> |
-| [Simple Consent Form](https://github.com/JATOS/JATOS_examples/raw/master/examples/consent_form.jzip) | Simple example of a consent form with text and buttons ‘I agree’ and ‘Cancel’. | - | - |  <div style={{'width':'100%'}}>![](/img/example-studies/Screenshot_consent_form.png)</div> |
+| [Simple Consent Form](https://github.com/JATOS/JATOS_examples/raw/master/examples/consent_form.jzip) | Simple example of a consent form with text and buttons <Hl>I agree</Hl> and <Hl>Cancel</Hl>. | - | - |  <div style={{'width':'100%'}}>![](/img/example-studies/Screenshot_consent_form.png)</div> |
 | [Introduction and Consent with Preview Feature](https://github.com/JATOS/JATOS_examples/raw/master/examples/consent_form_and_introduction_with_preview_feature.jzip) | This mobile-friendly example just has an introduction component that includes a consent text. | - | [Preview links](Restricting-study-flow.html#preview-links) |  <div style={{'width':'100%'}}>![](/img/example-studies/Screenshot_preview_showcase.png)</div> |
 | [Prolific Example](https://github.com/JATOS/JATOS_examples/raw/master/examples/prolific_example.jzip) § | Example on how to redirect in the end of the study back to Prolific | - | - |  <div style={{'width':'100%'}}>![](/img/example-studies/Screenshot_consent_form.png)</div> |
 | [2048 Game](https://github.com/JATOS/JATOS_examples/raw/master/examples/2048.jzip) | This addictive game is created by [Gabriele Cirulli](https://github.com/gabrielecirulli/2048). | - | - |  <div style={{'width':'100%'}}>![](/img/example-studies/Screenshot_2048Game.png)</div> |
