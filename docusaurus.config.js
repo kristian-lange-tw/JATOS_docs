@@ -36,7 +36,7 @@ const config = {
               banner: 'unreleased',
             },
             '3.7.1': {
-              label: '3.7.1',
+              label: '3.7.x',
               path: '',
               banner: 'none',
             },
@@ -55,6 +55,10 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        googleAnalytics: {
+          trackingID: 'UA-57013276-1',
+          anonymizeIP: true, // Should IPs be anonymized?
         },
       }),
     ],
@@ -136,10 +140,6 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
-      googleAnalytics: {
-        trackingID: 'UA-57013276-1',
-        anonymizeIP: true, // Should IPs be anonymized?
       },
     }),
 };
