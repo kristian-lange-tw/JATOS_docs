@@ -37,7 +37,7 @@ E.g.
    http://myjatosdomain/publix/v6UkpHR8Sfu?SONA_ID=123abc
    ```
 
-* And your _End Redirect URL_ (in study properties):
+* And your <Hl>End Redirect URL</Hl> (in study properties):
 
    ```
    https://rug.sona-systems.com/webstudy_credit.aspx?experiment_id=123&credit_token=1234567&survey_code=[SONA_ID]
@@ -52,4 +52,4 @@ E.g.
 
 ### 3. In JavaScript with `jatos.endStudyAndRedirect` or `jatos.endStudyAjax` 
 
-If you want to determine dynamically (i.e. in JavaScript) the address of the webpage that your participants see after finishing a study, you can use one of the two **_jatos.js_** functions [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) or [`jatos.endStudyAjax`](jatos.js-Reference.html#jatosendstudyajax) in the JavaScript of your study's <Hl>last component</Hl>. This is the most versatile way.
+If you want to determine dynamically (i.e. in JavaScript) the address of the webpage that your participants see after finishing a study, you can use one of the two **_jatos.js_** functions [`jatos.endStudyAndRedirect`](jatos.js-Reference.html#jatosendstudyandredirect) or [`jatos.endStudyAjax`](jatos.js-Reference.html#jatosendstudyajax) in the JavaScript of your study's last component. This is the most versatile way.

@@ -20,15 +20,15 @@ Here are a few advantages and limitations of JATOS with regards to data privacy.
 * JATOS' main advantage is that you can store your participants' data in your own server (e.g. at your university). This means that you have full control over the data stored in your database, and no commercial company has access to it. JATOS does not share any data (except of course during a study run with the participant's browsers). Each JATOS installation is completely independent of any other JATOS installation.
 
 * By default, JATOS stores the following data: 
-  * time (of the server running JATOS) at which the <Hl>study</Hl> -and each of its <Hl>components</Hl>- was started and finished
-  * the [<Hl>worker type</Hl>](Worker-Types.html) (MTurk, General single, Personal multiple, etc) 
-  * in cases of <Hl>MTurk workers</Hl>, the confirmation code AND the MTurk worker ID. In these cases, if an MTurk worker participated in two of your studies, running in the same JATOS instance, **you will be able to associate the data across these two studies**. This is an important issue: <Hl>MTurk workers</Hl> might not be aware that you are the same researcher, and will not know that you have the chance to associate data from different studies. The best way to avoid this is to export all your study's data and delete it from the JATOS database once you are done with it. In this way, JATOS won't know that a worker already participated in another study and will create a new worker ID for them.   
+  * time (of the server running JATOS) at which the study -and each of its components- was started and finished
+  * the [worker type](Worker-Types.html) (MTurk, General single, Personal multiple, etc) 
+  * in cases of <Hl>MTurk</Hl> workers, the confirmation code AND the MTurk worker ID. In these cases, if an MTurk worker participated in two of your studies, running in the same JATOS instance, **you will be able to associate the data across these two studies**. This is an important issue: <Hl>MTurk</Hl> workers might not be aware that you are the same researcher, and will not know that you have the chance to associate data from different studies. The best way to avoid this is to export all your study's data and delete it from the JATOS database once you are done with it. In this way, JATOS won't know that a worker already participated in another study and will create a new worker ID for them.   
 
 * JATOS will **not** store information like IP address or browser type (User-Agent or any other HTTP header field).
 
 ### Things you should consider in your studies 
 
-* You should consider to add some button in your study pages to abort the study. Some ethics demand that any participant should have the **right to withdraw** at any time, without explanation. In this case all data of the participant gathered during the study should be deleted. Conveniently <Hl>jatos.js</Hl> offers the functions [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy) and [`jatos.addAbortButton`](jatos.js-Reference.html#jatosaddabortbutton) that do exactly that.
+* You should consider to add some button in your study pages to abort the study. Some ethics demand that any participant should have the **right to withdraw** at any time, without explanation. In this case all data of the participant gathered during the study should be deleted. Conveniently **jatos.js** offers the functions [`jatos.abortStudy`](jatos.js-Reference.html#jatosabortstudy) and [`jatos.addAbortButton`](jatos.js-Reference.html#jatosaddabortbutton) that do exactly that.
 
 * Use **encryption** with your [server instance](JATOS-on-a-server.html). Only with encryption no one else in the internet can read the private data from your study's participants.
 

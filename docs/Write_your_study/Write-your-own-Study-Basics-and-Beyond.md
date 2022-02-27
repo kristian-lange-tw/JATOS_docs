@@ -14,11 +14,11 @@ After you [created a new study](Create-a-new-study.html) ... what comes next?
 
 If you have an empty study you want to add a component. A component corresponds to a webpage defined by an HTML file. A study can have more than one component - this is actually a strength of JATOS: e.g. one can combine different experiments into one, or easily add an survey to an existing experiment.
 
-To add a component go to your study and click on Components -> New.
+To add a component go to your study and click on <Hl>Components</Hl> -> <Hl>New</Hl>.
 
 ![New Component](/img/Screenshot_new-component_371.png)
 
-Then in the following form you define the component's properties: enter the component's title and most importantly its 'HTML file path'. This is the path to the HTML file that starts this component.
+Then in the following form you define the component's properties: enter the component's title and most importantly its <Hl>HTML file path</Hl>. This is the path to the HTML file that starts this component.
 
 ![New Component](/img/Screenshot_new-component-properites.png)
 
@@ -71,7 +71,7 @@ E.g. you want to be able to quickly change
 * the number of trials
 * some parameter needed in the experiment
 
-This you can achieve with the Study JSON Input or Component JSON Input because both can be easily edited in the Study Properties or Component Properties.
+This you can achieve with the <Hl>Study JSON Input</Hl> or <Hl>Component JSON Input</Hl> because both can be easily edited in the <Hl>Study Properties</Hl> or <Hl>Component Properties</Hl>.
 
 ![Study Properties / JSON input](/img/Screenshot_studyJsonInput_371.png)
 
@@ -95,7 +95,7 @@ you can access those fields in your JavaScript with `jatos.studyJsonInput.introd
 
 ## Study / Batch / Group Session
 
-The sessions are there to help you exchange data within a study, batch or group. The Study Session allows to pass on data within the same study run, from one component to the next. With the Batch Session one can transfer data between study runs that belong to the same batch. There is a whole page dedicated to those sessions: [Session Data - Three Types](/Session-Data-Three-Types.html).
+The sessions are there to help you exchange data within a study, batch or group. The Study Session allows to pass on data within the same study run, from one component to the next. With the <Hl>Batch Session</Hl> one can transfer data between study runs that belong to the same batch. There is a whole page dedicated to those sessions: [Session Data - Three Types](/Session-Data-Three-Types.html).
 
 
 ## Group Studies

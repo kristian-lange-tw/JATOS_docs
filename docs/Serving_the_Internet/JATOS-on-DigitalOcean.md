@@ -45,15 +45,15 @@ First we want to set up a simple JATOS server without encryption (HTTPS) or a do
 
 1. [Optional] Add backups
 
-1. Finally click the <Hl>Create</Hl> button
+1. Finally click the _Create_ button
 
 1. Try out your JATOS: Now the server is being created which can take a couple seconds (or minutes). Copy the server's (aka Droplet) IP address into your browser's address bar and if everything went well, you will see a JATOS login screen.
 
 1. Log into JATOS with ‘admin’ and password ‘admin’
 
 1. The first thing you should do is change your admin password:
-   1. Click on ‘Admin (admin) in top-right header
-   1. Click ‘Change Password’
+   1. Click on <Hl>Admin (admin)</Hl> in top-right header
+   1. Click <Hl>Change Password</Hl>
 
 **Voila, you have your own JATOS server.**
 

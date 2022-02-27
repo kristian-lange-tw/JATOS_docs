@@ -10,7 +10,7 @@ There are several situation in which you might want to store (some parts) of the
 1. run a between-participants study.
 1. run a longitudinal study.
 
-Whenever a participant clicks on a <Hl>study link</Hl>, JATOS internally starts a study run. Once the data from the last component are sumitted, the study run is finished and the data are no longer avalable to the client side. So, to run a cross-sectional or a longitudinal study, you need store data in a way that outlives the particular study run and is avalable to future runs. The [<Hl>Batch Session data</Hl>](Session-Data-Three-Types.html) does just this.  
+Whenever a participant clicks on a <Hl>study link</Hl>, JATOS internally starts a study run. Once the data from the last component are sumitted, the study run is finished and the data are no longer avalable to the client side. So, to run a cross-sectional or a longitudinal study, you need store data in a way that outlives the particular study run and is avalable to future runs. The [<Hl>Batch Session</Hl> data](Session-Data-Three-Types.html) does just this.  
 
 
 ## 1. Counterbalance conditions between participants
