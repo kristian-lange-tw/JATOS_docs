@@ -172,7 +172,9 @@ There are three ways to change the configuration of the study logs:
 By default JATOS uses only locally stored users and no LDAP. LDAP configuration is only possible in `conf/production.conf`. At the moment LDAP users still have to be created manually in JATOS' _User manager_ (with the checkbox LDAP turned on).- only authentication is done via LDAP.
 
 * `jatos.user.authentication.ldap.url` - Specifies URL of the LDAP server. Not set or an empty string means no authentication via LDAP.
-* `jatos.user.authentication.ldap.basedn` - LDAP base domain name (e.g. "dc=example,dc=com"). Not set or an empty string means no authentication via LDAP.
+* `jatos.user.authentication.ldap.basedn` - LDAP base DN(s) (distinguished name). Can be one DN with a single string (e.g. `"ou=students,dc=example,dc=com"`) or a list of DNs in squared brackets (e.g. `["ou=students,dc=example,dc=com", "ou=scientists,dc=example,dc=com"]`). Not set or an empty string means no authentication via LDAP.
+* `jatos.user.authentication.ldap.admin.dn` - DN (distinguished name) of an (optional) admin user that has the right to search for other users. Some LDAP servers need this if it is impossible to bind directly to an 'uid'. Not set or an empty string means no admin user needed.
+* `jatos.user.authentication.ldap.admin.password` - Password of the admin user
 * `jatos.user.authentication.ldap.timeout` -  Time in milliseconds JATOS waits for a response from your LDAP server. Default is 5000 ms.
 
 If your LDAP uses encryption, you have to add your certificate to JATOS' trusted certificates defined with `play.ws.ssl.trustManager.stores`. E.g. if your certificate's location is in `/jatos/conf/certs/ca.pem`, then use the following to add it:
