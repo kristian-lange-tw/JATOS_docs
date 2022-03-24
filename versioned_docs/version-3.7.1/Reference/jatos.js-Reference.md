@@ -350,7 +350,7 @@ Convenience function that shows a text and an image in the center of the screen.
    });
    ```
 
-1. Shows text only
+1. Shows text and image
 
    ```javascript
    jatos.showOverlay({
